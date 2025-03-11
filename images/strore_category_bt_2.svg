@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="76" viewBox="0 0 76 76">
+  <defs>
+    <filter id="타원_169" x="0" y="0" width="76" height="76" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feFlood flood-color="#242b4d" flood-opacity="0.169"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="사각형_1406" data-name="사각형 1406" width="24.888" height="29.201" rx="4" fill="#9397a6"/>
+    </clipPath>
+  </defs>
+  <g id="strore_category_bt_2" transform="translate(-352.5 -1377.5)">
+    <rect id="사각형_1413" data-name="사각형 1413" width="75" height="75" transform="translate(353 1378)" fill="none"/>
+    <g transform="matrix(1, 0, 0, 1, 352.5, 1377.5)" filter="url(#타원_169)">
+      <circle id="타원_169-2" data-name="타원 169" cx="27.5" cy="27.5" r="27.5" transform="translate(10.5 7.5)" fill="#fafafb"/>
+    </g>
+    <g id="그룹_1901" data-name="그룹 1901" transform="translate(378 1396.281)">
+      <g id="그룹_1891" data-name="그룹 1891" transform="translate(0 0)" clip-path="url(#clip-path)">
+        <path id="패스_2949" data-name="패스 2949" d="M19.911,6.207l-1.162,7.5L13.44,7.466l.165-1.26,3.65-2.722C20.077.166,12.444,0,12.444,0S4.812.166,7.633,3.484l3.65,2.722.166,1.26L6.139,13.707l-1.161-7.5L0,8.628V29.2H24.888V8.628ZM10.121,28.04,6.55,15.745l3.406-3.633,1,1.991Zm4.646,0L13.938,14.1l1-1.991,3.416,3.644Z" transform="translate(0 0)" fill="#9397a6"/>
+      </g>
+    </g>
+  </g>
+</svg>

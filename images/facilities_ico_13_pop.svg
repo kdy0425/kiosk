@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470" height="300" viewBox="0 0 470 300">
+  <g id="facilities_ico_13_pop" transform="translate(0.088 0.186)">
+    <rect id="facility_list" width="470" height="300" transform="translate(-0.088 -0.185)" fill="#efeff7"/>
+    <g id="그룹_1855" data-name="그룹 1855" transform="translate(154.406 121.022)">
+      <path id="패스_2860" data-name="패스 2860" d="M22.446,3.907H28.5L44.876,41.38H37.963L34.195,32.4H16.6L12.774,41.38h-6.7ZM31.8,26.6,25.366,11.726,18.992,26.6Z" transform="translate(21.182 13.621)" fill="#656a82"/>
+      <path id="패스_2861" data-name="패스 2861" d="M25.645,10.027h-11.8V3.966H44.029v6.061h-11.8V41.17H25.645Z" transform="translate(48.255 13.828)" fill="#656a82"/>
+      <path id="패스_2862" data-name="패스 2862" d="M22.047,3.967H29l11.327,17.59L51.651,3.967h6.958v37.2H52.122V14.491L40.386,32.027h-.22L28.529,14.594V41.17H22.047Z" transform="translate(76.858 13.829)" fill="#656a82"/>
+      <path id="패스_2863" data-name="패스 2863" d="M159.773,72.527H2.961A2.96,2.96,0,0,1,0,69.571V2.956A2.957,2.957,0,0,1,2.961,0H159.773a2.952,2.952,0,0,1,2.952,2.956V69.571a2.955,2.955,0,0,1-2.952,2.956M5.917,66.61h150.9V5.917H5.917Z" transform="translate(0 0)" fill="#656a82"/>
+    </g>
+  </g>
+</svg>

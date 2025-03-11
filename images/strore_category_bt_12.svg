@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="76" viewBox="0 0 76 76">
+  <defs>
+    <filter id="타원_169" x="0" y="0" width="76" height="76" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feFlood flood-color="#242b4d" flood-opacity="0.169"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="strore_category_bt_12" transform="translate(-352.5 -1377.5)">
+    <rect id="사각형_1413" data-name="사각형 1413" width="75" height="75" transform="translate(353 1378)" fill="none"/>
+    <g transform="matrix(1, 0, 0, 1, 352.5, 1377.5)" filter="url(#타원_169)">
+      <circle id="타원_169-2" data-name="타원 169" cx="27.5" cy="27.5" r="27.5" transform="translate(10.5 7.5)" fill="#fafafb"/>
+    </g>
+    <circle id="타원_218" data-name="타원 218" cx="3" cy="3" r="3" transform="translate(378 1410)" fill="#9195a4"/>
+    <circle id="타원_219" data-name="타원 219" cx="3" cy="3" r="3" transform="translate(388 1410)" fill="#9195a4"/>
+    <circle id="타원_220" data-name="타원 220" cx="3" cy="3" r="3" transform="translate(398 1410)" fill="#9195a4"/>
+  </g>
+</svg>

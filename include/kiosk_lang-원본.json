@@ -1,0 +1,493 @@
+{
+    "index":{
+        "BOTTOM_MNU_FLOOR":
+        {
+            "kor":"층별안내",
+            "eng":"Floor Guide",
+            "chn":"楼层介绍",
+            "jpn":"フロア案内"
+        },
+        "BOTTOM_MNU_STORE":
+        {
+            "kor":"매장검색",
+            "eng":"Store search",
+            "chn":"搜索卖场",
+            "jpn":"売場検索"
+        },
+        "BOTTOM_MNU_FOOD":
+        {
+            "kor":"F&B",
+            "eng":"F&B",
+            "chn":"F&B",
+            "jpn":"F&B"
+        },
+        "BOTTOM_MNU_EVENT":
+        {
+            "kor":"행사안내",
+            "eng":"Event Guide",
+            "chn":"活动指南",
+            "jpn":"イベント案内"
+        },
+        "BOTTOM_MNU_FACILITY":
+        {
+            "kor":"편의시설",
+            "eng":"Facilities Guide",
+            "chn":"便利设施",
+            "jpn":"便宜施設"
+        },
+        "BOTTOM_MNU_HOME":
+        {
+            "kor":"처음으로",
+            "eng":"Home",
+            "chn":"首页",
+            "jpn":"初めへ"
+        },
+
+        "POP_LOCATION":
+        {
+            "kor":"위치",
+            "eng":"LOCATION",
+            "chn":"位置",
+            "jpn":"位置"
+        },
+
+        "POP_TEL":
+        {
+            "kor":"전화",
+            "eng":"TEL",
+            "chn":"电话",
+            "jpn":"電話"
+        },
+
+        "POP_MENU_TITLE":
+        {
+            "kor":"대표메뉴",
+            "eng":"MAIN MENU",
+            "chn":"代表菜单",
+            "jpn":"代表メニュー"
+        },
+
+        "POP_WAYFIND_LOCATION":
+        {
+            "kor":"위치안내",
+            "eng":"LOCATION",
+            "chn":"位置介绍",
+            "jpn":"位置案内"
+        },
+        "POP_WAYFIND_WAYFIND":
+        {
+            "kor":"길찾기",
+            "eng":"DIRECTIONS",
+            "chn":"寻路",
+            "jpn":"道案内"
+        },
+
+        "POP_WAYTYPE_TITLE" : {
+            "kor":"원하시는 이동수단을 선택해 주세요.<br>현 위치에서 가장 가까운 동선으로 안내해 드립니다." ,
+            "eng":"Choose the desired means of transportation.",
+            "chn":"请选择所需要的移动手段。",
+            "jpn":"ご希望の移動手段を選択してください。"
+        },
+        "POP_WAYTYPE_ELE" : {
+            "kor":"엘리베이터" ,
+            "eng":"Elevator",
+            "chn":"电梯",
+            "jpn":"エレベーター"
+        },
+        "POP_WAYTYPE_ESC" : {
+            "kor":"에스컬레이터" ,
+            "eng":"Escalator",
+            "chn":"自动扶梯",
+            "jpn":"エスカレーター"
+        },
+        "BOTTOM_MNU_TIME_TITLE_0" : {
+            "kor":"영업시간" ,
+            "eng":"Opening hours",
+            "chn":"营业时间",
+            "jpn":"営業時間"
+        },
+        "BOTTOM_MNU_TIME_TITLE_1" : {
+            "kor":"AK&" ,
+            "eng":"AK&",
+            "chn":"AK&",
+            "jpn":"AK&"
+        },
+        "POP_LOCATION_TXT" : {
+            "kor":"매장위치" ,
+            "eng":"Location",
+            "chn":"位置",
+            "jpn":"位置"
+        },
+        "POP_CATEGORY_TXT" : {
+            "kor":"카테고리" ,
+            "eng":"Category",
+            "chn":"栏目",
+            "jpn":"カテゴリ"
+        },
+        "POP_TEL_TXT" : {
+            "kor":"매장전화" ,
+            "eng":"Phone Number",
+            "chn":"电话号码",
+            "jpn":"電話番号"
+        },
+        "POP_HOUR_TXT" : {
+            "kor":"운영시간" ,
+            "eng":"Opening hours",
+            "chn":"营业时间",
+            "jpn":"営業時間"
+        }
+    },
+    
+    "floor" : {
+        "GUIDE_SWIPE" : {
+            "kor":"축소 및 확대 동작으로 자세하게 보실 수 있습니다.",
+            "eng":"You can see in detail by zooming in and out.",
+            "chn":"您可以通过放大和缩小查看详细信息。",
+            "jpn":"ズームインおよびズームアウトして詳細を確認できます。"
+        },
+        "FLOOR_HERE_ICON_TITLE" : {
+            "kor":"현위치",
+            "eng":"Here",
+            "chn":"现在位置",
+            "jpn":"現在位置"
+        },
+        "MULTI_TOUCH_TXT" : {
+            "kor":"멀티터치",
+            "eng":"Multi Touch",
+            "chn":"多点触摸",
+            "jpn":"マルチタッチ"
+        },
+        "FLOOR_LEVEL_B1" : {
+            "kor":"",
+            "eng":"",
+            "chn":"",
+            "jpn":""
+        },
+        "FLOOR_LEVEL_MF" : {
+            "kor":"",
+            "eng":"",
+            "chn":"",
+            "jpn":""
+        },
+        "FLOOR_LEVEL_F1" : {
+            "kor":"",
+            "eng":"",
+            "chn":"",
+            "jpn":""
+        },
+        "FLOOR_LEVEL_F2" : {
+            "kor":"",
+            "eng":"",
+            "chn":"",
+            "jpn":""
+        },
+        "FLOOR_LEVEL_F3" : {
+            "kor":"",
+            "eng":"",
+            "chn":"",
+            "jpn":""
+        },
+        "FLOOR_LEVEL_F4" : {
+            "kor":"",
+            "eng":"",
+            "chn":"",
+            "jpn":""
+        },
+        "FLOOR_LEVEL_P4" : {
+            "kor":"",
+            "eng":"",
+            "chn":"",
+            "jpn":""
+        },
+        "FLOOR_LEVEL_F5" : {
+            "kor":"",
+            "eng":"",
+            "chn":"",
+            "jpn":""
+        },
+
+        "WAYFIND_SUB_START_TITLE" : {
+            "kor":"현재위치" ,
+            "eng":"Current<br>location",
+            "chn":"现在位置",
+            "jpn":"現在位置"
+        },
+        "WAYFIND_SUB_TARGET_TITLE" : {
+            "kor":"도착위치",
+            "eng":"Arrival<br>location",
+            "chn":"到达位置",
+            "jpn":"到着位置"
+        },
+
+        "FLOOR_LEVEL_CURRENT" : {
+            "kor":"현재위치" ,
+            "eng":"Current<br>location",
+            "chn":"现在位置",
+            "jpn":"現在位置"
+        },
+
+        "FLOOR_LEVEL_CURRENT_TITLE" : {
+            "kor":"현재위치" ,
+            "eng":"Current",
+            "chn":"",
+            "jpn":""
+        },
+
+        "PUB_CODE_P01" : {
+            "kor":"화장실" ,
+            "eng":"Toliet",
+            "chn":"洗手间",
+            "jpn":"トイレ"
+        },
+        "PUB_CODE_P02" : {
+            "kor":"유아휴게실" ,
+            "eng":"Infant lounge",
+            "chn":"婴儿休息室",
+            "jpn":"幼児ラウンジ"
+        },
+        "PUB_CODE_P03" : {
+            "kor":"유모차서비스" ,
+            "eng":"Stroller service",
+            "chn":"婴儿车服务",
+            "jpn":"ベビーカー<br>サービス"
+        },
+        "PUB_CODE_P04" : {
+            "kor":"사은데스크" ,
+            "eng":"Gift desk",
+            "chn":"礼品台",
+            "jpn":"礼品台"
+        },
+        "PUB_CODE_P06" : {
+            "kor":"엘리베이터" ,
+            "eng":"Elevator",
+            "chn":"电梯",
+            "jpn":"エレベーター"
+        },
+        "PUB_CODE_P07" : {
+            "kor":"지하철" ,
+            "eng":"Subway",
+            "chn":"地铁",
+            "jpn":"地下鉄"
+        },
+        "PUB_CODE_P08" : {
+            "kor":"주차장" ,
+            "eng":"Parking lot",
+            "chn":"停车场",
+            "jpn":"駐車場"
+        }
+
+    },
+
+    "store" : {
+        "STORE_TITLE" : {
+            "kor":"매장검색" ,
+            "eng":"Search by store",
+            "chn":"搜索卖场",
+            "jpn":"売場検索"
+        },
+        "STORE_TITLE_SUB" : {
+            "kor":"찾으시고자 하는 매장을 선택해 주세요" ,
+            "eng":"Choose the store you like to find.",
+            "chn":"请选择想要找的卖场。",
+            "jpn":"お探しの車両番号を入力してください。"
+        },
+        "STORE_LOCATION" : {
+            "kor":"위치",
+            "eng":"LOCATION",
+            "chn":"位置",
+            "jpn":"位置"
+        },
+
+        "STORE_CTG_SEARCH" : {
+            "kor":"카테고리 검색" ,
+            "eng":"Category",
+            "chn":"分类搜索",
+            "jpn":"カテゴリー"
+        },
+        "STORE_CTG_INIT" : {
+            "kor":"초성/알파벳 검색" ,
+            "eng":"Initial/Alphabet",
+            "chn":"初声/字母搜索",
+            "jpn":"頭文字/アルファベット"
+        },
+        "STORE_CTG_FLOOR" : {
+            "kor":"층별 검색" ,
+            "eng":"Floor",
+            "chn":"分层搜索",
+            "jpn":"フロア"
+        },
+        "STORE_INIT_TXT" : {
+            "kor":"찾고자 하시는 매장의 초성을 선택해주세요" ,
+            "eng":"Choose the initial consonant of the store you like to find.",
+            "chn":"请选择想要找的卖场的初声。",
+            "jpn":"お探しの店舗の頭文字をお選びください。"
+        },
+
+        "STORE_CATE_MAIN_S00" : {
+            "kor":"전체" ,
+            "eng":"ALL",
+            "chn":"全部",
+            "jpn":"全体"
+        },
+        "STORE_CATE_MAIN_001" : {
+            "kor":"출입국시설" ,
+            "eng":"Departure and Arrival",
+            "chn":"移民设施",
+            "jpn":"出入国施設"
+        },
+        "STORE_CATE_MAIN_002" : {
+            "kor":"교통시설" ,
+            "eng":"Traffic Service",
+            "chn":"交通设施",
+            "jpn":"交通施設"
+        },
+        "STORE_CATE_MAIN_003" : {
+            "kor":"안내/서비스" ,
+            "eng":"Information Service",
+            "chn":"信息/服务",
+            "jpn":"案内/サービス"
+        },
+        "STORE_CATE_MAIN_004" : {
+            "kor":"공공시설" ,
+            "eng":"Public Service",
+            "chn":"公共设施",
+            "jpn":"公共施設"
+        },
+        "STORE_CATE_MAIN_005" : {
+            "kor":"사무실" ,
+            "eng":"Office",
+            "chn":"办公室",
+            "jpn":"オフィス"
+        },
+        "STORE_CATE_MAIN_102" : {
+            "kor":"음식" ,
+            "eng":"Food",
+            "chn":"食品",
+            "jpn":"食べ物"
+        },
+        "STORE_CATE_MAIN_103" : {
+            "kor":"쇼핑" ,
+            "eng":"Shopping",
+            "chn":"购物",
+            "jpn":"ショッピング"
+        },
+        "STORE_CATE_MAIN_104" : {
+            "kor":"금융" ,
+            "eng":"Finance/Bank",
+            "chn":"金融",
+            "jpn":"金融"
+        },
+        "STORE_CATE_MAIN_105" : {
+            "kor":"통신" ,
+            "eng":"Mobile/Communication",
+            "chn":"通讯",
+            "jpn":"通信"
+        },
+        "STORE_CATE_MAIN_106" : {
+            "kor":"여행" ,
+            "eng":"Travel",
+            "chn":"旅游",
+            "jpn":"旅行"
+        },
+        "STORE_CATE_MAIN_107" : {
+            "kor":"편의" ,
+            "eng":"Convenience",
+            "chn":"便利",
+            "jpn":"利便性"
+        },
+        "STORE_CATE_MAIN_108" : {
+            "kor":"교통" ,
+            "eng":"transportation",
+            "chn":"交通",
+            "jpn":"交通"
+        },
+        "STORE_NO_RESULT" : {
+            "kor":"검색결과가 없습니다.<br>다른 검색어를 입력해 주세요." ,
+            "eng":"No Results Found<br>Please enter another search term",
+            "chn":"no results found",
+            "jpn":"no results found"
+        }
+    },
+
+    "facility" : {
+        "FACILITY_TITLE" : {
+            "kor":"편의시설" ,
+            "eng":"Amenities",
+            "chn":"便利设施",
+            "jpn":"便宜施設"
+        },
+        "FACILITY_TITLE_SUB" : {
+            "kor":"찾으시고자 하는 시설을 선택해주세요" ,
+            "eng":"Choose the facilities you like to find.",
+            "chn":"请选择想要找的设施。",
+            "jpn":"ご希望の施設をお選びください。"
+        },
+        "FACILTY_CODE_P01" : {
+            "kor":"화장실" ,
+            "eng":"Toliet",
+            "chn":"洗手间",
+            "jpn":"トイレ"
+        },
+        "FACILTY_CODE_P02" : {
+            "kor":"유아휴게실" ,
+            "eng":"Infant lounge",
+            "chn":"婴儿休息室",
+            "jpn":"幼児ラウンジ"
+        },
+        "FACILTY_CODE_P11" : {
+            "kor":"유모차서비스" ,
+            "eng":"Stroller service",
+            "chn":"婴儿车服务",
+            "jpn":"ベビーカーサービス"
+        },
+        "FACILTY_CODE_P12" : {
+            "kor":"사은데스크" ,
+            "eng":"Gift desk",
+            "chn":"礼品台",
+            "jpn":"礼品台"
+        },
+        "FACILTY_CODE_P14" : {
+            "kor":"엘리베이터" ,
+            "eng":"Elevator",
+            "chn":"电梯",
+            "jpn":"エレベーター"
+        },
+        "FACILTY_CODE_P15" : {
+            "kor":"지하철" ,
+            "eng":"Subway",
+            "chn":"地铁",
+            "jpn":"地下鉄"
+        },
+        "FACILTY_CODE_P16" : {
+            "kor":"주차장" ,
+            "eng":"Parking lot",
+            "chn":"停车场",
+            "jpn":"駐車場"
+        },
+        "FACILTY_CODE_P17" : {
+            "kor":"고객상담실" ,
+            "eng":"Customer Service",
+            "chn":"客户服务",
+            "jpn":"顧客サービス"
+        },
+        "FACILTY_CODE_P20" : {
+            "kor":"물품보관함" ,
+            "eng":"Locker",
+            "chn":"储物柜",
+            "jpn":"ロッカー"
+        },
+        "FACILTY_CODE_P21" : {
+            "kor":"ATM" ,
+            "eng":"ATM",
+            "chn":"ATM",
+            "jpn":"ATM"
+        },
+        "FACILTY_CODE_P22" : {
+            "kor":"의무실" ,
+            "eng":"Infirmary",
+            "chn":"医务室",
+            "jpn":"診療所"
+        }
+    }
+
+}

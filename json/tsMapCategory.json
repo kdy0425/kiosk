@@ -1,0 +1,2205 @@
+[
+  {
+    "floor": [ "P01F3D", "P03F3D" ],
+    "list": [
+      {
+        "bigCategory": [ "001" ],
+        "localedValues": [ "출입국시설", "Immigration Facilities", "移民施設", "移民设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "00001" ],
+            "localedValues": [ "체크인카운터", "Check-in Counter", "チェックイン", "值机柜台" ]
+          },
+          {
+            "category": [ "00002" ],
+            "localedValues": [ "탑승구", "Boarding Gate", "ゲート", "登机口" ]
+          },
+          {
+            "category": [ "00003" ],
+            "localedValues": [ "입국장", "Arrivals Hall", "到着ロビー", "入境大厅" ]
+          },
+          {
+            "category": [ "00021" ],
+            "localedValues": [ "환승장", "Transfer Lounge", "乗り継ぎ場", "转机大厅" ]
+          },
+          {
+            "category": [ "0001G" ],
+            "localedValues": [ "수하물수취대", "Baggage Claim", "手荷物受取所", "行李提取" ]
+          },
+          {
+            "category": [ "0001B" ],
+            "localedValues": [ "만남의장소", "Meeting Point", "待合室", "会客点" ]
+          },
+          {
+            "category": [ "0001A" ],
+            "localedValues": [ "큰짐 찾는곳", "Oversized Baggage Storage", "大型手荷物受取所", "大件行李提取" ]
+          },
+          {
+            "category": [ "00029" ],
+            "localedValues": [ "수하물검사실", "Baggage Inspection", "手荷物検査室", "托运行李检查室" ]
+          },
+          {
+            "category": [ "00025" ],
+            "localedValues": [ "출국장", "Departure Hall", "出発ロビー", "出发大厅" ]
+          },
+          {
+            "category": [ "00019" ],
+            "localedValues": [ "입국심사장", "Immigration Office", "入国審査場", "入境边防检查" ]
+          },
+          {
+            "category": [ "00018" ],
+            "localedValues": [ "큰짐 부치는곳", "Oversized Baggage Check-in", "大型手荷物", "大件行李托运" ]
+          },
+          {
+            "category": [ "00015" ],
+            "localedValues": [ "출국심사", "Emigration", "出国審査", "出境边防检查" ]
+          },
+          {
+            "category": [ "00016" ],
+            "localedValues": [ "자동출국심사대", "Automatic Immigration Control", "自動出国審査", "自動移民控制" ]
+          },
+          {
+            "category": [ "00026" ],
+            "localedValues": [ "환승데스크", "Transfer Desk", "乗り継ぎデスク", "转机柜台" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "004" ],
+        "localedValues": [ "공공시설", "Public Facilities", "公共施設", "公共设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "0000U" ],
+            "localedValues": [ "화장실", "Toilets", "お手洗", "洗手间" ]
+          },
+          {
+            "category": [ "0000V" ],
+            "localedValues": [ "흡연실", "Smoking Room", "喫煙所", "吸烟室" ]
+          },
+          {
+            "category": [ "0000Z" ],
+            "localedValues": [ "유아휴게실", "Infant Nursery", "ベビ-ル-ム", "哺乳室" ]
+          },
+          {
+            "category": [ "0000H" ],
+            "localedValues": [ "심장제세동기", "AED", "AED", "AED" ]
+          },
+          {
+            "category": [ "0002I" ],
+            "localedValues": [ "키즈존", "Kids Zone", "キッズゾーン", "儿童游乐设施" ]
+          },
+          {
+            "category": [ "0002J" ],
+            "localedValues": [ "인터넷존", "Internet Zone", "インターネットゾーン", "网络区域" ]
+          },
+          {
+            "category": [ "0001J" ],
+            "localedValues": [ "샤워실", "Showers", "リフレッシュルーム", "淋浴室" ]
+          },
+          {
+            "category": [ "0002K" ],
+            "localedValues": [ "휴식시설", "Relax Zone", "休憩室", "休息区" ]
+          },
+          {
+            "category": [ "0000X" ],
+            "localedValues": [ "셔틀트레인", "Shuttle Train", "シャトルトレイン", "航站快轨" ]
+          },
+          {
+            "category": [ "00011" ],
+            "localedValues": [ "기도실", "Prayer Room", "祈祷室", "祈祷室" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "103" ],
+        "localedValues": [ "일반쇼핑", "General Shopping", "一般ショッピング", "普通购物" ],
+        "midCategoryies": [
+          {
+            "category": [ "10302", "10316" ],
+            "localedValues": [ "화장품/향수", "Cosmetics/Perfumes", "化粧品/香水", "化妆品/香水" ]
+          },
+          {
+            "category": [ "10303", "10315" ],
+            "localedValues": [ "패션/액세서리", "Fashion/Accessories", "ファッション/アクセサリ", "服装/饰品" ]
+          },
+          {
+            "category": [ "10317" ],
+            "localedValues": [ "편의점", "Convenience Store", "コンビニ", "便利店" ]
+          },
+          {
+            "category": [ "10308" ],
+            "localedValues": [ "서점", "Books", "書籍", "书籍" ]
+          },
+          {
+            "category": [ "10306" ],
+            "localedValues": [ "전자제품", "Electronics", "電子製品", "电子产品" ]
+          },
+          {
+            "category": [ "10307", "10318", "10305", "10309", "10313" ],
+            "localedValues": [ "기타", "Other", "その他    ", "其他" ]
+          },
+          {
+            "category": [ "10310" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "102" ],
+        "localedValues": [ "음식", "Food", "食べ物", "餐饮" ],
+        "midCategoryies": [
+          {
+            "category": [ "10202" ],
+            "localedValues": [ "한식", "Korean Food", "韓国食", "韩餐" ]
+          },
+          {
+            "category": [ "10208" ],
+            "localedValues": [ "양식", "Western Food", "洋食", "西餐" ]
+          },
+          {
+            "category": [ "10217", "10212", "10210", "10209" ],
+            "localedValues": [ "아시안푸드", "Asian Food", "アジアンフード", "亚洲美食" ]
+          },
+          {
+            "category": [ "10204" ],
+            "localedValues": [ "푸드코트", "Food Court", "フードコート", "美食区" ]
+          },
+          {
+            "category": [ "10213", "10203", "10201" ],
+            "localedValues": [ "분식/패스트푸드", "Street Food/Fast Food", "粉食/ファーストフード", "面食/快餐" ]
+          },
+          {
+            "category": [ "10205", "10206", "10211" ],
+            "localedValues": [ "카페/베이커리/바", "Cafe/Bakery/Bar", "カフェ/ベーカリー/バー", "咖啡/面包/酒吧" ]
+          },
+          {
+            "category": [ "10207" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "104", "105" ],
+        "localedValues": [ "금융/통신", "Finance / Telecommunication", "金融/通信", "金融/通信" ],
+        "midCategoryies": [
+          {
+            "category": [ "10404" ],
+            "localedValues": [ "여행자보험", "Travel Insurance", "旅行者保険", "旅游保险" ]
+          },
+          {
+            "category": [ "10402" ],
+            "localedValues": [ "은행", "Bank", "銀行", "银行" ]
+          },
+          {
+            "category": [ "10401" ],
+            "localedValues": [ "환전", "Currency Exchange", "両替", "外币兑换" ]
+          },
+          {
+            "category": [ "10403" ],
+            "localedValues": [ "현금지급기", "ATM", "キャッシュサービス", "自动取款机" ]
+          },
+          {
+            "category": [ "10501" ],
+            "localedValues": [ "휴대폰 대여/로밍", "Phone Rental/Global Roaming", "携帯電話レンタル/ローミング", "手机租赁/漫游" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "106", "107" ],
+        "localedValues": [ "편의시설", "Facilities", "便利施設", "服务设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "10607", "10602", "10604", "10606" ],
+            "localedValues": [ "호텔/라운지", "Hotel/Lounge", "ホテル/ラウンジ", "酒店/休息室" ]
+          },
+          {
+            "category": [ "10707" ],
+            "localedValues": [ "마사지", "Massage", "マッサージ", "按摩" ]
+          },
+          {
+            "category": [ "10709", "10710" ],
+            "localedValues": [ "부가세환급", "Tax Refund", "賦課税還付", "退税" ]
+          },
+          {
+            "category": [ "10704", "10705" ],
+            "localedValues": [ "약국/병원", "Pharmacy/Hospital", "薬局/病院", "药房/医院" ]
+          },
+          {
+            "category": [ "10701", "10702" ],
+            "localedValues": [ "포장/택배/우편", "Packaging/Pacrcel/Mail", "包装/宅配便/郵便", "包装/快递/邮递" ]
+          },
+          {
+            "category": [ "10703" ],
+            "localedValues": [ "외투보관", "CloakRoom", "コート保管", "外套寄存处" ]
+          },
+          {
+            "category": [ "10605" ],
+            "localedValues": [ "렌터카", "Rent Car", "レンタカー", "租车" ]
+          },
+          {
+            "category": [ "10713" ],
+            "localedValues": [ "문화/전시", "Culture/Exhibition", "文化/展示", "文化/展示" ]
+          },
+          {
+            "category": [ "10715" ],
+            "localedValues": [ "안내/서비스", "Guide/Services", "案内/サービス", "服务" ]
+          },
+          {
+            "category": [ "10716" ],
+            "localedValues": [ "민원/행정", "Civil/Administrative", "窓口/行政", "投诉/行政" ]
+          },
+          {
+            "category": [ "10706" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "floor": [ "P01F4D", "P03F4D" ],
+    "list": [
+      {
+        "bigCategory": [ "004" ],
+        "localedValues": [ "공공시설", "Public Facilities", "公共施設", "公共设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "0000U" ],
+            "localedValues": [ "화장실", "Toilets", "お手洗", "洗手间" ]
+          },
+          {
+            "category": [ "0000V" ],
+            "localedValues": [ "흡연실", "Smoking Room", "喫煙所", "吸烟室" ]
+          },
+          {
+            "category": [ "0000Z" ],
+            "localedValues": [ "유아휴게실", "Infant Nursery", "ベビ-ル-ム", "哺乳室" ]
+          },
+          {
+            "category": [ "0000H" ],
+            "localedValues": [ "심장제세동기", "AED", "AED", "AED" ]
+          },
+          {
+            "category": [ "0002I" ],
+            "localedValues": [ "키즈존", "Kids Zone", "キッズゾーン", "儿童游乐设施" ]
+          },
+          {
+            "category": [ "0002J" ],
+            "localedValues": [ "인터넷존", "Internet Zone", "インターネットゾーン", "网络区域" ]
+          },
+          {
+            "category": [ "0001J" ],
+            "localedValues": [ "샤워실", "Showers", "リフレッシュルーム", "淋浴室" ]
+          },
+          {
+            "category": [ "0002K" ],
+            "localedValues": [ "휴식시설", "Relax Zone", "休憩室", "休息区" ]
+          },
+          {
+            "category": [ "0000X" ],
+            "localedValues": [ "셔틀트레인", "Shuttle Train", "シャトルトレイン", "航站快轨" ]
+          },
+          {
+            "category": [ "00011" ],
+            "localedValues": [ "기도실", "Prayer Room", "祈祷室", "祈祷室" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "103" ],
+        "localedValues": [ "일반쇼핑", "General Shopping", "一般ショッピング", "普通购物" ],
+        "midCategoryies": [
+          {
+            "category": [ "10302", "10316" ],
+            "localedValues": [ "화장품/향수", "Cosmetics/Perfumes", "化粧品/香水", "化妆品/香水" ]
+          },
+          {
+            "category": [ "10303", "10315" ],
+            "localedValues": [ "패션/액세서리", "Fashion/Accessories", "ファッション/アクセサリ", "服装/饰品" ]
+          },
+          {
+            "category": [ "10317" ],
+            "localedValues": [ "편의점", "Convenience Store", "コンビニ", "便利店" ]
+          },
+          {
+            "category": [ "10308" ],
+            "localedValues": [ "서점", "Books", "書籍", "书籍" ]
+          },
+          {
+            "category": [ "10306" ],
+            "localedValues": [ "전자제품", "Electronics", "電子製品", "电子产品" ]
+          },
+          {
+            "category": [ "10307", "10318", "10305", "10309", "10313" ],
+            "localedValues": [ "기타", "Other", "その他    ", "其他" ]
+          },
+          {
+            "category": [ "10310" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "102" ],
+        "localedValues": [ "음식", "Food", "食べ物", "餐饮" ],
+        "midCategoryies": [
+          {
+            "category": [ "10202" ],
+            "localedValues": [ "한식", "Korean Food", "韓国食", "韩餐" ]
+          },
+          {
+            "category": [ "10208" ],
+            "localedValues": [ "양식", "Western Food", "洋食", "西餐" ]
+          },
+          {
+            "category": [ "10217", "10212", "10210", "10209" ],
+            "localedValues": [ "아시안푸드", "Asian Food", "アジアンフード", "亚洲美食" ]
+          },
+          {
+            "category": [ "10204" ],
+            "localedValues": [ "푸드코트", "Food Court", "フードコート", "美食区" ]
+          },
+          {
+            "category": [ "10213", "10203", "10201" ],
+            "localedValues": [ "분식/패스트푸드", "Street Food/Fast Food", "粉食/ファーストフード", "面食/快餐" ]
+          },
+          {
+            "category": [ "10205", "10206", "10211" ],
+            "localedValues": [ "카페/베이커리/바", "Cafe/Bakery/Bar", "カフェ/ベーカリー/バー", "咖啡/面包/酒吧" ]
+          },
+          {
+            "category": [ "10207" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "104", "105" ],
+        "localedValues": [ "금융/통신", "Finance / Telecommunication", "金融/通信", "金融/通信" ],
+        "midCategoryies": [
+          {
+            "category": [ "10404" ],
+            "localedValues": [ "여행자보험", "Travel Insurance", "旅行者保険", "旅游保险" ]
+          },
+          {
+            "category": [ "10402" ],
+            "localedValues": [ "은행", "Bank", "銀行", "银行" ]
+          },
+          {
+            "category": [ "10401" ],
+            "localedValues": [ "환전", "Currency Exchange", "両替", "外币兑换" ]
+          },
+          {
+            "category": [ "10403" ],
+            "localedValues": [ "현금지급기", "ATM", "キャッシュサービス", "自动取款机" ]
+          },
+          {
+            "category": [ "10501" ],
+            "localedValues": [ "휴대폰 대여/로밍", "Phone Rental/Global Roaming", "携帯電話レンタル/ローミング", "手机租赁/漫游" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "106", "107" ],
+        "localedValues": [ "편의시설", "Facilities", "便利施設", "服务设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "10607", "10602", "10604", "10606" ],
+            "localedValues": [ "호텔/라운지", "Hotel/Lounge", "ホテル/ラウンジ", "酒店/休息室" ]
+          },
+          {
+            "category": [ "10707" ],
+            "localedValues": [ "마사지", "Massage", "マッサージ", "按摩" ]
+          },
+          {
+            "category": [ "10709", "10710" ],
+            "localedValues": [ "부가세환급", "Tax Refund", "賦課税還付", "退税" ]
+          },
+          {
+            "category": [ "10704", "10705" ],
+            "localedValues": [ "약국/병원", "Pharmacy/Hospital", "薬局/病院", "药房/医院" ]
+          },
+          {
+            "category": [ "10701", "10702" ],
+            "localedValues": [ "포장/택배/우편", "Packaging/Pacrcel/Mail", "包装/宅配便/郵便", "包装/快递/邮递" ]
+          },
+          {
+            "category": [ "10703" ],
+            "localedValues": [ "외투보관", "CloakRoom", "コート保管", "外套寄存处" ]
+          },
+          {
+            "category": [ "10605" ],
+            "localedValues": [ "렌터카", "Rent Car", "レンタカー", "租车" ]
+          },
+          {
+            "category": [ "10713" ],
+            "localedValues": [ "문화/전시", "Culture/Exhibition", "文化/展示", "文化/展示" ]
+          },
+          {
+            "category": [ "10715" ],
+            "localedValues": [ "안내/서비스", "Guide/Services", "案内/サービス", "服务" ]
+          },
+          {
+            "category": [ "10716" ],
+            "localedValues": [ "민원/행정", "Civil/Administrative", "窓口/行政", "投诉/行政" ]
+          },
+          {
+            "category": [ "10706" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "floor": [ "P01F1D", "P03F1D"],
+    "list": [
+      {
+        "bigCategory": [ "102" ],
+        "localedValues": [ "음식", "Food", "食べ物", "餐饮" ],
+        "midCategoryies": [
+          {
+            "category": [ "10202" ],
+            "localedValues": [ "한식", "Korean Food", "韓国食", "韩餐" ]
+          },
+          {
+            "category": [ "10208" ],
+            "localedValues": [ "양식", "Western Food", "洋食", "西餐" ]
+          },
+          {
+            "category": [ "10217", "10212", "10210", "10209" ],
+            "localedValues": [ "아시안푸드", "Asian Food", "アジアンフード", "亚洲美食" ]
+          },
+          {
+            "category": [ "10204" ],
+            "localedValues": [ "푸드코트", "Food Court", "フードコート", "美食区" ]
+          },
+          {
+            "category": [ "10213", "10203", "10201" ],
+            "localedValues": [ "분식/패스트푸드", "Street Food/Fast Food", "粉食/ファーストフード", "面食/快餐" ]
+          },
+          {
+            "category": [ "10205", "10206", "10211" ],
+            "localedValues": [ "카페/베이커리/바", "Cafe/Bakery/Bar", "カフェ/ベーカリー/バー", "咖啡/面包/酒吧" ]
+          },
+          {
+            "category": [ "10207" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "103" ],
+        "localedValues": [ "일반쇼핑", "General Shopping", "一般ショッピング", "普通购物" ],
+        "midCategoryies": [
+          {
+            "category": [ "10302", "10316" ],
+            "localedValues": [ "화장품/향수", "Cosmetics/Perfumes", "化粧品/香水", "化妆品/香水" ]
+          },
+          {
+            "category": [ "10303", "10315" ],
+            "localedValues": [ "패션/액세서리", "Fashion/Accessories", "ファッション/アクセサリ", "服装/饰品" ]
+          },
+          {
+            "category": [ "10317" ],
+            "localedValues": [ "편의점", "Convenience Store", "コンビニ", "便利店" ]
+          },
+          {
+            "category": [ "10308" ],
+            "localedValues": [ "서점", "Books", "書籍", "书籍" ]
+          },
+          {
+            "category": [ "10306" ],
+            "localedValues": [ "전자제품", "Electronics", "電子製品", "电子产品" ]
+          },
+          {
+            "category": [ "10307", "10318", "10305", "10309", "10313" ],
+            "localedValues": [ "기타", "Other", "その他    ", "其他" ]
+          },
+          {
+            "category": [ "10310" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "104", "105" ],
+        "localedValues": [ "금융/통신", "Finance / Telecommunication", "金融/通信", "金融/通信" ],
+        "midCategoryies": [
+          {
+            "category": [ "10404" ],
+            "localedValues": [ "여행자보험", "Travel Insurance", "旅行者保険", "旅游保险" ]
+          },
+          {
+            "category": [ "10402" ],
+            "localedValues": [ "은행", "Bank", "銀行", "银行" ]
+          },
+          {
+            "category": [ "10401" ],
+            "localedValues": [ "환전", "Currency Exchange", "両替", "外币兑换" ]
+          },
+          {
+            "category": [ "10403" ],
+            "localedValues": [ "현금지급기", "ATM", "キャッシュサービス", "自动取款机" ]
+          },
+          {
+            "category": [ "10501" ],
+            "localedValues": [ "휴대폰 대여/로밍", "Phone Rental/Global Roaming", "携帯電話レンタル/ローミング", "手机租赁/漫游" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "106", "107" ],
+        "localedValues": [ "편의시설", "Facilities", "便利施設", "服务设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "10607", "10602", "10604", "10606" ],
+            "localedValues": [ "호텔/라운지", "Hotel/Lounge", "ホテル/ラウンジ", "酒店/休息室" ]
+          },
+          {
+            "category": [ "10707" ],
+            "localedValues": [ "마사지", "Massage", "マッサージ", "按摩" ]
+          },
+          {
+            "category": [ "10709", "10710" ],
+            "localedValues": [ "부가세환급", "Tax Refund", "賦課税還付", "退税" ]
+          },
+          {
+            "category": [ "10704", "10705" ],
+            "localedValues": [ "약국/병원", "Pharmacy/Hospital", "薬局/病院", "药房/医院" ]
+          },
+          {
+            "category": [ "10701", "10702" ],
+            "localedValues": [ "포장/택배/우편", "Packaging/Pacrcel/Mail", "包装/宅配便/郵便", "包装/快递/邮递" ]
+          },
+          {
+            "category": [ "10703" ],
+            "localedValues": [ "외투보관", "CloakRoom", "コート保管", "外套寄存处" ]
+          },
+          {
+            "category": [ "10605" ],
+            "localedValues": [ "렌터카", "Rent Car", "レンタカー", "租车" ]
+          },
+          {
+            "category": [ "10713" ],
+            "localedValues": [ "문화/전시", "Culture/Exhibition", "文化/展示", "文化/展示" ]
+          },
+          {
+            "category": [ "10715" ],
+            "localedValues": [ "안내/서비스", "Guide/Services", "案内/サービス", "服务" ]
+          },
+          {
+            "category": [ "10716" ],
+            "localedValues": [ "민원/행정", "Civil/Administrative", "窓口/行政", "投诉/行政" ]
+          },
+          {
+            "category": [ "10706" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "004" ],
+        "localedValues": [ "공공시설", "Public Facilities", "公共施設", "公共设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "0000U" ],
+            "localedValues": [ "화장실", "Toilets", "お手洗", "洗手间" ]
+          },
+          {
+            "category": [ "0000V" ],
+            "localedValues": [ "흡연실", "Smoking Room", "喫煙所", "吸烟室" ]
+          },
+          {
+            "category": [ "0000Z" ],
+            "localedValues": [ "유아휴게실", "Infant Nursery", "ベビ-ル-ム", "哺乳室" ]
+          },
+          {
+            "category": [ "0000H" ],
+            "localedValues": [ "심장제세동기", "AED", "AED", "AED" ]
+          },
+          {
+            "category": [ "0002I" ],
+            "localedValues": [ "키즈존", "Kids Zone", "キッズゾーン", "儿童游乐设施" ]
+          },
+          {
+            "category": [ "0002J" ],
+            "localedValues": [ "인터넷존", "Internet Zone", "インターネットゾーン", "网络区域" ]
+          },
+          {
+            "category": [ "0001J" ],
+            "localedValues": [ "샤워실", "Showers", "リフレッシュルーム", "淋浴室" ]
+          },
+          {
+            "category": [ "0002K" ],
+            "localedValues": [ "휴식시설", "Relax Zone", "休憩室", "休息区" ]
+          },
+          {
+            "category": [ "0000X" ],
+            "localedValues": [ "셔틀트레인", "Shuttle Train", "シャトルトレイン", "航站快轨" ]
+          },
+          {
+            "category": [ "00011" ],
+            "localedValues": [ "기도실", "Prayer Room", "祈祷室", "祈祷室" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "001" ],
+        "localedValues": [ "출입국시설", "Immigration Facilities", "移民施設", "移民设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "00001" ],
+            "localedValues": [ "체크인카운터", "Check-in Counter", "チェックイン", "值机柜台" ]
+          },
+          {
+            "category": [ "00002" ],
+            "localedValues": [ "탑승구", "Boarding Gate", "ゲート", "登机口" ]
+          },
+          {
+            "category": [ "00003" ],
+            "localedValues": [ "입국장", "Arrivals Hall", "到着ロビー", "入境大厅" ]
+          },
+          {
+            "category": [ "00021" ],
+            "localedValues": [ "환승장", "Transfer Lounge", "乗り継ぎ場", "转机大厅" ]
+          },
+          {
+            "category": [ "0001G" ],
+            "localedValues": [ "수하물수취대", "Baggage Claim", "手荷物受取所", "行李提取" ]
+          },
+          {
+            "category": [ "0001B" ],
+            "localedValues": [ "만남의장소", "Meeting Point", "待合室", "会客点" ]
+          },
+          {
+            "category": [ "0001A" ],
+            "localedValues": [ "큰짐 찾는곳", "Oversized Baggage Storage", "大型手荷物受取所", "大件行李提取" ]
+          },
+          {
+            "category": [ "00029" ],
+            "localedValues": [ "수하물검사실", "Baggage Inspection", "手荷物検査室", "托运行李检查室" ]
+          },
+          {
+            "category": [ "00025" ],
+            "localedValues": [ "출국장", "Departure Hall", "出発ロビー", "出发大厅" ]
+          },
+          {
+            "category": [ "00019" ],
+            "localedValues": [ "입국심사장", "Immigration Office", "入国審査場", "入境边防检查" ]
+          },
+          {
+            "category": [ "00018" ],
+            "localedValues": [ "큰짐 부치는곳", "Oversized Baggage Check-in", "大型手荷物", "大件行李托运" ]
+          },
+          {
+            "category": [ "00015" ],
+            "localedValues": [ "출국심사", "Emigration", "出国審査", "出境边防检查" ]
+          },
+          {
+            "category": [ "00016" ],
+            "localedValues": [ "자동출국심사대", "Automatic Immigration Control", "自動出国審査", "自動移民控制" ]
+          },
+          {
+            "category": [ "00026" ],
+            "localedValues": [ "환승데스크", "Transfer Desk", "乗り継ぎデスク", "转机柜台" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "floor": [ "P01F2D", "P03F2D" ],
+    "list": [
+      {
+        "bigCategory": [ "102" ],
+        "localedValues": [ "음식", "Food", "食べ物", "餐饮" ],
+        "midCategoryies": [
+          {
+            "category": [ "10202" ],
+            "localedValues": [ "한식", "Korean Food", "韓国食", "韩餐" ]
+          },
+          {
+            "category": [ "10208" ],
+            "localedValues": [ "양식", "Western Food", "洋食", "西餐" ]
+          },
+          {
+            "category": [ "10217", "10212", "10210", "10209" ],
+            "localedValues": [ "아시안푸드", "Asian Food", "アジアンフード", "亚洲美食" ]
+          },
+          {
+            "category": [ "10204" ],
+            "localedValues": [ "푸드코트", "Food Court", "フードコート", "美食区" ]
+          },
+          {
+            "category": [ "10213", "10203", "10201" ],
+            "localedValues": [ "분식/패스트푸드", "Street Food/Fast Food", "粉食/ファーストフード", "面食/快餐" ]
+          },
+          {
+            "category": [ "10205", "10206", "10211" ],
+            "localedValues": [ "카페/베이커리/바", "Cafe/Bakery/Bar", "カフェ/ベーカリー/バー", "咖啡/面包/酒吧" ]
+          },
+          {
+            "category": [ "10207" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "106", "107" ],
+        "localedValues": [ "편의시설", "Facilities", "便利施設", "服务设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "10607", "10602", "10604", "10606" ],
+            "localedValues": [ "호텔/라운지", "Hotel/Lounge", "ホテル/ラウンジ", "酒店/休息室" ]
+          },
+          {
+            "category": [ "10707" ],
+            "localedValues": [ "마사지", "Massage", "マッサージ", "按摩" ]
+          },
+          {
+            "category": [ "10709", "10710" ],
+            "localedValues": [ "부가세환급", "Tax Refund", "賦課税還付", "退税" ]
+          },
+          {
+            "category": [ "10704", "10705" ],
+            "localedValues": [ "약국/병원", "Pharmacy/Hospital", "薬局/病院", "药房/医院" ]
+          },
+          {
+            "category": [ "10701", "10702" ],
+            "localedValues": [ "포장/택배/우편", "Packaging/Pacrcel/Mail", "包装/宅配便/郵便", "包装/快递/邮递" ]
+          },
+          {
+            "category": [ "10703" ],
+            "localedValues": [ "외투보관", "CloakRoom", "コート保管", "外套寄存处" ]
+          },
+          {
+            "category": [ "10605" ],
+            "localedValues": [ "렌터카", "Rent Car", "レンタカー", "租车" ]
+          },
+          {
+            "category": [ "10713" ],
+            "localedValues": [ "문화/전시", "Culture/Exhibition", "文化/展示", "文化/展示" ]
+          },
+          {
+            "category": [ "10715" ],
+            "localedValues": [ "안내/서비스", "Guide/Services", "案内/サービス", "服务" ]
+          },
+          {
+            "category": [ "10716" ],
+            "localedValues": [ "민원/행정", "Civil/Administrative", "窓口/行政", "投诉/行政" ]
+          },
+          {
+            "category": [ "10706" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "004" ],
+        "localedValues": [ "공공시설", "Public Facilities", "公共施設", "公共设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "0000U" ],
+            "localedValues": [ "화장실", "Toilets", "お手洗", "洗手间" ]
+          },
+          {
+            "category": [ "0000V" ],
+            "localedValues": [ "흡연실", "Smoking Room", "喫煙所", "吸烟室" ]
+          },
+          {
+            "category": [ "0000Z" ],
+            "localedValues": [ "유아휴게실", "Infant Nursery", "ベビ-ル-ム", "哺乳室" ]
+          },
+          {
+            "category": [ "0000H" ],
+            "localedValues": [ "심장제세동기", "AED", "AED", "AED" ]
+          },
+          {
+            "category": [ "0002I" ],
+            "localedValues": [ "키즈존", "Kids Zone", "キッズゾーン", "儿童游乐设施" ]
+          },
+          {
+            "category": [ "0002J" ],
+            "localedValues": [ "인터넷존", "Internet Zone", "インターネットゾーン", "网络区域" ]
+          },
+          {
+            "category": [ "0001J" ],
+            "localedValues": [ "샤워실", "Showers", "リフレッシュルーム", "淋浴室" ]
+          },
+          {
+            "category": [ "0002K" ],
+            "localedValues": [ "휴식시설", "Relax Zone", "休憩室", "休息区" ]
+          },
+          {
+            "category": [ "0000X" ],
+            "localedValues": [ "셔틀트레인", "Shuttle Train", "シャトルトレイン", "航站快轨" ]
+          },
+          {
+            "category": [ "00011" ],
+            "localedValues": [ "기도실", "Prayer Room", "祈祷室", "祈祷室" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "floor": [ "P01B1D", "P03B1D" ],
+    "list": [
+      {
+        "bigCategory": [ "102" ],
+        "localedValues": [ "음식", "Food", "食べ物", "餐饮" ],
+        "midCategoryies": [
+          {
+            "category": [ "10202" ],
+            "localedValues": [ "한식", "Korean Food", "韓国食", "韩餐" ]
+          },
+          {
+            "category": [ "10208" ],
+            "localedValues": [ "양식", "Western Food", "洋食", "西餐" ]
+          },
+          {
+            "category": [ "10217", "10212", "10210", "10209" ],
+            "localedValues": [ "아시안푸드", "Asian Food", "アジアンフード", "亚洲美食" ]
+          },
+          {
+            "category": [ "10204" ],
+            "localedValues": [ "푸드코트", "Food Court", "フードコート", "美食区" ]
+          },
+          {
+            "category": [ "10213", "10203", "10201" ],
+            "localedValues": [ "분식/패스트푸드", "Street Food/Fast Food", "粉食/ファーストフード", "面食/快餐" ]
+          },
+          {
+            "category": [ "10205", "10206", "10211" ],
+            "localedValues": [ "카페/베이커리/바", "Cafe/Bakery/Bar", "カフェ/ベーカリー/バー", "咖啡/面包/酒吧" ]
+          },
+          {
+            "category": [ "10207" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "103" ],
+        "localedValues": [ "일반쇼핑", "General Shopping", "一般ショッピング", "普通购物" ],
+        "midCategoryies": [
+          {
+            "category": [ "10302", "10316" ],
+            "localedValues": [ "화장품/향수", "Cosmetics/Perfumes", "化粧品/香水", "化妆品/香水" ]
+          },
+          {
+            "category": [ "10303", "10315" ],
+            "localedValues": [ "패션/액세서리", "Fashion/Accessories", "ファッション/アクセサリ", "服装/饰品" ]
+          },
+          {
+            "category": [ "10317" ],
+            "localedValues": [ "편의점", "Convenience Store", "コンビニ", "便利店" ]
+          },
+          {
+            "category": [ "10308" ],
+            "localedValues": [ "서점", "Books", "書籍", "书籍" ]
+          },
+          {
+            "category": [ "10306" ],
+            "localedValues": [ "전자제품", "Electronics", "電子製品", "电子产品" ]
+          },
+          {
+            "category": [ "10307", "10318", "10305", "10309", "10313" ],
+            "localedValues": [ "기타", "Other", "その他    ", "其他" ]
+          },
+          {
+            "category": [ "10310" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "106", "107" ],
+        "localedValues": [ "편의시설", "Facilities", "便利施設", "服务设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "10607", "10602", "10604", "10606" ],
+            "localedValues": [ "호텔/라운지", "Hotel/Lounge", "ホテル/ラウンジ", "酒店/休息室" ]
+          },
+          {
+            "category": [ "10707" ],
+            "localedValues": [ "마사지", "Massage", "マッサージ", "按摩" ]
+          },
+          {
+            "category": [ "10709", "10710" ],
+            "localedValues": [ "부가세환급", "Tax Refund", "賦課税還付", "退税" ]
+          },
+          {
+            "category": [ "10704", "10705" ],
+            "localedValues": [ "약국/병원", "Pharmacy/Hospital", "薬局/病院", "药房/医院" ]
+          },
+          {
+            "category": [ "10701", "10702" ],
+            "localedValues": [ "포장/택배/우편", "Packaging/Pacrcel/Mail", "包装/宅配便/郵便", "包装/快递/邮递" ]
+          },
+          {
+            "category": [ "10703" ],
+            "localedValues": [ "외투보관", "CloakRoom", "コート保管", "外套寄存处" ]
+          },
+          {
+            "category": [ "10605" ],
+            "localedValues": [ "렌터카", "Rent Car", "レンタカー", "租车" ]
+          },
+          {
+            "category": [ "10713" ],
+            "localedValues": [ "문화/전시", "Culture/Exhibition", "文化/展示", "文化/展示" ]
+          },
+          {
+            "category": [ "10715" ],
+            "localedValues": [ "안내/서비스", "Guide/Services", "案内/サービス", "服务" ]
+          },
+          {
+            "category": [ "10716" ],
+            "localedValues": [ "민원/행정", "Civil/Administrative", "窓口/行政", "投诉/行政" ]
+          },
+          {
+            "category": [ "10706" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "004" ],
+        "localedValues": [ "공공시설", "Public Facilities", "公共施設", "公共设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "0000U" ],
+            "localedValues": [ "화장실", "Toilets", "お手洗", "洗手间" ]
+          },
+          {
+            "category": [ "0000V" ],
+            "localedValues": [ "흡연실", "Smoking Room", "喫煙所", "吸烟室" ]
+          },
+          {
+            "category": [ "0000Z" ],
+            "localedValues": [ "유아휴게실", "Infant Nursery", "ベビ-ル-ム", "哺乳室" ]
+          },
+          {
+            "category": [ "0000H" ],
+            "localedValues": [ "심장제세동기", "AED", "AED", "AED" ]
+          },
+          {
+            "category": [ "0002I" ],
+            "localedValues": [ "키즈존", "Kids Zone", "キッズゾーン", "儿童游乐设施" ]
+          },
+          {
+            "category": [ "0002J" ],
+            "localedValues": [ "인터넷존", "Internet Zone", "インターネットゾーン", "网络区域" ]
+          },
+          {
+            "category": [ "0001J" ],
+            "localedValues": [ "샤워실", "Showers", "リフレッシュルーム", "淋浴室" ]
+          },
+          {
+            "category": [ "0002K" ],
+            "localedValues": [ "휴식시설", "Relax Zone", "休憩室", "休息区" ]
+          },
+          {
+            "category": [ "0000X" ],
+            "localedValues": [ "셔틀트레인", "Shuttle Train", "シャトルトレイン", "航站快轨" ]
+          },
+          {
+            "category": [ "00011" ],
+            "localedValues": [ "기도실", "Prayer Room", "祈祷室", "祈祷室" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "floor": [ "P01F3F", "P03F3F" ],
+    "list": [
+      {
+        "bigCategory": [ "103" ],
+        "localedValues": [ "면세쇼핑", "Duty Free Shopping", "免税ショッピング", "免税购物" ],
+        "midCategoryies": [
+          {
+            "category": [ "10301" ],
+            "localedValues": [ "부티크", "Boutique", "ブティック", "精品店" ]
+          },
+          {
+            "category": [ "10302", "10316" ],
+            "localedValues": [ "화장품/향수", "Cosmetics/Perfumes", "化粧品/香水", "化妆品/香水" ]
+          },
+          {
+            "category": [ "10304", "10314" ],
+            "localedValues": [ "주류/담배", "Liquor/Tobacco", "酒類/煙草", "酒/烟" ]
+          },
+          {
+            "category": [ "10303", "10315" ],
+            "localedValues": [ "패션/액세서리", "Fashion/Accessories", "ファッション/アクセサリ", "服装/饰品" ]
+          },
+          {
+            "category": [ "10307" ],
+            "localedValues": [ "식품", "Food", "食品", "食品" ]
+          },
+          {
+            "category": [ "10305", "10309" ],
+            "localedValues": [ "유아/기념품", "Children/Souvenirs", "幼児/お土産", "幼儿/纪念品" ]
+          },
+          {
+            "category": [ "10306" ],
+            "localedValues": [ "전자제품", "Electronics", "電子製品", "电子产品" ]
+          },
+          {
+            "category": [ "10312", "10313", "10308", "10318", "10317" ],
+            "localedValues": [ "비면세/기타", "Non-Taxable/Etc", "非免税/その他", "非免税/其他" ]
+          },
+          {
+            "category": [ "10310" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          },
+          {
+            "category": [ "10319" ],
+            "localedValues": [ "면세품인도장", "Duty Free Pickup", "免税品引渡しカウンタ", "免税品领取处" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "102" ],
+        "localedValues": [ "음식", "Food", "食べ物", "餐饮" ],
+        "midCategoryies": [
+          {
+            "category": [ "10202" ],
+            "localedValues": [ "한식", "Korean Food", "韓国食", "韩餐" ]
+          },
+          {
+            "category": [ "10208" ],
+            "localedValues": [ "양식", "Western Food", "洋食", "西餐" ]
+          },
+          {
+            "category": [ "10217", "10212", "10210", "10209" ],
+            "localedValues": [ "아시안푸드", "Asian Food", "アジアンフード", "亚洲美食" ]
+          },
+          {
+            "category": [ "10204" ],
+            "localedValues": [ "푸드코트", "Food Court", "フードコート", "美食区" ]
+          },
+          {
+            "category": [ "10213", "10203", "10201" ],
+            "localedValues": [ "분식/패스트푸드", "Street Food/Fast Food", "粉食/ファーストフード", "面食/快餐" ]
+          },
+          {
+            "category": [ "10205", "10206", "10211" ],
+            "localedValues": [ "카페/베이커리/바", "Cafe/Bakery/Bar", "カフェ/ベーカリー/バー", "咖啡/面包/酒吧" ]
+          },
+          {
+            "category": [ "10207" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "106", "107" ],
+        "localedValues": [ "편의시설", "Facilities", "便利施設", "服务设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "10607", "10602", "10604", "10606" ],
+            "localedValues": [ "호텔/라운지", "Hotel/Lounge", "ホテル/ラウンジ", "酒店/休息室" ]
+          },
+          {
+            "category": [ "10707" ],
+            "localedValues": [ "마사지", "Massage", "マッサージ", "按摩" ]
+          },
+          {
+            "category": [ "10709", "10710" ],
+            "localedValues": [ "부가세환급", "Tax Refund", "賦課税還付", "退税" ]
+          },
+          {
+            "category": [ "10704", "10705" ],
+            "localedValues": [ "약국/병원", "Pharmacy/Hospital", "薬局/病院", "药房/医院" ]
+          },
+          {
+            "category": [ "10701", "10702" ],
+            "localedValues": [ "포장/택배/우편", "Packaging/Pacrcel/Mail", "包装/宅配便/郵便", "包装/快递/邮递" ]
+          },
+          {
+            "category": [ "10703" ],
+            "localedValues": [ "외투보관", "CloakRoom", "コート保管", "外套寄存处" ]
+          },
+          {
+            "category": [ "10605" ],
+            "localedValues": [ "렌터카", "Rent Car", "レンタカー", "租车" ]
+          },
+          {
+            "category": [ "10713" ],
+            "localedValues": [ "문화/전시", "Culture/Exhibition", "文化/展示", "文化/展示" ]
+          },
+          {
+            "category": [ "10715" ],
+            "localedValues": [ "안내/서비스", "Guide/Services", "案内/サービス", "服务" ]
+          },
+          {
+            "category": [ "10716" ],
+            "localedValues": [ "민원/행정", "Civil/Administrative", "窓口/行政", "投诉/行政" ]
+          },
+          {
+            "category": [ "10706" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "104", "105" ],
+        "localedValues": [ "금융/통신", "Finance / Telecommunication", "金融/通信", "金融/通信" ],
+        "midCategoryies": [
+          {
+            "category": [ "10404" ],
+            "localedValues": [ "여행자보험", "Travel Insurance", "旅行者保険", "旅游保险" ]
+          },
+          {
+            "category": [ "10402" ],
+            "localedValues": [ "은행", "Bank", "銀行", "银行" ]
+          },
+          {
+            "category": [ "10401" ],
+            "localedValues": [ "환전", "Currency Exchange", "両替", "外币兑换" ]
+          },
+          {
+            "category": [ "10403" ],
+            "localedValues": [ "현금지급기", "ATM", "キャッシュサービス", "自动取款机" ]
+          },
+          {
+            "category": [ "10501" ],
+            "localedValues": [ "휴대폰 대여/로밍", "Phone Rental/Global Roaming", "携帯電話レンタル/ローミング", "手机租赁/漫游" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "004" ],
+        "localedValues": [ "공공시설", "Public Facilities", "公共施設", "公共设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "0000U" ],
+            "localedValues": [ "화장실", "Toilets", "お手洗", "洗手间" ]
+          },
+          {
+            "category": [ "0000V" ],
+            "localedValues": [ "흡연실", "Smoking Room", "喫煙所", "吸烟室" ]
+          },
+          {
+            "category": [ "0000Z" ],
+            "localedValues": [ "유아휴게실", "Infant Nursery", "ベビ-ル-ム", "哺乳室" ]
+          },
+          {
+            "category": [ "0000H" ],
+            "localedValues": [ "심장제세동기", "AED", "AED", "AED" ]
+          },
+          {
+            "category": [ "0002I" ],
+            "localedValues": [ "키즈존", "Kids Zone", "キッズゾーン", "儿童游乐设施" ]
+          },
+          {
+            "category": [ "0002J" ],
+            "localedValues": [ "인터넷존", "Internet Zone", "インターネットゾーン", "网络区域" ]
+          },
+          {
+            "category": [ "0001J" ],
+            "localedValues": [ "샤워실", "Showers", "リフレッシュルーム", "淋浴室" ]
+          },
+          {
+            "category": [ "0002K" ],
+            "localedValues": [ "휴식시설", "Relax Zone", "休憩室", "休息区" ]
+          },
+          {
+            "category": [ "0000X" ],
+            "localedValues": [ "셔틀트레인", "Shuttle Train", "シャトルトレイン", "航站快轨" ]
+          },
+          {
+            "category": [ "00011" ],
+            "localedValues": [ "기도실", "Prayer Room", "祈祷室", "祈祷室" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "001" ],
+        "localedValues": [ "출입국시설", "Immigration Facilities", "移民施設", "移民设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "00001" ],
+            "localedValues": [ "체크인카운터", "Check-in Counter", "チェックイン", "值机柜台" ]
+          },
+          {
+            "category": [ "00002" ],
+            "localedValues": [ "탑승구", "Boarding Gate", "ゲート", "登机口" ]
+          },
+          {
+            "category": [ "00003" ],
+            "localedValues": [ "입국장", "Arrivals Hall", "到着ロビー", "入境大厅" ]
+          },
+          {
+            "category": [ "00021" ],
+            "localedValues": [ "환승장", "Transfer Lounge", "乗り継ぎ場", "转机大厅" ]
+          },
+          {
+            "category": [ "0001G" ],
+            "localedValues": [ "수하물수취대", "Baggage Claim", "手荷物受取所", "行李提取" ]
+          },
+          {
+            "category": [ "0001B" ],
+            "localedValues": [ "만남의장소", "Meeting Point", "待合室", "会客点" ]
+          },
+          {
+            "category": [ "0001A" ],
+            "localedValues": [ "큰짐 찾는곳", "Oversized Baggage Storage", "大型手荷物受取所", "大件行李提取" ]
+          },
+          {
+            "category": [ "00029" ],
+            "localedValues": [ "수하물검사실", "Baggage Inspection", "手荷物検査室", "托运行李检查室" ]
+          },
+          {
+            "category": [ "00025" ],
+            "localedValues": [ "출국장", "Departure Hall", "出発ロビー", "出发大厅" ]
+          },
+          {
+            "category": [ "00019" ],
+            "localedValues": [ "입국심사장", "Immigration Office", "入国審査場", "入境边防检查" ]
+          },
+          {
+            "category": [ "00018" ],
+            "localedValues": [ "큰짐 부치는곳", "Oversized Baggage Check-in", "大型手荷物", "大件行李托运" ]
+          },
+          {
+            "category": [ "00015" ],
+            "localedValues": [ "출국심사", "Emigration", "出国審査", "出境边防检查" ]
+          },
+          {
+            "category": [ "00016" ],
+            "localedValues": [ "자동출국심사대", "Automatic Immigration Control", "自動出国審査", "自動移民控制" ]
+          },
+          {
+            "category": [ "00026" ],
+            "localedValues": [ "환승데스크", "Transfer Desk", "乗り継ぎデスク", "转机柜台" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "floor": [ "P01F4F", "P03F4F" ],
+    "list": [
+      {
+        "bigCategory": [ "103" ],
+        "localedValues": [ "면세쇼핑", "Duty Free Shopping", "免税ショッピング", "免税购物" ],
+        "midCategoryies": [
+          {
+            "category": [ "10301" ],
+            "localedValues": [ "부티크", "Boutique", "ブティック", "精品店" ]
+          },
+          {
+            "category": [ "10302", "10316" ],
+            "localedValues": [ "화장품/향수", "Cosmetics/Perfumes", "化粧品/香水", "化妆品/香水" ]
+          },
+          {
+            "category": [ "10304", "10314" ],
+            "localedValues": [ "주류/담배", "Liquor/Tobacco", "酒類/煙草", "酒/烟" ]
+          },
+          {
+            "category": [ "10303", "10315" ],
+            "localedValues": [ "패션/액세서리", "Fashion/Accessories", "ファッション/アクセサリ", "服装/饰品" ]
+          },
+          {
+            "category": [ "10307" ],
+            "localedValues": [ "식품", "Food", "食品", "食品" ]
+          },
+          {
+            "category": [ "10305", "10309" ],
+            "localedValues": [ "유아/기념품", "Children/Souvenirs", "幼児/お土産", "幼儿/纪念品" ]
+          },
+          {
+            "category": [ "10306" ],
+            "localedValues": [ "전자제품", "Electronics", "電子製品", "电子产品" ]
+          },
+          {
+            "category": [ "10312", "10313", "10308", "10318", "10317" ],
+            "localedValues": [ "비면세/기타", "Non-Taxable/Etc", "非免税/その他", "非免税/其他" ]
+          },
+          {
+            "category": [ "10310" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          },
+          {
+            "category": [ "10319" ],
+            "localedValues": [ "면세품인도장", "Duty Free Pickup", "免税品引渡しカウンタ", "免税品领取处" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "102" ],
+        "localedValues": [ "음식", "Food", "食べ物", "餐饮" ],
+        "midCategoryies": [
+          {
+            "category": [ "10202" ],
+            "localedValues": [ "한식", "Korean Food", "韓国食", "韩餐" ]
+          },
+          {
+            "category": [ "10208" ],
+            "localedValues": [ "양식", "Western Food", "洋食", "西餐" ]
+          },
+          {
+            "category": [ "10217", "10212", "10210", "10209" ],
+            "localedValues": [ "아시안푸드", "Asian Food", "アジアンフード", "亚洲美食" ]
+          },
+          {
+            "category": [ "10204" ],
+            "localedValues": [ "푸드코트", "Food Court", "フードコート", "美食区" ]
+          },
+          {
+            "category": [ "10213", "10203", "10201" ],
+            "localedValues": [ "분식/패스트푸드", "Street Food/Fast Food", "粉食/ファーストフード", "面食/快餐" ]
+          },
+          {
+            "category": [ "10205", "10206", "10211" ],
+            "localedValues": [ "카페/베이커리/바", "Cafe/Bakery/Bar", "カフェ/ベーカリー/バー", "咖啡/面包/酒吧" ]
+          },
+          {
+            "category": [ "10207" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "106", "107" ],
+        "localedValues": [ "편의시설", "Facilities", "便利施設", "服务设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "10607", "10602", "10604", "10606" ],
+            "localedValues": [ "호텔/라운지", "Hotel/Lounge", "ホテル/ラウンジ", "酒店/休息室" ]
+          },
+          {
+            "category": [ "10707" ],
+            "localedValues": [ "마사지", "Massage", "マッサージ", "按摩" ]
+          },
+          {
+            "category": [ "10709", "10710" ],
+            "localedValues": [ "부가세환급", "Tax Refund", "賦課税還付", "退税" ]
+          },
+          {
+            "category": [ "10704", "10705" ],
+            "localedValues": [ "약국/병원", "Pharmacy/Hospital", "薬局/病院", "药房/医院" ]
+          },
+          {
+            "category": [ "10701", "10702" ],
+            "localedValues": [ "포장/택배/우편", "Packaging/Pacrcel/Mail", "包装/宅配便/郵便", "包装/快递/邮递" ]
+          },
+          {
+            "category": [ "10703" ],
+            "localedValues": [ "외투보관", "CloakRoom", "コート保管", "外套寄存处" ]
+          },
+          {
+            "category": [ "10605" ],
+            "localedValues": [ "렌터카", "Rent Car", "レンタカー", "租车" ]
+          },
+          {
+            "category": [ "10713" ],
+            "localedValues": [ "문화/전시", "Culture/Exhibition", "文化/展示", "文化/展示" ]
+          },
+          {
+            "category": [ "10715" ],
+            "localedValues": [ "안내/서비스", "Guide/Services", "案内/サービス", "服务" ]
+          },
+          {
+            "category": [ "10716" ],
+            "localedValues": [ "민원/행정", "Civil/Administrative", "窓口/行政", "投诉/行政" ]
+          },
+          {
+            "category": [ "10706" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "004" ],
+        "localedValues": [ "공공시설", "Public Facilities", "公共施設", "公共设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "0000U" ],
+            "localedValues": [ "화장실", "Toilets", "お手洗", "洗手间" ]
+          },
+          {
+            "category": [ "0000V" ],
+            "localedValues": [ "흡연실", "Smoking Room", "喫煙所", "吸烟室" ]
+          },
+          {
+            "category": [ "0000Z" ],
+            "localedValues": [ "유아휴게실", "Infant Nursery", "ベビ-ル-ム", "哺乳室" ]
+          },
+          {
+            "category": [ "0000H" ],
+            "localedValues": [ "심장제세동기", "AED", "AED", "AED" ]
+          },
+          {
+            "category": [ "0002I" ],
+            "localedValues": [ "키즈존", "Kids Zone", "キッズゾーン", "儿童游乐设施" ]
+          },
+          {
+            "category": [ "0002J" ],
+            "localedValues": [ "인터넷존", "Internet Zone", "インターネットゾーン", "网络区域" ]
+          },
+          {
+            "category": [ "0001J" ],
+            "localedValues": [ "샤워실", "Showers", "リフレッシュルーム", "淋浴室" ]
+          },
+          {
+            "category": [ "0002K" ],
+            "localedValues": [ "휴식시설", "Relax Zone", "休憩室", "休息区" ]
+          },
+          {
+            "category": [ "0000X" ],
+            "localedValues": [ "셔틀트레인", "Shuttle Train", "シャトルトレイン", "航站快轨" ]
+          },
+          {
+            "category": [ "00011" ],
+            "localedValues": [ "기도실", "Prayer Room", "祈祷室", "祈祷室" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "floor": [ "P02F3F", "P03F3F" ],
+    "list": [
+      {
+        "bigCategory": [ "103" ],
+        "localedValues": [ "면세쇼핑", "Duty Free Shopping", "免税ショッピング", "免税购物" ],
+        "midCategoryies": [
+          {
+            "category": [ "10301" ],
+            "localedValues": [ "부티크", "Boutique", "ブティック", "精品店" ]
+          },
+          {
+            "category": [ "10302", "10316" ],
+            "localedValues": [ "화장품/향수", "Cosmetics/Perfumes", "化粧品/香水", "化妆品/香水" ]
+          },
+          {
+            "category": [ "10304", "10314" ],
+            "localedValues": [ "주류/담배", "Liquor/Tobacco", "酒類/煙草", "酒/烟" ]
+          },
+          {
+            "category": [ "10303", "10315" ],
+            "localedValues": [ "패션/액세서리", "Fashion/Accessories", "ファッション/アクセサリ", "服装/饰品" ]
+          },
+          {
+            "category": [ "10307" ],
+            "localedValues": [ "식품", "Food", "食品", "食品" ]
+          },
+          {
+            "category": [ "10305", "10309" ],
+            "localedValues": [ "유아/기념품", "Children/Souvenirs", "幼児/お土産", "幼儿/纪念品" ]
+          },
+          {
+            "category": [ "10306" ],
+            "localedValues": [ "전자제품", "Electronics", "電子製品", "电子产品" ]
+          },
+          {
+            "category": [ "10312", "10313", "10308", "10318", "10317" ],
+            "localedValues": [ "비면세/기타", "Non-Taxable/Etc", "非免税/その他", "非免税/其他" ]
+          },
+          {
+            "category": [ "10310" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          },
+          {
+            "category": [ "10319" ],
+            "localedValues": [ "면세품인도장", "Duty Free Pickup", "免税品引渡しカウンタ", "免税品领取处" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "102" ],
+        "localedValues": [ "음식", "Food", "食べ物", "餐饮" ],
+        "midCategoryies": [
+          {
+            "category": [ "10202" ],
+            "localedValues": [ "한식", "Korean Food", "韓国食", "韩餐" ]
+          },
+          {
+            "category": [ "10208" ],
+            "localedValues": [ "양식", "Western Food", "洋食", "西餐" ]
+          },
+          {
+            "category": [ "10217", "10212", "10210", "10209" ],
+            "localedValues": [ "아시안푸드", "Asian Food", "アジアンフード", "亚洲美食" ]
+          },
+          {
+            "category": [ "10204" ],
+            "localedValues": [ "푸드코트", "Food Court", "フードコート", "美食区" ]
+          },
+          {
+            "category": [ "10213", "10203", "10201" ],
+            "localedValues": [ "분식/패스트푸드", "Street Food/Fast Food", "粉食/ファーストフード", "面食/快餐" ]
+          },
+          {
+            "category": [ "10205", "10206", "10211" ],
+            "localedValues": [ "카페/베이커리/바", "Cafe/Bakery/Bar", "カフェ/ベーカリー/バー", "咖啡/面包/酒吧" ]
+          },
+          {
+            "category": [ "10207" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "106", "107" ],
+        "localedValues": [ "편의시설", "Facilities", "便利施設", "服务设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "10607", "10602", "10604", "10606" ],
+            "localedValues": [ "호텔/라운지", "Hotel/Lounge", "ホテル/ラウンジ", "酒店/休息室" ]
+          },
+          {
+            "category": [ "10707" ],
+            "localedValues": [ "마사지", "Massage", "マッサージ", "按摩" ]
+          },
+          {
+            "category": [ "10709", "10710" ],
+            "localedValues": [ "부가세환급", "Tax Refund", "賦課税還付", "退税" ]
+          },
+          {
+            "category": [ "10704", "10705" ],
+            "localedValues": [ "약국/병원", "Pharmacy/Hospital", "薬局/病院", "药房/医院" ]
+          },
+          {
+            "category": [ "10701", "10702" ],
+            "localedValues": [ "포장/택배/우편", "Packaging/Pacrcel/Mail", "包装/宅配便/郵便", "包装/快递/邮递" ]
+          },
+          {
+            "category": [ "10703" ],
+            "localedValues": [ "외투보관", "CloakRoom", "コート保管", "外套寄存处" ]
+          },
+          {
+            "category": [ "10605" ],
+            "localedValues": [ "렌터카", "Rent Car", "レンタカー", "租车" ]
+          },
+          {
+            "category": [ "10713" ],
+            "localedValues": [ "문화/전시", "Culture/Exhibition", "文化/展示", "文化/展示" ]
+          },
+          {
+            "category": [ "10715" ],
+            "localedValues": [ "안내/서비스", "Guide/Services", "案内/サービス", "服务" ]
+          },
+          {
+            "category": [ "10716" ],
+            "localedValues": [ "민원/행정", "Civil/Administrative", "窓口/行政", "投诉/行政" ]
+          },
+          {
+            "category": [ "10706" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "104", "105" ],
+        "localedValues": [ "금융/통신", "Finance / Telecommunication", "金融/通信", "金融/通信" ],
+        "midCategoryies": [
+          {
+            "category": [ "10404" ],
+            "localedValues": [ "여행자보험", "Travel Insurance", "旅行者保険", "旅游保险" ]
+          },
+          {
+            "category": [ "10402" ],
+            "localedValues": [ "은행", "Bank", "銀行", "银行" ]
+          },
+          {
+            "category": [ "10401" ],
+            "localedValues": [ "환전", "Currency Exchange", "両替", "外币兑换" ]
+          },
+          {
+            "category": [ "10403" ],
+            "localedValues": [ "현금지급기", "ATM", "キャッシュサービス", "自动取款机" ]
+          },
+          {
+            "category": [ "10501" ],
+            "localedValues": [ "휴대폰 대여/로밍", "Phone Rental/Global Roaming", "携帯電話レンタル/ローミング", "手机租赁/漫游" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "004" ],
+        "localedValues": [ "공공시설", "Public Facilities", "公共施設", "公共设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "0000U" ],
+            "localedValues": [ "화장실", "Toilets", "お手洗", "洗手间" ]
+          },
+          {
+            "category": [ "0000V" ],
+            "localedValues": [ "흡연실", "Smoking Room", "喫煙所", "吸烟室" ]
+          },
+          {
+            "category": [ "0000Z" ],
+            "localedValues": [ "유아휴게실", "Infant Nursery", "ベビ-ル-ム", "哺乳室" ]
+          },
+          {
+            "category": [ "0000H" ],
+            "localedValues": [ "심장제세동기", "AED", "AED", "AED" ]
+          },
+          {
+            "category": [ "0002I" ],
+            "localedValues": [ "키즈존", "Kids Zone", "キッズゾーン", "儿童游乐设施" ]
+          },
+          {
+            "category": [ "0002J" ],
+            "localedValues": [ "인터넷존", "Internet Zone", "インターネットゾーン", "网络区域" ]
+          },
+          {
+            "category": [ "0001J" ],
+            "localedValues": [ "샤워실", "Showers", "リフレッシュルーム", "淋浴室" ]
+          },
+          {
+            "category": [ "0002K" ],
+            "localedValues": [ "휴식시설", "Relax Zone", "休憩室", "休息区" ]
+          },
+          {
+            "category": [ "0000X" ],
+            "localedValues": [ "셔틀트레인", "Shuttle Train", "シャトルトレイン", "航站快轨" ]
+          },
+          {
+            "category": [ "00011" ],
+            "localedValues": [ "기도실", "Prayer Room", "祈祷室", "祈祷室" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "001" ],
+        "localedValues": [ "출입국시설", "Immigration Facilities", "移民施設", "移民设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "00001" ],
+            "localedValues": [ "체크인카운터", "Check-in Counter", "チェックイン", "值机柜台" ]
+          },
+          {
+            "category": [ "00002" ],
+            "localedValues": [ "탑승구", "Boarding Gate", "ゲート", "登机口" ]
+          },
+          {
+            "category": [ "00003" ],
+            "localedValues": [ "입국장", "Arrivals Hall", "到着ロビー", "入境大厅" ]
+          },
+          {
+            "category": [ "00021" ],
+            "localedValues": [ "환승장", "Transfer Lounge", "乗り継ぎ場", "转机大厅" ]
+          },
+          {
+            "category": [ "0001G" ],
+            "localedValues": [ "수하물수취대", "Baggage Claim", "手荷物受取所", "行李提取" ]
+          },
+          {
+            "category": [ "0001B" ],
+            "localedValues": [ "만남의장소", "Meeting Point", "待合室", "会客点" ]
+          },
+          {
+            "category": [ "0001A" ],
+            "localedValues": [ "큰짐 찾는곳", "Oversized Baggage Storage", "大型手荷物受取所", "大件行李提取" ]
+          },
+          {
+            "category": [ "00029" ],
+            "localedValues": [ "수하물검사실", "Baggage Inspection", "手荷物検査室", "托运行李检查室" ]
+          },
+          {
+            "category": [ "00025" ],
+            "localedValues": [ "출국장", "Departure Hall", "出発ロビー", "出发大厅" ]
+          },
+          {
+            "category": [ "00019" ],
+            "localedValues": [ "입국심사장", "Immigration Office", "入国審査場", "入境边防检查" ]
+          },
+          {
+            "category": [ "00018" ],
+            "localedValues": [ "큰짐 부치는곳", "Oversized Baggage Check-in", "大型手荷物", "大件行李托运" ]
+          },
+          {
+            "category": [ "00015" ],
+            "localedValues": [ "출국심사", "Emigration", "出国審査", "出境边防检查" ]
+          },
+          {
+            "category": [ "00016" ],
+            "localedValues": [ "자동출국심사대", "Automatic Immigration Control", "自動出国審査", "自動移民控制" ]
+          },
+          {
+            "category": [ "00026" ],
+            "localedValues": [ "환승데스크", "Transfer Desk", "乗り継ぎデスク", "转机柜台" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "floor": [ "P02F4F", "P03F4F"],
+    "list": [
+
+      {
+        "bigCategory": [ "103" ],
+        "localedValues": [ "면세쇼핑", "Duty Free Shopping", "免税ショッピング", "免税购物" ],
+        "midCategoryies": [
+          {
+            "category": [ "10319" ],
+            "localedValues": [ "면세품인도장", "Duty Free Pickup", "免税品引渡しカウンタ", "免税品领取处" ]
+          }
+        ]
+      },
+
+      {
+        "bigCategory": [ "106", "107" ],
+        "localedValues": [ "편의시설", "Facilities", "便利施設", "服务设施" ],
+        "midCategoryies": [
+          {
+          	"category": [ "10607", "10602", "10604", "10606" ],
+          	"localedValues": [ "호텔/라운지", "Hotel/Lounge", "ホテル/ラウンジ", "酒店/休息室" ]
+          },
+          {
+          	"category": [ "10713" ],
+          	"localedValues": [ "문화/전시", "Culture/Exhibition", "文化/展示", "文化/展示" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "004" ],
+        "localedValues": [ "공공시설", "Public Facilities", "公共施設", "公共设施" ],
+        "midCategoryies": [
+          {
+          	"category": [ "0000U" ],
+          	"localedValues": [ "화장실", "Toilets", "お手洗", "洗手间" ]
+          },
+          {
+          	"category": [ "0002K" ],
+          	"localedValues": [ "휴식시설", "Relax Zone", "休憩室", "休息区" ]
+          },
+          {
+          	"category": [ "00011" ],
+          	"localedValues": [ "기도실", "Prayer Room", "祈祷室", "祈祷室" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "floor": [ "P01B1T", "P01F1T", "P01F2T", "P03B1T", "P03F1T", "P03F2T"  ],
+    "list": [
+      {
+        "bigCategory": [ "108" ],
+        "localedValues": [ "교통", "Transport", "交通", "交通" ],
+        "midCategoryies": [
+          {
+            "category": [ "00023" ],
+            "localedValues": [ "버스", "BUS", "バス", "巴士" ]
+          },
+          {
+            "category": [ "0001V" ],
+            "localedValues": [ "택시", "TAXI", "タクシー", "出租车" ]
+          },
+          {
+            "category": [ "00024" ],
+            "localedValues": [ "철도", "Railroad", "鉄道", "铁路" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "102" ],
+        "localedValues": [ "음식", "Food", "食べ物", "餐饮" ],
+        "midCategoryies": [
+          {
+            "category": [ "10202" ],
+            "localedValues": [ "한식", "Korean Food", "韓国食", "韩餐" ]
+          },
+          {
+            "category": [ "10208" ],
+            "localedValues": [ "양식", "Western Food", "洋食", "西餐" ]
+          },
+          {
+            "category": [ "10217", "10212", "10210", "10209" ],
+            "localedValues": [ "아시안푸드", "Asian Food", "アジアンフード", "亚洲美食" ]
+          },
+          {
+            "category": [ "10204" ],
+            "localedValues": [ "푸드코트", "Food Court", "フードコート", "美食区" ]
+          },
+          {
+            "category": [ "10213", "10203", "10201" ],
+            "localedValues": [ "분식/패스트푸드", "Street Food/Fast Food", "粉食/ファーストフード", "面食/快餐" ]
+          },
+          {
+            "category": [ "10205", "10206", "10211" ],
+            "localedValues": [ "카페/베이커리/바", "Cafe/Bakery/Bar", "カフェ/ベーカリー/バー", "咖啡/面包/酒吧" ]
+          },
+          {
+            "category": [ "10207" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "103" ],
+        "localedValues": [ "일반쇼핑", "General Shopping", "一般ショッピング", "普通购物" ],
+        "midCategoryies": [
+          {
+            "category": [ "10302", "10316" ],
+            "localedValues": [ "화장품/향수", "Cosmetics/Perfumes", "化粧品/香水", "化妆品/香水" ]
+          },
+          {
+            "category": [ "10303", "10315" ],
+            "localedValues": [ "패션/액세서리", "Fashion/Accessories", "ファッション/アクセサリ", "服装/饰品" ]
+          },
+          {
+            "category": [ "10317" ],
+            "localedValues": [ "편의점", "Convenience Store", "コンビニ", "便利店" ]
+          },
+          {
+            "category": [ "10308" ],
+            "localedValues": [ "서점", "Books", "書籍", "书籍" ]
+          },
+          {
+            "category": [ "10306" ],
+            "localedValues": [ "전자제품", "Electronics", "電子製品", "电子产品" ]
+          },
+          {
+            "category": [ "10307", "10318", "10305", "10309", "10313" ],
+            "localedValues": [ "기타", "Other", "その他    ", "其他" ]
+          },
+          {
+            "category": [ "10310" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "106", "107" ],
+        "localedValues": [ "편의시설", "Facilities", "便利施設", "服务设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "10607", "10602", "10604", "10606" ],
+            "localedValues": [ "호텔/라운지", "Hotel/Lounge", "ホテル/ラウンジ", "酒店/休息室" ]
+          },
+          {
+            "category": [ "10707" ],
+            "localedValues": [ "마사지", "Massage", "マッサージ", "按摩" ]
+          },
+          {
+            "category": [ "10709", "10710" ],
+            "localedValues": [ "부가세환급", "Tax Refund", "賦課税還付", "退税" ]
+          },
+          {
+            "category": [ "10704", "10705" ],
+            "localedValues": [ "약국/병원", "Pharmacy/Hospital", "薬局/病院", "药房/医院" ]
+          },
+          {
+            "category": [ "10701", "10702" ],
+            "localedValues": [ "포장/택배/우편", "Packaging/Pacrcel/Mail", "包装/宅配便/郵便", "包装/快递/邮递" ]
+          },
+          {
+            "category": [ "10703" ],
+            "localedValues": [ "외투보관", "CloakRoom", "コート保管", "外套寄存处" ]
+          },
+          {
+            "category": [ "10605" ],
+            "localedValues": [ "렌터카", "Rent Car", "レンタカー", "租车" ]
+          },
+          {
+            "category": [ "10713" ],
+            "localedValues": [ "문화/전시", "Culture/Exhibition", "文化/展示", "文化/展示" ]
+          },
+          {
+            "category": [ "10715" ],
+            "localedValues": [ "안내/서비스", "Guide/Services", "案内/サービス", "服务" ]
+          },
+          {
+            "category": [ "10716" ],
+            "localedValues": [ "민원/행정", "Civil/Administrative", "窓口/行政", "投诉/行政" ]
+          },
+          {
+            "category": [ "10706" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "004" ],
+        "localedValues": [ "공공시설", "Public Facilities", "公共施設", "公共设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "0000U" ],
+            "localedValues": [ "화장실", "Toilets", "お手洗", "洗手间" ]
+          },
+          {
+            "category": [ "0000V" ],
+            "localedValues": [ "흡연실", "Smoking Room", "喫煙所", "吸烟室" ]
+          },
+          {
+            "category": [ "0000Z" ],
+            "localedValues": [ "유아휴게실", "Infant Nursery", "ベビ-ル-ム", "哺乳室" ]
+          },
+          {
+            "category": [ "0000H" ],
+            "localedValues": [ "심장제세동기", "AED", "AED", "AED" ]
+          },
+          {
+            "category": [ "0002I" ],
+            "localedValues": [ "키즈존", "Kids Zone", "キッズゾーン", "儿童游乐设施" ]
+          },
+          {
+            "category": [ "0002J" ],
+            "localedValues": [ "인터넷존", "Internet Zone", "インターネットゾーン", "网络区域" ]
+          },
+          {
+            "category": [ "0001J" ],
+            "localedValues": [ "샤워실", "Showers", "リフレッシュルーム", "淋浴室" ]
+          },
+          {
+            "category": [ "0002K" ],
+            "localedValues": [ "휴식시설", "Relax Zone", "休憩室", "休息区" ]
+          },
+          {
+            "category": [ "0000X" ],
+            "localedValues": [ "셔틀트레인", "Shuttle Train", "シャトルトレイン", "航站快轨" ]
+          },
+          {
+            "category": [ "00011" ],
+            "localedValues": [ "기도실", "Prayer Room", "祈祷室", "祈祷室" ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "floor": [ "P01F1F", "P03F1F" ],
+    "list": [
+      {
+        "bigCategory": [ "001" ],
+        "localedValues": [ "출입국시설", "Immigration Facilities", "移民施設", "移民设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "00001" ],
+            "localedValues": [ "체크인카운터", "Check-in Counter", "チェックイン", "值机柜台" ]
+          },
+          {
+            "category": [ "00002" ],
+            "localedValues": [ "탑승구", "Boarding Gate", "ゲート", "登机口" ]
+          },
+          {
+            "category": [ "00003" ],
+            "localedValues": [ "입국장", "Arrivals Hall", "到着ロビー", "入境大厅" ]
+          },
+          {
+            "category": [ "00021" ],
+            "localedValues": [ "환승장", "Transfer Lounge", "乗り継ぎ場", "转机大厅" ]
+          },
+          {
+            "category": [ "0001G" ],
+            "localedValues": [ "수하물수취대", "Baggage Claim", "手荷物受取所", "行李提取" ]
+          },
+          {
+            "category": [ "0001B" ],
+            "localedValues": [ "만남의장소", "Meeting Point", "待合室", "会客点" ]
+          },
+          {
+            "category": [ "0001A" ],
+            "localedValues": [ "큰짐 찾는곳", "Oversized Baggage Storage", "大型手荷物受取所", "大件行李提取" ]
+          },
+          {
+            "category": [ "00029" ],
+            "localedValues": [ "수하물검사실", "Baggage Inspection", "手荷物検査室", "托运行李检查室" ]
+          },
+          {
+            "category": [ "00025" ],
+            "localedValues": [ "출국장", "Departure Hall", "出発ロビー", "出发大厅" ]
+          },
+          {
+            "category": [ "00019" ],
+            "localedValues": [ "입국심사장", "Immigration Office", "入国審査場", "入境边防检查" ]
+          },
+          {
+            "category": [ "00018" ],
+            "localedValues": [ "큰짐 부치는곳", "Oversized Baggage Check-in", "大型手荷物", "大件行李托运" ]
+          },
+          {
+            "category": [ "00015" ],
+            "localedValues": [ "출국심사", "Emigration", "出国審査", "出境边防检查" ]
+          },
+          {
+            "category": [ "00016" ],
+            "localedValues": [ "자동출국심사대", "Automatic Immigration Control", "自動出国審査", "自動移民控制" ]
+          },
+          {
+            "category": [ "00026" ],
+            "localedValues": [ "환승데스크", "Transfer Desk", "乗り継ぎデスク", "转机柜台" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "103" ],
+        "localedValues": [ "면세쇼핑", "Duty Free Shopping", "免税ショッピング", "免税购物" ],
+        "midCategoryies": [
+          {
+            "category": [ "10301" ],
+            "localedValues": [ "부티크", "Boutique", "ブティック", "精品店" ]
+          },
+          {
+            "category": [ "10302", "10316" ],
+            "localedValues": [ "화장품/향수", "Cosmetics/Perfumes", "化粧品/香水", "化妆品/香水" ]
+          },
+          {
+            "category": [ "10304", "10314" ],
+            "localedValues": [ "주류/담배", "Liquor/Tobacco", "酒類/煙草", "酒/烟" ]
+          },
+          {
+            "category": [ "10303", "10315" ],
+            "localedValues": [ "패션/액세서리", "Fashion/Accessories", "ファッション/アクセサリ", "服装/饰品" ]
+          },
+          {
+            "category": [ "10307" ],
+            "localedValues": [ "식품", "Food", "食品", "食品" ]
+          },
+          {
+            "category": [ "10305", "10309" ],
+            "localedValues": [ "유아/기념품", "Children/Souvenirs", "幼児/お土産", "幼儿/纪念品" ]
+          },
+          {
+            "category": [ "10306" ],
+            "localedValues": [ "전자제품", "Electronics", "電子製品", "电子产品" ]
+          },
+          {
+            "category": [ "10312", "10313", "10308", "10318", "10317" ],
+            "localedValues": [ "비면세/기타", "Non-Taxable/Etc", "非免税/その他", "非免税/其他" ]
+          },
+          {
+            "category": [ "10310" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          },
+          {
+            "category": [ "10319" ],
+            "localedValues": [ "면세품인도장", "Duty Free Pickup", "免税品引渡しカウンタ", "免税品领取处" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "104", "105" ],
+        "localedValues": [ "금융/통신", "Finance / Telecommunication", "金融/通信", "金融/通信" ],
+        "midCategoryies": [
+          {
+            "category": [ "10404" ],
+            "localedValues": [ "여행자보험", "Travel Insurance", "旅行者保険", "旅游保险" ]
+          },
+          {
+            "category": [ "10402" ],
+            "localedValues": [ "은행", "Bank", "銀行", "银行" ]
+          },
+          {
+            "category": [ "10401" ],
+            "localedValues": [ "환전", "Currency Exchange", "両替", "外币兑换" ]
+          },
+          {
+            "category": [ "10403" ],
+            "localedValues": [ "현금지급기", "ATM", "キャッシュサービス", "自动取款机" ]
+          },
+          {
+            "category": [ "10501" ],
+            "localedValues": [ "휴대폰 대여/로밍", "Phone Rental/Global Roaming", "携帯電話レンタル/ローミング", "手机租赁/漫游" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "106", "107" ],
+        "localedValues": [ "편의시설", "Facilities", "便利施設", "服务设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "10607", "10602", "10604", "10606" ],
+            "localedValues": [ "호텔/라운지", "Hotel/Lounge", "ホテル/ラウンジ", "酒店/休息室" ]
+          },
+          {
+            "category": [ "10707" ],
+            "localedValues": [ "마사지", "Massage", "マッサージ", "按摩" ]
+          },
+          {
+            "category": [ "10709", "10710" ],
+            "localedValues": [ "부가세환급", "Tax Refund", "賦課税還付", "退税" ]
+          },
+          {
+            "category": [ "10704", "10705" ],
+            "localedValues": [ "약국/병원", "Pharmacy/Hospital", "薬局/病院", "药房/医院" ]
+          },
+          {
+            "category": [ "10701", "10702" ],
+            "localedValues": [ "포장/택배/우편", "Packaging/Pacrcel/Mail", "包装/宅配便/郵便", "包装/快递/邮递" ]
+          },
+          {
+            "category": [ "10703" ],
+            "localedValues": [ "외투보관", "CloakRoom", "コート保管", "外套寄存处" ]
+          },
+          {
+            "category": [ "10605" ],
+            "localedValues": [ "렌터카", "Rent Car", "レンタカー", "租车" ]
+          },
+          {
+            "category": [ "10713" ],
+            "localedValues": [ "문화/전시", "Culture/Exhibition", "文化/展示", "文化/展示" ]
+          },
+          {
+            "category": [ "10715" ],
+            "localedValues": [ "안내/서비스", "Guide/Services", "案内/サービス", "服务" ]
+          },
+          {
+            "category": [ "10716" ],
+            "localedValues": [ "민원/행정", "Civil/Administrative", "窓口/行政", "投诉/行政" ]
+          },
+          {
+            "category": [ "10706" ],
+            "localedValues": [ "24시오픈", "Open 24H", "24時間営業", "24小时营业" ]
+          }
+        ]
+      },
+      {
+        "bigCategory": [ "004" ],
+        "localedValues": [ "공공시설", "Public Facilities", "公共施設", "公共设施" ],
+        "midCategoryies": [
+          {
+            "category": [ "0000U" ],
+            "localedValues": [ "화장실", "Toilets", "お手洗", "洗手间" ]
+          },
+          {
+            "category": [ "0000V" ],
+            "localedValues": [ "흡연실", "Smoking Room", "喫煙所", "吸烟室" ]
+          },
+          {
+            "category": [ "0000Z" ],
+            "localedValues": [ "유아휴게실", "Infant Nursery", "ベビ-ル-ム", "哺乳室" ]
+          },
+          {
+            "category": [ "0000H" ],
+            "localedValues": [ "심장제세동기", "AED", "AED", "AED" ]
+          },
+          {
+            "category": [ "0002I" ],
+            "localedValues": [ "키즈존", "Kids Zone", "キッズゾーン", "儿童游乐设施" ]
+          },
+          {
+            "category": [ "0002J" ],
+            "localedValues": [ "인터넷존", "Internet Zone", "インターネットゾーン", "网络区域" ]
+          },
+          {
+            "category": [ "0001J" ],
+            "localedValues": [ "샤워실", "Showers", "リフレッシュルーム", "淋浴室" ]
+          },
+          {
+            "category": [ "0002K" ],
+            "localedValues": [ "휴식시설", "Relax Zone", "休憩室", "休息区" ]
+          },
+          {
+            "category": [ "0000X" ],
+            "localedValues": [ "셔틀트레인", "Shuttle Train", "シャトルトレイン", "航站快轨" ]
+          },
+          {
+            "category": [ "00011" ],
+            "localedValues": [ "기도실", "Prayer Room", "祈祷室", "祈祷室" ]
+          }
+        ]
+      }
+    ]
+  }
+]

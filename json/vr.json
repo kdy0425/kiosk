@@ -1,0 +1,596 @@
+{
+  "VR_07QV" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=07QV",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08HS" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08HS",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08HT" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08HT",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08HU" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08HU",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08HV" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08HV",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08HW" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08HW",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08HX" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08HX",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08HY" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08HY",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08I0" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08I0",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08I3" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08I3",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08I4" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08I4",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08I5" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08I5",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08I6" : {
+    "onOff" : "off",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08I6",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08I7" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08I7",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08I8" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08I8",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08IJ" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08IJ",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08IK" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08IK",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08IL" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08IL",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08JM" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08JM",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08JN" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08JN",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08JX" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08JX",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08K5" : {
+    "onOff" : "off",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08K5",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08K6" : {
+    "onOff" : "off",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08K6",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08K7" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08K7",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08K8" : {
+    "onOff" : "off",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08K8",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08K9" : {
+    "onOff" : "off",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08K9",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08KM" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08KM",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08KN" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08KN",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08KO" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08KO",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08KT" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08KT",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08KX" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08KX",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08KY" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08KY",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08KZ" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08KZ",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08L0" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08L0",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08L1" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08L1",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08L2" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08L2",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08L3" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08L3",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08L4" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08L4",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08LG" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08LG",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08LR" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08LR",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08LS" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08LS",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08LT" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08LT",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08LU" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08LU",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08LV" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08LV",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08LW" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08LW",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08MS" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08MS",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08MT" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08MT",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08MY" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08MY",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08NF" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08NF",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08NH" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08NH",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08NK" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08NK",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08NL" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08NL",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08NM" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08NM",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08NN" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08NN",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08NP" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08NP",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08NT" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08NT",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08NU" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08NU",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08OC" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08OC",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08OM" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08OM",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08ON" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08ON",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08OU" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08OU",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08OV" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08OV",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08OZ" : {
+    "onOff" : "off",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08OZ",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08P1" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08P1",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08P5" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08P5",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  },
+  "VR_08PT" : {
+    "onOff" : "on",
+    "imgUrl" : "/apg/ws/intro/downloadVr?computerUsid=08PT",
+    "landMark" : "0",
+    "angle" : "0",
+    "hotSpots": [
+      {"pitch": -32,"yaw": 58,"cssClass": "map-up"}
+    ]
+  }
+}

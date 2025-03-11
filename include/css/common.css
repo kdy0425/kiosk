@@ -1,0 +1,386 @@
+/******************************************
+   name :  main.css
+   auth :  ELTOV
+   date :  2021.08.28
+   desc :  메인 CSS
+*******************************************/
+
+/*
+area , main/info , list , box
+#d7d7d7  #a6a6a6  #838383  #393a3e  #000000
+#3c5e79  #5f87b8 #243A4B
+*/
+
+/*-------------------------------Noto Sans CJK-------------------------------------*/
+:root {
+  --width: 100%;
+  --height: 100%;
+  --map-height: 1480px;
+  --main-color : #456ADB;
+  --main-txt-color: #000;
+}
+
+/* 폰트 */
+@font-face{
+  font-family: 'NotoSansCJK';
+  src: url(../font/NotoSansCJKkr-Bold.woff2) format('woff2');
+  font-weight:700;
+}
+@font-face{
+  font-family: 'NotoSansCJK';
+  src: url(../font/NotoSansCJKkr-Medium.woff2) format('woff2');
+  font-weight:500;
+}
+@font-face{
+  font-family: 'NotoSansCJK';
+  src: url(../font/NotoSansCJKkr-Regular.woff2) format('woff2');
+  font-weight: 400;
+}
+@font-face{
+  font-family: 'NotoSansCJK';
+  src: url(../font/NotoSansCJKkr-Light.woff2) format('woff2');
+  font-weight: 300;
+}
+
+@font-face{
+  font-family: 'NotoSansCJK';
+  src: url(../font/NotoSansCJKkr-Light.woff2) format('woff2');
+  font-weight: 200;
+}
+
+@font-face{
+  font-family: 'NotoSansCJK';
+  src: url(../font/NotoSansCJKkr-Thin.woff2) format('woff2');
+  font-weight: 100;
+}
+
+@font-face{
+  font-family: 'NanumSquareNeo';
+  src: url(../font/NanumSquareNeoTTF-aLt.woff2) format('woff2');
+  font-weight: 300;
+}
+
+@font-face{
+  font-family: 'NanumSquareNeo';
+  src: url(../font/NanumSquareNeoTTF-bRg.woff2) format('woff2');
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: 'NanumSquareNeo';
+  src: url(../font/NanumSquareNeoTTF-cBd.woff2) format('woff2');
+  font-weight: 700;
+}
+
+@font-face{
+  font-family: 'NanumSquareNeo';
+  src: url(../font/NanumSquareNeoTTF-dEb.woff2) format('woff2');
+  font-weight: 800;
+}
+
+@font-face{
+  font-family: 'NanumSquareNeo';
+  src: url(../font/NanumSquareNeoTTF-eHv.woff2) format('woff2');
+  font-weight: 900;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  /* smooth 처리 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  width: var(--width);
+  font-family: "NanumSquareNeo", "NotoSansCJK", sans-serif !important;
+  font-size: 62.5%;
+  background-color: #ffffff;
+  color: var(--main-txt-color);
+  overflow: hidden;
+  touch-action: none;
+  font-weight: 500;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+textarea,
+input,
+select,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary,
+audio,
+canvas,
+video {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th {
+  font-size: 100%;
+  font-weight: 500;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0;
+  width: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+img,
+fieldset {
+  border: 0;
+}
+img {
+  vertical-align: middle;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+legend {
+  width: 0;
+  height: 0;
+  line-height: 0;
+  position: absolute;
+  top: -10000px;
+  left: -10000px;
+  overflow: hidden;
+  visibility: hidden;
+}
+object {
+  outline: none;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: inherit;
+  font-size: 1em;
+}
+pre {
+  white-space: pre-wrap;
+}
+q {
+  quotes: "\201C""\201D""\2018""\2019";
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+fieldset {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+button,
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+  border-radius: 0;
+  vertical-align: middle;
+}
+textarea {
+  border: 0 none;
+  resize: none;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #aeaeae !important;
+  font-weight: 400;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #aeaeae !important;
+  font-weight: 400;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #aeaeae !important;
+  font-weight: 400;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #aeaeae !important;
+  font-weight: 400;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+a:hover {
+  color: #333;
+}
+
+input:focus {
+  outline: none;
+}
+
+button{
+  font-family: "NanumSquareNeo", "NotoSansCJK", sans-serif;
+  font-weight: 500;
+  background: none; outline: none; border: none;}
+
+/*------------------------scroll custom---------------------------*/
+/* ::-webkit-scrollbar {
+  width: 30px;
+  border: 1px solid #707070;
+} 
+::-webkit-scrollbar-track {
+  background-color: none;
+} 
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #000000;
+} 
+::-webkit-scrollbar-button {
+  display: none;
+}  */
+
+.clear {
+  clear: both;
+  height: 0px;
+  line-height: 0px;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+.clearfix:after {
+  clear: both;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75" height="75" viewBox="0 0 75 75">
+  <defs>
+    <filter id="패스_2810" x="0" y="1" width="74" height="74" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#84889c" flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="floor_public_ico_8" transform="translate(-446 -1376)">
+    <g transform="matrix(1, 0, 0, 1, 446, 1376)" filter="url(#패스_2810)">
+      <path id="패스_2810-2" data-name="패스 2810" d="M25,0A25,25,0,1,1,0,25,25,25,0,0,1,25,0Z" transform="translate(12 10)" fill="#fcfcfd"/>
+    </g>
+    <rect id="사각형_1387" data-name="사각형 1387" width="75" height="75" transform="translate(446 1376)" fill="none"/>
+    <path id="패스_2814" data-name="패스 2814" d="M0,22.655V0H8.363c4.958,0,8.04,2.7,8.04,7.036,0,4.372-3.334,7.2-8.493,7.2H2.843v8.422ZM2.843,11.781H8.42c3.265,0,5.458-1.868,5.458-4.648,0-2.91-2.42-4.648-5.838-4.648h-5.2Z" transform="translate(476.005 1400.089)" fill="#9397a6"/>
+  </g>
+</svg>

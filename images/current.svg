@@ -1,0 +1,16 @@
+<svg id="icon_5_off" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58" viewBox="0 0 58 58">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_91" data-name="사각형 91" width="55.825" height="55.825" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="icon_5" transform="translate(1 1)" clip-path="url(#clip-path)">
+    <path id="패스_79" data-name="패스 79" d="M50.13,72.429a22.3,22.3,0,1,1,22.3-22.3,22.326,22.326,0,0,1-22.3,22.3m0-38.642A16.341,16.341,0,1,0,66.471,50.128,16.36,16.36,0,0,0,50.13,33.787" transform="translate(-22.217 -22.216)" fill="#fff"/>
+    <path id="패스_80" data-name="패스 80" d="M91.321,103.215a11.9,11.9,0,1,1,11.9-11.9,11.909,11.909,0,0,1-11.9,11.9m0-17.832a5.936,5.936,0,1,0,5.936,5.937,5.943,5.943,0,0,0-5.936-5.937" transform="translate(-63.408 -63.407)" fill="#fff"/>
+    <rect id="사각형_87" data-name="사각형 87" width="5.959" height="10.877" transform="translate(24.933)" fill="#fff"/>
+    <rect id="사각형_88" data-name="사각형 88" width="10.877" height="5.959" transform="translate(0 24.932)" fill="#fff"/>
+    <rect id="사각형_89" data-name="사각형 89" width="5.96" height="10.877" transform="translate(24.933 44.948)" fill="#fff"/>
+    <rect id="사각형_90" data-name="사각형 90" width="10.877" height="5.959" transform="translate(44.948 24.933)" fill="#fff"/>
+  </g>
+  <rect id="사각형_122" data-name="사각형 122" width="58" height="58" fill="none"/>
+</svg>

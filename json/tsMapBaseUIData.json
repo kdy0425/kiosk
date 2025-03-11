@@ -1,0 +1,78 @@
+{
+  "T1": [
+    {
+      "title": ["교통센터", "T.C", "交通センター", "交通中心"],
+      "place": "P01",
+      "area": "T",
+      "floors": {
+        "T": [
+          {"id": "P01B1T", "floor": "B1", "title": "B1"},
+          {"id": "P01F1T", "floor": "F1", "title": "1F"},
+          {"id": "P01F2T", "floor": "F2", "title": "2F"}
+        ]
+      }
+    },
+    {
+      "title": ["T1", "T1", "T1", "T1"],
+      "place": "P01",
+      "area": "",
+      "floors": {
+        "D": [
+          {"id": "P01B1D", "floor": "B1", "title": "B1"},
+          {"id": "P01F1D", "floor": "F1", "title": "1F"},
+          {"id": "P01F2D", "floor": "F2", "title": "2F"},
+          {"id": "P01F3D", "floor": "F3", "title": "3F"},
+          {"id": "P01F4D", "floor": "F4", "title": "4F"}
+        ],
+        "F": [
+          {"id": "P01F3F", "floor": "F3", "title": "3F"},
+          {"id": "P01F4F", "floor": "F4", "title": "4F"}
+        ]
+      }
+    },
+    {
+      "title": ["탑승동", "Concourse", "コンコース", "登机区"],
+      "place": "P02",
+      "area": "F",
+      "floors": {
+        "F": [
+          {"id": "P02F3F", "floor": "F3", "title": "3F"},
+          {"id": "P02F4F", "floor": "F4", "title": "4F"}
+        ]
+      }
+    }
+  ],
+  "T2": [
+    {
+      "title": ["교통센터", "T.C", "交通センター", "交通中心"],
+      "place": "P03",
+      "area": "T",
+      "floors": {
+        "T": [
+          {"id": "P03B1T", "floor": "B1", "title": "B1"},
+          {"id": "P03F1T", "floor": "F1", "title": "1F"},
+          {"id": "P03F2T", "floor": "F2", "title": "2F"}
+        ]
+      }
+    },
+    {
+      "title": ["T2", "T2", "T2", "T2"],
+      "place": "P03",
+      "area": "",
+      "floors": {
+        "D": [
+          {"id": "P03B1D", "floor": "B1", "title": "B1"},
+          {"id": "P03F1D", "floor": "F1", "title": "1F"},
+          {"id": "P03F2D", "floor": "F2", "title": "2F"},
+          {"id": "P03F3D", "floor": "F3", "title": "3F"},
+          {"id": "P03F4D", "floor": "F4", "title": "4F"},
+          {"id": "P03F5D", "floor": "F5", "title": "5F"}
+        ],
+        "F": [
+          {"id": "P03F3F", "floor": "F3", "title": "3F"},
+          {"id": "P03F4F", "floor": "F4", "title": "4F"}
+        ]
+      }
+    }
+  ]
+}

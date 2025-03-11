@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900.001" height="1050.001" viewBox="0 0 900.001 1050.001">
+  <g id="buliding_guide_img" transform="translate(5 4.253)">
+    <line id="Line_71" data-name="Line 71" x2="518" transform="translate(76 135.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+    <line id="Line_72" data-name="Line 72" x2="518" transform="translate(76 205.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+    <line id="Line_73" data-name="Line 73" x2="518" transform="translate(76 275.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+    <line id="Line_74" data-name="Line 74" x2="518" transform="translate(76 345.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+    <line id="Line_75" data-name="Line 75" x2="518" transform="translate(76 415.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+    <line id="Line_76" data-name="Line 76" x2="518" transform="translate(76 485.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+    <line id="Line_77" data-name="Line 77" x2="518" transform="translate(76 555.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+    <line id="Line_80" data-name="Line 80" x2="518" transform="translate(76 625.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+    <line id="Line_81" data-name="Line 81" x2="518" transform="translate(76 695.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+    <line id="Line_82" data-name="Line 82" x2="518" transform="translate(76 765.747)" fill="none" stroke="#4c4c4e" stroke-width="2"/>
+    <line id="Line_83" data-name="Line 83" x2="518" transform="translate(76 835.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+    <line id="Line_84" data-name="Line 84" x2="518" transform="translate(76 905.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+    <line id="Line_85" data-name="Line 85" x2="518" transform="translate(76 975.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+    <line id="Line_94" data-name="Line 94" x2="189" transform="translate(705 485.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+    <line id="Line_95" data-name="Line 95" x2="189" transform="translate(705 555.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+    <line id="Line_96" data-name="Line 96" x2="189" transform="translate(705 625.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+    <line id="Line_97" data-name="Line 97" x2="189" transform="translate(705 695.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+    <line id="Line_98" data-name="Line 98" x2="189" transform="translate(705 765.747)" fill="none" stroke="#4c4c4e" stroke-width="2"/>
+    <line id="Line_99" data-name="Line 99" x2="189" transform="translate(705 835.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+    <line id="Line_100" data-name="Line 100" x2="189" transform="translate(705 905.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+    <line id="Line_101" data-name="Line 101" x2="189" transform="translate(705 975.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+    <g id="Exclusion_2" data-name="Exclusion 2" transform="translate(28.14 8365.466)" fill="none">
+      <path d="M866.861-7319.718h-820v-980h520v349h300v631Z" stroke="none"/>
+      <path d="M 864.8615112304688 -7321.71875 L 864.8615112304688 -7948.71875 L 564.859375 -7948.71875 L 564.859619140625 -8297.7197265625 L 48.86040115356445 -8297.7197265625 L 48.86040115356445 -7321.71875 L 864.8615112304688 -7321.71875 M 866.8615112304688 -7319.7177734375 L 866.8615112304688 -7319.71875 L 46.86040115356445 -7319.71875 L 46.86040115356445 -8299.7197265625 L 566.8596801757812 -8299.7197265625 L 566.859375 -7950.71875 L 866.8615112304688 -7950.71875 L 866.8615112304688 -7319.7177734375 Z" stroke="none" fill="#4c4c4e"/>
+    </g>
+    <g id="TEXT_한" transform="translate(0 1)">
+      <text id="ACADEMY_l_GENIE_MUSIC_HALL_l_SKY_PARK" data-name="ACADEMY l GENIE MUSIC HALL l SKY PARK" transform="translate(92 118.747)" fill="#919396" font-size="12" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">ACADEMY l GENIE MUSIC HALL l SKY PARK</tspan></text>
+      <text id="RESTAURANTS_CUSTOMER_SERVICE" data-name="RESTAURANTS ㅣCUSTOMER SERVICE" transform="translate(92 328.747)" fill="#919396" font-size="12" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">RESTAURANTS ㅣCUSTOMER SERVICE</tspan></text>
+      <text id="LIVING_LITTLE_SHINSEGAE" data-name="LIVINGㅣLITTLE SHINSEGAE" transform="translate(92 398.747)" fill="#919396" font-size="12" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">LIVINGㅣLITTLE SHINSEGAE</tspan></text>
+      <text id="MENS_FASHION_GOLF" data-name="MENS FASHIONㅣGOLF" transform="translate(92 468.747)" fill="#919396" font-size="12" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">MENS FASHIONㅣGOLF</tspan></text>
+      <text id="STREET_CASUAL_PLAY_GROUND" data-name="STREET CASUALㅣPLAY GROUND" transform="translate(92 538.747)" fill="#919396" font-size="12" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">STREET CASUALㅣPLAY GROUND</tspan></text>
+      <text id="WOMENS_FASHION_SHOES_HANDBAGS_LANGERIE" data-name="WOMENS FASHIONㅣSHOESㅣHANDBAGSㅣLANGERIE" transform="translate(92 608.747)" fill="#919396" font-size="12" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">WOMENS FASHIONㅣSHOESㅣHANDBAGSㅣLANGERIE</tspan></text>
+      <text id="WOMEN_CONTEMPORARY_CLASSIC" data-name="WOMEN CONTEMPORARYㅣCLASSIC" transform="translate(92 678.747)" fill="#919396" font-size="12" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">WOMEN CONTEMPORARYㅣCLASSIC</tspan></text>
+      <text id="COSMETICS_LUXURY" data-name="COSMETICSㅣㅣLUXURY" transform="translate(92 748.747)" fill="#919396" font-size="12" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">COSMETICSㅣㅣLUXURY</tspan></text>
+      <text id="LUXURY_BOUTIQUE" data-name="LUXURY BOUTIQUE" transform="translate(92 818.747)" fill="#919396" font-size="12" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">LUXURY BOUTIQUE</tspan></text>
+      <text id="FOOD_MARKET" data-name="FOOD MARKET" transform="translate(92 888.747)" fill="#919396" font-size="12" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">FOOD MARKET</tspan></text>
+      <text id="아카데미_l_신세계문화홀_지니뮤직홀_l_스카이파크" data-name="아카데미 l 신세계문화홀 「지니뮤직홀」 l 스카이파크" transform="translate(92 95.747)" fill="#4c4c4e" font-size="16" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">아카데미 l 신세계문화홀 「지니뮤직홀」 l 스카이파크</tspan></text>
+      <text id="CGV" transform="translate(92 175.747)" fill="#4c4c4e" font-size="16" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">CGV</tspan></text>
+      <text id="CGV-2" data-name="CGV" transform="translate(92 245.747)" fill="#4c4c4e" font-size="16" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">CGV</tspan></text>
+      <text id="전문식당가_l_고객서비스센터" data-name="전문식당가 l 고객서비스센터" transform="translate(92 305.747)" fill="#4c4c4e" font-size="16" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">전문식당가 l 고객서비스센터</tspan></text>
+      <text id="생활_아동_리틀신세계_" data-name="생활ㅣ아동 「리틀신세계」" transform="translate(92 375.747)" fill="#4c4c4e" font-size="16" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">생활ㅣ아동 「리틀신세계」</tspan></text>
+      <text id="남성패션_골프" data-name="남성패션ㅣ골프" transform="translate(92 445.747)" fill="#4c4c4e" font-size="16" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">남성패션ㅣ골프</tspan></text>
+      <text id="스트리트_캐쥬얼_플레이_그라운드_" data-name="스트리트 캐쥬얼 「플레이 그라운드」" transform="translate(92 515.747)" fill="#4c4c4e" font-size="16" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">스트리트 캐쥬얼 「플레이 그라운드」</tspan></text>
+      <text id="여성_캐쥬얼_슈즈_핸드백_란제리" data-name="여성 캐쥬얼ㅣ슈즈ㅣ핸드백ㅣ란제리" transform="translate(92 585.747)" fill="#4c4c4e" font-size="16" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">여성 캐쥬얼ㅣ슈즈ㅣ핸드백ㅣ란제리</tspan></text>
+      <text id="여성_컨템포러리_클래식" data-name="여성 컨템포러리ㅣ클래식" transform="translate(92 655.747)" fill="#4c4c4e" font-size="16" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">여성 컨템포러리ㅣ클래식</tspan></text>
+      <text id="화장품_해외유명브랜드_럭셔리_워치·주얼리" data-name="화장품ㅣ해외유명브랜드ㅣ럭셔리 워치·주얼리" transform="translate(92 725.747)" fill="#4c4c4e" font-size="16" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">화장품ㅣ해외유명브랜드ㅣ럭셔리 워치·주얼리</tspan></text>
+      <text id="해외유명브랜드_럭셔리_퍼퓸_주얼리_슈즈" data-name="해외유명브랜드ㅣ럭셔리 퍼퓸ㅣ주얼리ㅣ슈즈" transform="translate(92 795.747)" fill="#4c4c4e" font-size="16" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">해외유명브랜드ㅣ럭셔리 퍼퓸ㅣ주얼리ㅣ슈즈</tspan></text>
+      <text id="푸드마켓" transform="translate(92 865.747)" fill="#4c4c4e" font-size="16" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">푸드마켓</tspan></text>
+    </g>
+    <g id="Group_64" data-name="Group 64">
+      <text id="백화점" transform="translate(75 19.747)" fill="#4c4c4e" font-size="24" font-family="Shinsegae-Sans-serif-Bold_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="700"><tspan x="0" y="0">백화점</tspan></text>
+      <text id="주차동" transform="translate(703 369.747)" fill="#4c4c4e" font-size="24" font-family="Shinsegae-Sans-serif-Bold_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="700"><tspan x="0" y="0">주차동</tspan></text>
+    </g>
+    <text id="SPORTS" transform="translate(719 467.747)" fill="#919396" font-size="12" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">SPORTS</tspan></text>
+    <text id="스포츠" transform="translate(719 444.747)" fill="#4c4c4e" font-size="16" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="0" y="0">스포츠</tspan></text>
+    <g id="Group_62" data-name="Group 62" transform="translate(96.535)">
+      <text id="연결통로_이마트" data-name="연결통로/
+이마트" transform="translate(553.465 796.747)" fill="#4c4c4e" font-size="16" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="-34" y="0">연결통로/</tspan><tspan x="-22" y="19">이마트</tspan></text>
+      <text id="차량_연결통로" data-name="차량
+연결통로" transform="translate(553.465 864.747)" fill="#4c4c4e" font-size="16" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="-15" y="0">차량</tspan><tspan x="-30" y="19">연결통로</tspan></text>
+      <text id="연결통로" transform="translate(553.465 454.747)" fill="#4c4c4e" font-size="16" font-family="Shinsegae-Sans-serif-Medium_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="500"><tspan x="-30" y="0">연결통로</tspan></text>
+      <g id="Rectangle_61" data-name="Rectangle 61" transform="translate(496.465 484.746)" fill="none" stroke="#4c4c4e" stroke-width="2">
+        <rect width="112" height="282" stroke="none"/>
+        <rect x="1" y="1" width="110" height="280" fill="none"/>
+      </g>
+      <line id="Line_78" data-name="Line 78" y2="45" transform="translate(497.465 415.747)" fill="none" stroke="#4c4c4e" stroke-width="2"/>
+      <line id="Line_86" data-name="Line 86" y2="45" transform="translate(497.465 765.747)" fill="none" stroke="#4c4c4e" stroke-width="2"/>
+      <line id="Line_88" data-name="Line 88" y2="45" transform="translate(497.465 835.747)" fill="none" stroke="#4c4c4e" stroke-width="2"/>
+      <line id="Line_92" data-name="Line 92" y2="139" transform="translate(497.465 905.747)" fill="none" stroke="#4c4c4e" stroke-width="2"/>
+      <line id="Line_79" data-name="Line 79" y2="45" transform="translate(607.465 415.747)" fill="none" stroke="#4c4c4e" stroke-width="2"/>
+      <line id="Line_87" data-name="Line 87" y2="45" transform="translate(607.465 765.747)" fill="none" stroke="#4c4c4e" stroke-width="2"/>
+      <line id="Line_89" data-name="Line 89" y2="45" transform="translate(607.465 835.747)" fill="none" stroke="#4c4c4e" stroke-width="2"/>
+      <line id="Line_93" data-name="Line 93" y2="139" transform="translate(607.465 905.747)" fill="none" stroke="#4c4c4e" stroke-width="2"/>
+      <line id="Line_90" data-name="Line 90" x2="112" transform="translate(496.465 835.747)" fill="none" stroke="#4c4c4e" stroke-width="2"/>
+      <line id="Line_91" data-name="Line 91" x2="112" transform="translate(496.465 905.747)" fill="none" stroke="#4c4c4e" stroke-width="2"/>
+    </g>
+    <text id="_10_9_8_7_6_5_4_3_2_1_B1_B2_B3_B4" data-name="10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+B1
+B2
+B3
+B4" transform="translate(23 110.747)" fill="#4c4c4e" font-size="20" font-family="Shinsegae-Sans-serif-Bold_OTF, 'Shinsegae Sans-serif\(OTF\)'" font-weight="700"><tspan x="-11" y="0">10</tspan><tspan x="-5" y="70">9</tspan><tspan x="-5" y="140">8</tspan><tspan x="-5" y="210">7</tspan><tspan x="-5" y="280">6</tspan><tspan x="-5" y="350">5</tspan><tspan x="-5" y="420">4</tspan><tspan x="-5" y="490">3</tspan><tspan x="-5" y="560">2</tspan><tspan x="-4" y="630">1</tspan><tspan x="-11" y="700">B1</tspan><tspan x="-12" y="770">B2</tspan><tspan x="-12" y="840">B3</tspan><tspan x="-12" y="910">B4</tspan></text>
+    <g id="Group_63" data-name="Group 63" transform="translate(-710)">
+      <line id="Line_109" data-name="Line 109" x2="60" transform="translate(705 485.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+      <line id="Line_108" data-name="Line 108" x2="60" transform="translate(705 555.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+      <line id="Line_107" data-name="Line 107" x2="60" transform="translate(705 625.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+      <line id="Line_106" data-name="Line 106" x2="60" transform="translate(705 695.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+      <line id="Line_105" data-name="Line 105" x2="60" transform="translate(705 765.747)" fill="none" stroke="#4c4c4e" stroke-width="2"/>
+      <line id="Line_110" data-name="Line 110" x2="60" transform="translate(705 1044.747)" fill="none" stroke="#4c4c4e" stroke-width="2"/>
+      <line id="Line_111" data-name="Line 111" x2="60" transform="translate(705 66.747)" fill="none" stroke="#4c4c4e" stroke-width="2"/>
+      <line id="Line_104" data-name="Line 104" x2="60" transform="translate(705 835.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+      <line id="Line_103" data-name="Line 103" x2="60" transform="translate(705 905.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+      <line id="Line_102" data-name="Line 102" x2="60" transform="translate(705 975.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+      <line id="Line_112" data-name="Line 112" x2="60" transform="translate(705 205.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+      <line id="Line_116" data-name="Line 116" x2="60" transform="translate(705 135.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+      <line id="Line_113" data-name="Line 113" x2="60" transform="translate(705 275.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+      <line id="Line_114" data-name="Line 114" x2="60" transform="translate(705 345.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+      <line id="Line_115" data-name="Line 115" x2="60" transform="translate(705 415.747)" fill="none" stroke="#b7b8b9" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
