@@ -10,10 +10,8 @@
   }
 
   function getContext(){
-    if(window.ControlState && ControlState.currentPopupInfo){
-      const popup = document.querySelector(`#${ControlState.currentPopupInfo}.popup_layer.show`);
-      if(popup) return popup;
-    }
+    const popup = document.querySelector('.popup_layer.show');
+    if(popup) return popup;
     return document.querySelector(`#${ControlState.currentPageInfo}`);
   }
 
@@ -51,7 +49,7 @@
     const group = activeGroup;
     const items = getFocusable(group);
     if(!items.length) return;
-    if((dir === 1) && (active.hasAttribute('page-tts') || active.hasAttribute('popup-tts') || active.hasAttribute('group-tts'))){
+    if((dir === 1) && (active.hasAttribute('page-tts') || active.hasAttribute('popup-tts'))){
       gi = (gi + 1) % groups.length;
       const ni = getFocusable(groups[gi]);
       if(ni.length) ni[0].focus();
