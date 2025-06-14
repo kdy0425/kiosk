@@ -1,0 +1,292 @@
+@use '_mixins' as *;
+@use '_variables' as *;
+
+.popup_layer {
+    position: absolute;left:0;top:0;width:100%;height: 100%;display: none;align-items: center;justify-content: center;background-color: rgba(0,0,0,.64);z-index: 1000;
+    .popup_box {
+        background-color: #fff;width:1600px;min-height:1400px;position: relative;padding:120px;display:flex;flex-direction: column;justify-content: center;
+        .popup_close {
+            position: absolute;right:70px;top:90px;width:150px;height:180px;border:0;background-color: transparent;background-position: center top 20px;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68' height='68' fill='none'%3E%3Cpath stroke='%23000' stroke-width='6' d='m3 3 62 62M65 3 3 65'/%3E%3C/svg%3E");
+            padding-bottom:10px;font-size:5rem;display: flex;justify-content: center;align-items: end;font-weight:700;
+        }
+        .popup_title{
+            color:#000;font-size:8rem;text-align: center;font-weight: 700;padding-top:10px;margin-bottom:130px;
+        }
+        .popup_content {
+            display: flex;flex-direction: column;flex:1 1 auto;
+            .popup_btns {
+                display: flex;gap:60px;padding-top:100px;margin-top:auto;
+                button {
+                    flex:1 1;border:0;background-color: #000;border-radius:20px;color:#fff;height:160px;font-size:52px;font-weight:700;
+                }
+            }
+            &.center{
+                align-items: center;justify-content: center;
+            }
+        }
+    }
+    &.show{display:flex;}
+
+    .search_input{
+        .tit{margin-right:68px;}
+    }
+    .search_keypad{
+        margin-top:80px;min-height:510px;
+        .keypad_type{
+            margin-right:68px;width:210px;
+        }
+        .keypad_area{
+            flex-direction: column;align-items: end;gap:25px;
+            .keypad{
+                width:100%;gap:16px !important;flex:none;
+                button{
+                    width:100px !important;height:100px !important;
+                }
+            }
+            .keypad_delete{
+                margin-top:0;height: auto;
+                button{
+                    display: flex;align-items: center;justify-content: center;padding:6px 0 0;
+                    svg{
+                        display: inline-block;margin:0 15px 3px 0;
+                    }
+                }
+            }
+        }
+    }
+    .splide__arrows{
+        margin-left:0;margin-right:0;margin-top:100px;
+        .splide__arrow{
+            width:540px;
+        }
+    }
+    .info_step{
+        height:auto;padding:75px 90px;gap:60px 150px;justify-content: start;flex-wrap:wrap;
+        .item + .item{
+            
+        }
+    }
+    .info_text{
+        margin-top:80px;
+        ol{
+            li{
+                font-size:4.8rem;letter-spacing: -2px;
+            }
+            li + li{
+                margin-top:12px;
+            }
+        }
+    }
+}
+
+/*남은시간*/
+#time_popup{
+    .popup_box{
+        min-height: 1100px;
+    }
+    .time_count{
+        margin:0 auto;display: flex;align-items: center;justify-content: center;padding-left:17%;color:#fff;width:810px;height:245px;background-position: center center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='810' height='244' fill='none'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='20' d='M122.164 52.51v61.673l60.766 28.432'/%3E%3Cpath fill='%23000' d='M121.832 220.408c-54.442 0-98.706-44.493-98.706-99.149 0-49.12 35.772-90.014 82.506-97.787V0C46.071 7.985 0 59.314 0 121.26c0 67.481 54.653 122.379 121.832 122.379 46.553 0 87.083-26.375 107.589-65l-21.861-8.258c-17.013 29.884-49.052 50.059-85.698 50.059l-.03-.031ZM220.537 121.259c0 6.352-.632 12.553-1.746 18.542l21.891 8.287c1.927-8.65 2.981-17.603 2.981-26.829C243.663 59.314 197.592 7.985 138.031 0v23.472c46.734 7.803 82.506 48.667 82.506 97.787Z'/%3E%3Cpath fill='%23000' d='M714.043 22.865H229.391c23.005 25.226 37.067 58.83 37.067 95.731 0 36.901-14.062 70.505-37.067 95.731h484.622c52.635 0 95.303-42.86 95.303-95.731 0-52.871-42.668-95.731-95.303-95.731h.03Z'/%3E%3C/svg%3E");
+        strong{
+            font-size:12rem;font-weight:700;
+        }
+        span{
+            font-size:6.4rem;font-weight:700;margin-left:30px;margin-top:20px;
+        }
+    }
+    .time_text{
+        margin-top:150px;font-size:6rem;font-weight:700;text-align: center;
+    }
+}
+
+
+/*팝업 시설안내*/
+.popup_facility{
+    text-align: center;
+    .icon {
+        display: block;margin:0 auto 13px;width:428px;height:428px;
+        img{
+            width: 100%;max-width: 9999em;
+        }
+    }
+    .name {
+        color:#000;font-size:8rem;font-weight:700;
+    }
+    .popup_location {
+       font-size:6.5rem;color:#222;border-top:4px solid #000;border-bottom:4px solid #000;display: flex;align-items: center;justify-content: center;height: 217px;padding:20px 0;margin-top:80px;
+       .tit{
+            padding-left:86px;background-position: left center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='68' fill='none'%3E%3Cpath fill='%23000' d='M57.6 30.272C57.6 14.898 45.24 2.429 30 2.429c-15.239 0-27.6 12.47-27.6 27.843 0 .726.04 1.452.09 2.158 0 14.11 16.884 27.942 24.198 33.272a5.598 5.598 0 0 0 6.615 0c7.314-5.33 24.199-19.162 24.199-33.272.059-.716.088-1.432.088-2.158h.01Z'/%3E%3Cellipse cx='30.001' cy='30.357' fill='%23fff' rx='13.2' ry='13.357'/%3E%3C/svg%3E");
+       }
+       .cnt{
+            margin-left:70px;font-weight: 700;
+       }
+    }
+    .location_text {
+        color:#000;margin-top:70px;height:200px;display: flex;align-items: center;justify-content: center;text-align: center;font-size:5.2rem;font-weight:700;line-height: 1.5;
+    }
+}
+
+/*팝업 매장안내*/
+.popup_store{
+    padding:0 50px;
+    .thum{
+        margin:0 auto 78px;height: 840px;display: flex;align-items: center;justify-content: center;
+    }
+    .info_table{
+        display: flex;flex-direction: column;gap:45px;font-size:6.5rem;
+        .row{
+            display: flex;
+            .cnt{
+                flex:1 1 auto;text-align: right;font-weight:700;
+            }
+        }
+    }
+    & + .popup_btns{padding-left:50px;padding-right:50px;}
+}
+
+
+
+/*맵 이동수단*/
+.move_type{
+    gap:120px;
+    button{
+        background-color: #000;color:#fff;width:380px;height:380px;border-radius:30px;border:0;
+        svg{
+            display: block;margin:0 auto 40px;
+        }
+        span{
+            font-weight:700;
+        }
+    }
+}
+
+/*주차안내*/
+#parking_slide{
+    width: 100%;
+}
+#parking_items{
+    min-height:823px;
+    .splide__slide {
+        .splide__slide__row .parking_item{padding-bottom:70px;}
+        .splide__slide__row + .splide__slide__row .parking_item{padding-top:70px;padding-bottom:0;border-top:2px solid #a7a7a7;}
+    }
+}
+.parking_item{
+    display:flex;align-items: start;gap:110px;
+    .thum{
+        width:340px;height:340px;background-position: center center;background-size:cover;
+    }
+    .content{
+        flex:1 1 auto;width:1%;display:table;font-size:6.4rem;color:#000;
+        .item{
+            display:table-row;
+            .tit{
+                display:table-cell;padding:22px 50px 22px 0;
+            }
+            .cnt{
+                display:table-cell;font-weight:700;padding:22px 0;
+                .suffix{
+                    color:#FF643C;
+                }
+            }
+            &:first-child > *{
+                padding-top:10px;
+            }
+            &:last-child > *{
+                padding-bottom:0;
+            }
+        }
+    }
+}
+
+.popup_empty{
+    &:before{content:"";display: block;margin:0 auto 80px;width:360px;height:360px;border-radius: 50%;background-color: #000;background-position: center center;background-repeat: no-repeat;background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='165' height='166' fill='none'%3E%3Cpath fill='%23fff' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='6' d='m126.634 103.497-8.393 12.885a10.248 10.248 0 0 1-8.593 4.659H54.982c-3.467 0-6.7-1.75-8.593-4.659l-8.393-12.885a8.145 8.145 0 0 0-6.817-3.692H3v49.34c0 7.118 5.767 12.885 12.885 12.885h132.86c7.118 0 12.885-5.767 12.885-12.885v-49.34h-28.187a8.147 8.147 0 0 0-6.818 3.692h.009Z'/%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='6' d='M161.633 65.965v33.838M3 99.805V14.852C3 8.309 8.31 3 14.852 3h86.187'/%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='10' d='m126.891 5.64 32 32M126.891 37.64l32-32'/%3E%3C/svg%3E");}
+    height:1027px;display: flex;flex-direction: column;align-items: center;justify-content: center;text-align: center;color:#000;font-size:5.2rem;font-weight:700;
+}
+
+
+
+/*저자세*/
+.lowScreen{
+    .popup_layer{
+        padding-bottom:200px;
+        .popup_box{
+            margin-top:auto;min-height:1280px;
+        }
+    }
+    .popup_store{
+        display: flex;
+        .thum{
+            width:600px;height:527px;margin:0 60px 0 0;overflow: hidden;position: relative;
+            img{position: absolute;left:50%;top:50%;transform: translate(-50%,-50%);height: 100%;max-width: 999999em;}
+        }
+        .info_table{
+            flex:1 1 auto;width:1%;
+            .row{
+                flex-wrap: wrap;gap:18px 40px;
+                .tit{
+                }
+                .cnt{
+                    text-align: left;font-weight:700;
+                }
+            }
+        }
+    }
+}
+
+/*고대비*/
+.contrast{
+    .popup_layer {
+        background-color: rgba(0,0,0,.8);
+        .popup_box {
+            background-color: #1C1C1E;color:#fff;border:6px solid #fff;width: 1612px;
+            .popup_close {
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='68' height='68' fill='none'%3E%3Cpath stroke='%23fff' stroke-width='6' d='m3 3 62 62M65 3 3 65'/%3E%3C/svg%3E");
+                color:#fff;
+            }
+            .popup_title{
+                color:#fff;
+            }
+            .popup_content {
+                .popup_btns {
+                    button {
+                        background-color: $point-color;color:#000;
+                    }
+                }
+            }
+        }
+    }
+    .parking_item{
+        .content{
+            color:#fff;
+            .item{
+                .cnt{
+                    .suffix{
+                        color:$point-color;
+                    }
+                }
+            }
+        }
+    }
+    .popup_empty{
+        &:before{filter: invert(1);}
+        color:#fff;
+    }
+
+    .popup_facility{
+        .icon{
+            filter: invert(1);
+        }
+        .name {
+            color:#fff;
+        }
+        .popup_location {
+           color:#fff;border-color:#fff;
+           .tit{
+                filter: invert(1);color:#000;
+           }
+        }
+        .location_text {
+            color:#fff;
+        }
+    }    
+}

@@ -1,0 +1,57 @@
+<div id="page_parking" class="page_wrap">
+    <div class="page_title">
+        <h2 data-lang-code="주차안내">주차안내</h2>
+        <p data-lang-code="주차안내서브문구">찾으시는 차량의 번호를 입력해 주세요.</p>
+    </div>
+    <div class="page_content">
+        @@include('../partials/parking_use.html')
+
+        <div class="parking_search">
+            <input type="hidden"><!-- 차량번호 -->
+            <div class="search_top">
+                <div class="title" data-lang-code="차량번호입력요청">차량 번호를 입력해 주세요</div>
+                <div class="search_input">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="search_bottom">
+                <div class="parking_price">
+                    <strong data-lang-code="주차요금안내">주차요금 안내</strong>
+                    <b data-lang-code="기본요금">기본 30분 무료</b>
+                    <p data-lang-code="추가요금">(이후 20분당 1,500원 요금 부과)</p>
+
+                    <strong data-lang-code="무료주차혜택">구매금액 별 무료주차</strong>
+                    <p>
+                        <span data-lang-code="무료1만원">1만원 이상 구매시 1시간 무료 주차</span><br/>
+                        <span data-lang-code="무료3만원">3만원 이상 구매시 2시간 무료 주차</span><br/>
+                        <span data-lang-code="무료5만원">5만원 이상 구매시 3시간 무료 주차</span><br/>
+                        <span data-lang-code="무료10만원">10만원 이상 구매시 5시간 무료 주차</span>
+                    </p>
+                    <div class="parking_help">
+                        <button type="button" class="help_btn" onclick="showPopup('parking_use_popup')">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="none"><rect width="80" height="80" fill="CurrentColor" rx="40"/><path fill="#fff" d="M28.471 34.167c-.63-6.45 3.977-11.98 12.222-11.98 6.548 0 11.3 3.444 11.3 9.506 0 4.56-2.715 6.936-5.237 9.021-2.765 2.28-3.977 3.59-3.977 7.033v3.444h-5.335v-3.687c0-4.219 1.358-6.547 4.607-9.166 1.989-1.6 3.929-2.813 3.929-6.305 0-3.444-1.94-5.044-5.384-5.044-4.365 0-6.693 2.619-6.547 6.354l-5.578.824Zm8.682 26.287v-5.965h5.917v5.965h-5.917Z"/></svg>
+                            <span data-lang-code="도움필요안내">도움이 필요하신가요?</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="parking_keypad">
+                    <button type="button" data-rel="1">1</button>
+                    <button type="button" data-rel="2">2</button>
+                    <button type="button" data-rel="3">3</button>
+                    <button type="button" data-rel="4">4</button>
+                    <button type="button" data-rel="5">5</button>
+                    <button type="button" data-rel="6">6</button>
+                    <button type="button" data-rel="7">7</button>
+                    <button type="button" data-rel="8">8</button>
+                    <button type="button" data-rel="9">9</button>
+                    <button type="button" data-rel="delete" data-lang-code="삭제">삭제</button>
+                    <button type="button" data-rel="0">0</button>
+                    <button type="button" data-rel="search" data-lang-code="검색">검색</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

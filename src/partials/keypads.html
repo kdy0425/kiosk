@@ -1,0 +1,84 @@
+<div class="search_input">
+    <div class="tit" data-lang-code="통합검색">통합검색</div>
+    <div class="cnt">
+        <div class="input">
+            <input type="text" class="keypad_input empty" readonly>
+            <div class="placeholder" data-lang-code="매장검색플레이스홀더">찾으시는 매장의 초성을 입력해 주세요</div>
+        </div>
+    </div>
+</div>
+<div class="search_keypad">
+    <div class="keypad_type">
+        <div class="item"><button type="button" class="kr active" onclick="keypadType(this, 'kr')">ㄱㄴㄷ</button></div>
+        <div class="item"><button type="button" class="en" onclick="keypadType(this, 'en')">ABC</button></div>
+        <div class="item"><button type="button" class="num" onclick="keypadType(this, 'num')">123</button></div>
+    </div>
+    <div class="keypad_area">
+        <div class="keypad keypad kr active">
+            <div class="item"><button type="button" data-rel="ㄱ">ㄱ</button></div>
+            <div class="item"><button type="button" data-rel="ㄴ">ㄴ</button></div>
+            <div class="item"><button type="button" data-rel="ㄷ">ㄷ</button></div>
+            <div class="item"><button type="button" data-rel="ㄸ">ㄸ</button></div>
+            <div class="item"><button type="button" data-rel="ㄹ">ㄹ</button></div>
+            <div class="item"><button type="button" data-rel="ㅁ">ㅁ</button></div>
+            <div class="item"><button type="button" data-rel="ㅂ">ㅂ</button></div>
+            <div class="item"><button type="button" data-rel="ㅃ">ㅃ</button></div>
+            <div class="item"><button type="button" data-rel="ㅅ">ㅅ</button></div>
+            <div class="item"><button type="button" data-rel="ㅆ">ㅆ</button></div>
+            <div class="item"><button type="button" data-rel="ㅇ">ㅇ</button></div>
+            <div class="item"><button type="button" data-rel="ㅈ">ㅈ</button></div>
+            <div class="item"><button type="button" data-rel="ㅉ">ㅉ</button></div>
+            <div class="item"><button type="button" data-rel="ㅊ">ㅊ</button></div>
+            <div class="item"><button type="button" data-rel="ㅋ">ㅋ</button></div>
+            <div class="item"><button type="button" data-rel="ㅌ">ㅌ</button></div>
+            <div class="item"><button type="button" data-rel="ㅍ">ㅍ</button></div>
+            <div class="item"><button type="button" data-rel="ㅎ">ㅎ</button></div>
+        </div>
+        <div class="keypad keypad en">
+            <div class="item"><button type="button" data-rel="A">A</button></div>
+            <div class="item"><button type="button" data-rel="B">B</button></div>
+            <div class="item"><button type="button" data-rel="C">C</button></div>
+            <div class="item"><button type="button" data-rel="D">D</button></div>
+            <div class="item"><button type="button" data-rel="E">E</button></div>
+            <div class="item"><button type="button" data-rel="F">F</button></div>
+            <div class="item"><button type="button" data-rel="G">G</button></div>
+            <div class="item"><button type="button" data-rel="H">H</button></div>
+            <div class="item"><button type="button" data-rel="I">I</button></div>
+            <div class="item"><button type="button" data-rel="J">J</button></div>
+            <div class="item"><button type="button" data-rel="K">K</button></div>
+            <div class="item"><button type="button" data-rel="L">L</button></div>
+            <div class="item"><button type="button" data-rel="M">M</button></div>
+            <div class="item"><button type="button" data-rel="N">N</button></div>
+            <div class="item"><button type="button" data-rel="O">O</button></div>
+            <div class="item"><button type="button" data-rel="P">P</button></div>
+            <div class="item"><button type="button" data-rel="Q">Q</button></div>
+            <div class="item"><button type="button" data-rel="R">R</button></div>
+            <div class="item"><button type="button" data-rel="S">S</button></div>
+            <div class="item"><button type="button" data-rel="T">T</button></div>
+            <div class="item"><button type="button" data-rel="U">U</button></div>
+            <div class="item"><button type="button" data-rel="V">V</button></div>
+            <div class="item"><button type="button" data-rel="W">W</button></div>
+            <div class="item"><button type="button" data-rel="X">X</button></div>
+            <div class="item"><button type="button" data-rel="Y">Y</button></div>
+            <div class="item"><button type="button" data-rel="Z">Z</button></div>
+        </div>
+        <div class="keypad keypad num">
+            <div class="item"><button type="button" data-rel="0">0</button></div>
+            <div class="item"><button type="button" data-rel="1">1</button></div>
+            <div class="item"><button type="button" data-rel="2">2</button></div>
+            <div class="item"><button type="button" data-rel="3">3</button></div>
+            <div class="item"><button type="button" data-rel="4">4</button></div>
+            <div class="item"><button type="button" data-rel="5">5</button></div>
+            <div class="item"><button type="button" data-rel="6">6</button></div>
+            <div class="item"><button type="button" data-rel="7">7</button></div>
+            <div class="item"><button type="button" data-rel="8">8</button></div>
+            <div class="item"><button type="button" data-rel="9">9</button></div>
+        </div>
+        <div class="keypad_delete">
+            <button type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="79" height="58" fill="none"><path stroke="CurrentColor" stroke-miterlimit="10" stroke-width="4" d="M25.444 4.787 3 26.398a3.266 3.266 0 0 0 0 4.704l22.435 21.611a9.978 9.978 0 0 0 6.917 2.787h39.88A4.768 4.768 0 0 0 77 50.731V6.77A4.768 4.768 0 0 0 72.231 2h-39.88c-2.573 0-5.055 1-6.916 2.787h.01ZM35.332 14.879l27.74 27.74M63.073 14.879l-27.741 27.74"/></svg>
+                <span data-lang-code="삭제">삭제</span>
+            </button>
+        </div>
+    </div>
+</div>

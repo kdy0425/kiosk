@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="139.646" height="134.567" viewBox="0 0 139.646 134.567">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="-0.108" x2="0.5" y2="0.935" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6e0d3e"/>
+      <stop offset="1" stop-color="#6e0d3e" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="ico_floor_location" transform="translate(-1397.416 2152.917) rotate(-90)">
+    <g id="그룹_14058" data-name="그룹 14058" transform="translate(2739.389 -1675.889) rotate(90)">
+      <path id="다각형_3" data-name="다각형 3" d="M69.823,0l69.823,96.067H0Z" transform="translate(3073.305 624.973)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="그룹_14057" data-name="그룹 14057" transform="translate(-1066.083 932.739)">
+      <circle id="타원_559" data-name="타원 559" cx="38.5" cy="38.5" r="38.5" transform="translate(3142 496)" fill="#ff643c" opacity="0.28"/>
+      <circle id="타원_560" data-name="타원 560" cx="24" cy="24" r="24" transform="translate(3157 511)" fill="#ff643c" opacity="0.3"/>
+      <circle id="타원_561" data-name="타원 561" cx="11" cy="11" r="11" transform="translate(3170 524)" fill="#ff643c"/>
+    </g>
+  </g>
+</svg>

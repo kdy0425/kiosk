@@ -1,0 +1,72 @@
+<div class="floating">
+    <div class="btns">
+        <div class="item home">
+            <button type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="67" fill="none"><path fill="CurrentColor" d="M64 63.427a3.59 3.59 0 0 1-1.043 2.527A3.55 3.55 0 0 1 60.444 67H3.556a3.529 3.529 0 0 1-2.513-1.046A3.611 3.611 0 0 1 0 63.427v-37.59a3.6 3.6 0 0 1 1.363-2.833L29.819.751A3.503 3.503 0 0 1 32 0c.794 0 1.564.27 2.18.752l28.445 22.251c.427.33.77.764 1.008 1.258.237.494.355 1.023.355 1.575v37.59H64Zm-7.111-3.585V27.576L32 8.11 7.111 27.576v32.266H56.89Z"/><path stroke="CurrentColor" stroke-width="6" d="M32 41v24"/></svg>
+                <strong data-lang-code="처음화면">처음화면</strong>
+            </button>
+        </div>
+        <div class="item">
+            <button type="button" onclick="controlAction(this,'toggle', 'contrast')">
+                <strong data-lang-code="고대비">고대비</strong>
+                <span class="value" data-lang-code="꺼짐">꺼짐</span>
+            </button>
+        </div>
+        <div class="item">
+            <button type="button" onclick="controlAction(this,'toggle', 'lowScreen')">
+                <strong data-lang-code="낮은화면">낮은화면</strong>
+                <span class="value" data-lang-code="꺼짐">꺼짐</span>
+            </button>
+        </div>
+        <div class="item">
+            <button type="button" onclick="controlAction(this,'pannel')">
+                <strong>Lang</strong>
+                <span class="value">한국어</span>
+            </button>
+            <div class="select_items">
+                <button type="button" class="active" onclick="setControl(this, 'language', 'KO', '한국어')">한국어</button>
+                <button type="button" onclick="setControl(this, 'language', 'EN', 'English')">English</button>
+            </div>
+        </div>
+        <div class="item">
+            <button type="button" onclick="controlAction(this,'pannel')">
+                <strong data-lang-code="음성크기">음성크기</strong>
+                <span class="value">25</span>
+            </button>
+            <div class="select_items">
+                <button type="button" onclick="setControl(this, 'ttsVolume', '0')"data-rel="0">0</button>
+                <button type="button" class="active" onclick="setControl(this, 'ttsVolume', '25')"data-rel="25">25</button>
+                <button type="button" onclick="setControl(this, 'ttsVolume', '50')"data-rel="50">50</button>
+                <button type="button" onclick="setControl(this, 'ttsVolume', '75')"data-rel="75">75</button>
+                <button type="button" onclick="setControl(this, 'ttsVolume', '100')"data-rel="100">100</button>
+            </div>
+        </div>
+        <div class="item">
+            <button type="button" onclick="controlAction(this,'pannel')">
+                <strong data-lang-code="음성속도">음성속도</strong>
+                x<span class="value">1</span>
+            </button>
+            <div class="select_items">
+                <button type="button" class="active" onclick="setControl(this, 'ttsSpeed', '1')"data-rel="1">1X</button>
+                <button type="button" onclick="setControl(this, 'ttsSpeed', '2')"data-rel="2">2X</button>
+                <button type="button" onclick="setControl(this, 'ttsSpeed', '4')"data-rel="4">4X</button>
+                <button type="button" onclick="setControl(this, 'ttsSpeed', '8')"data-rel="8">8X</button>
+            </div>
+        </div>
+        <div class="item">
+            <button type="button" onclick="controlAction(this,'pannel')">
+                <strong data-lang-code="글씨크기">글씨크기</strong>
+                x<span class="value">1</span>
+            </button>
+            <div class="select_items">
+                <button type="button" class="active" onclick="setControl(this, 'fontSize', '1')"data-rel="1">1X</button>
+                <button type="button" onclick="setControl(this, 'fontSize', '1.05')"data-rel="1.05">1.05X</button>
+                <button type="button" onclick="setControl(this, 'fontSize', '1.1')"data-rel="1.1">1.1X</button>
+            </div>
+        </div>
+    </div>
+    <div class="reset_time">
+        <strong data-lang-code="잔여시간">잔여시간</strong>
+        <span class="time">03:00</span>
+    </div>
+</div>

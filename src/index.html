@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>청주 현대 커넥트 키오스크</title>
+        <link rel="stylesheet" href="css/style.css" /><!-- 전체 스타일 -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+        <script src="./js/xml.js"></script>
+        <script src="./js/splide.js"></script>
+        <script src="./js/splide-extension-grid.min.js"></script> 
+    </head>
+    <body>
+        <div id="layout">
+            <div id="page_loading"><div id="bar"><div id="gauge"></div></div></div>
+            @@include('./pages/page_screen_saver.html')
+
+            <div id="content">
+                @@include('./pages/page_map.html')<!-- 층별안내 -->
+                @@include('./pages/page_store.html')<!-- 매장 -->
+                @@include('./pages/page_food.html')<!-- 식음료 -->
+                @@include('./pages/page_event.html')<!-- 행사안내 -->
+                @@include('./pages/page_facility.html')<!-- 시설안내 -->
+                @@include('./pages/page_parking.html')<!-- 주차안내 -->
+
+                @@include('./partials/popup.html')<!-- 팝업 -->
+            </div>
+
+            <div class="bottom_area">
+                @@include('./partials/menu.html')
+                @@include('./partials/floating.html')
+            </div>
+        </div>
+        <!-- 임시 버튼 -->
+    <div style="position: fixed;z-index:50;padding:50px;left:100px;top:400px;border:1px solid red;display: flex;flex-direction: column;gap:30px;">
+        <button type="button" onclick="showPopup('time_popup')">
+            시간안내
+        </button>
+    </div>
+    <!-- //임시 버튼 -->
+
+        <script src="./js/control.js"></script>
+        <script src="./js/popup.js"></script>
+        <script src="./js/page_screen_saver.js"></script>
+        <script src="./js/page_map.js"></script>
+        <script src="./js/search.js"></script>
+        <script src="./js/page_store.js"></script>
+        <script src="./js/page_food.js"></script>
+        <script src="./js/page_event.js"></script>
+        <script src="./js/page_facility.js"></script>
+        <script src="./js/page_parking.js"></script>
+        <script src="./js/slides.js"></script>
+        <script src="./js/eltovMapNavigator.js"></script>
+        <script src="./js/app.js"></script>
+    </body>
+</html>

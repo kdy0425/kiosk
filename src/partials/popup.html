@@ -1,0 +1,212 @@
+<div id="popup_layer" class="popup_layer">
+    <div id="popup_box" class="popup_box">
+    </div>
+</div>
+
+
+<!-- 팝업 - 얼랏 -->
+<template id="alert_popup">
+    <div class="focus_only" focus-group>
+        <input type="text" class="focus_only" data-tts-popup>
+    </div>
+    <button type="button" class="popup_close" onclick="closePopup(event);" data-lang-code="닫기">닫기</button>
+    <div class="popup_title">알림</div>
+    <div class="popup_content center">
+        <div id="popup_alert"></div>
+    </div>
+    <div class="form_btns type2" focus-group>
+        <button type="button" class="contain" onclick="closePopup(event);" data-tts="확인">확인</button>
+    </div>
+</template>
+
+<!-- 팝업 - 에러 -->
+<template id="error_popup">
+    <div class="focus_only" focus-group>
+        <input type="text" class="focus_only" data-tts-popup>
+    </div>
+    <button type="button" class="popup_close" onclick="closePopup(event);" data-lang-code="닫기">닫기</button>
+    <div class="popup_title">프린트 에러</div>
+    <div class="popup_content center">
+        <div id="popup_alert">기기에 문제가 있어<br/> 이용이 불가합니다.<br/>카운터에 문의해 주세요.</div>
+    </div>
+</template>
+
+<!-- 팝업 - 시설안내 -->
+<template id="wayfind_move_type">
+    <div class="focus_only" focus-group>
+        <input type="text" class="focus_only" data-tts-popup>
+    </div>
+    <button type="button" class="popup_close" onclick="closePopup(event);" data-lang-code="닫기">닫기</button>
+    <div class="popup_content center">
+        <div class="popup_title">원하시는 이동 수단을 선택해 주세요</div>
+        <div class="tab_btn move_type">
+            <div class="item">
+                <button type="button" onclick="selectMoveType('P01');">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="121" height="152" fill="none"><path fill="#fff" d="M.39.488v150.755H121V.488H.39Zm56.535 143.213H7.932V30.633h48.993V143.7Zm56.534 0H64.466V30.633h48.993V143.7Zm0-120.599H7.921V8.03h105.527v15.072h.011Z"/><path fill="#fff" d="m70.414 75.86 14.775 30.155h7.54l14.775-30.155h-6.977l-8.255 22.124V57.023h-6.626v40.961L77.392 75.86h-6.978ZM50.97 87.167 36.194 57.022h-7.542L13.88 87.168h6.978l8.254-22.114v40.962h6.626V65.053l8.255 22.114h6.977Z"/></svg>
+                    <span>엘레베이터</span>
+                </button>
+            </div>
+            <div class="item">
+                <button type="button" onclick="selectMoveType('P02');">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="142" height="143" fill="none"><path fill="#fff" d="M136.011 34.56 34.371 136.2c-7.83 7.83-20.52 7.83-28.35 0-7.83-7.83-7.83-20.52 0-28.35L107.66 6.21c7.83-7.83 20.52-7.83 28.35 0 7.83 7.83 7.83 20.52 0 28.35ZM39.122 21.61c5.87 0 10.63-4.76 10.63-10.63 0-5.87-4.76-10.63-10.63-10.63-5.87 0-10.63 4.76-10.63 10.63 0 5.87 4.76 10.63 10.63 10.63ZM53.293 49.95v-21.2h-28.34V78.3l28.34-28.35ZM93.65 102.84l41.4-14.61 6.83 6.83-14.52 41.29-6.33-6.32 12.66-28.02-40.06 40.07-5.61-5.6 40.07-40.07-28.11 12.76-6.33-6.33Z"/></svg>
+                    <span>에스컬레이터</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</template>
+
+
+<!-- 팝업 - 시설안내 -->
+<template id="facility_popup">
+    <div class="focus_only" focus-group>
+        <input type="text" class="focus_only" data-tts-popup>
+    </div>
+    <button type="button" class="popup_close" onclick="closePopup(event);" data-lang-code="닫기">닫기</button>
+    <div class="popup_content">
+        <div class="popup_facility">
+            <div class="icon"><img src="" onerror="this.src='./images/connect_hyundai_w.jpg';"></div>
+            <div class="name">서비스 라운지</div>
+            <div class="popup_location">
+                <div class="tit" data-lang-code="위치">위치</div>
+                <div class="cnt">GF, 1F, 2F, 3F</div>
+            </div>
+            <div class="location_text" data-lang-code="가까운시설안내">현재위치에서 가장 가까운 <br/>시설을 안내해드립니다.</div>
+        </div>
+        <div class="popup_btns">
+            <button type="button" class="wayfind_location" data-lang-code="위치안내">위치안내</button>
+            <button type="button" class="wayfind_path" data-lang-code="길안내">길안내</button>
+        </div>
+    </div>
+</template>
+
+
+<!-- 팝업 - 매장상세 -->
+<template id="store_popup">
+    <div class="focus_only" focus-group>
+        <input type="text" class="focus_only" data-tts-popup>
+    </div>
+    <button type="button" class="popup_close" onclick="closePopup(event);" data-lang-code="닫기">닫기</button>
+    <div class="popup_content">
+        <div class="popup_title">닥스/엔클라인/아이엘드/스카프</div>
+        <div class="popup_store">
+            <div class="thum"><img src="" onerror="this.src='./images/connect_hyundai_w.jpg';"></div>
+            <div class="info_table">
+                <div class="row"> 
+                    <div class="tit" data-lang-code="위치">위치</div>
+                    <div class="cnt" id="store_floor">GF</div>
+                </div>
+                <div class="row">
+                    <div class="tit" data-lang-code="전화번호">전화번호</div>
+                    <div class="cnt" id="store_tell">02.1512.1212</div>
+                </div>
+                <div class="row">
+                    <div class="tit" data-lang-code="영업시간">영업시간</div>
+                    <div class="cnt" id="store_time">10:00 ~ 22:00</div>
+                </div>
+            </div>
+        </div>
+        <div class="popup_btns">
+            <button type="button" class="wayfind_location" data-lang-code="위치안내">위치안내</button>
+            <button type="button" class="wayfind_path" data-lang-code="길안내">길안내</button>
+        </div>
+    </div>
+</template>
+
+
+<!-- 팝업 - 주차 검색 결과 -->
+<template id="parking_result">
+    <div class="focus_only" focus-group>
+        <input type="text" class="focus_only" data-tts-popup>
+    </div>
+    <button type="button" class="popup_close" onclick="closePopup(event);" data-lang-code="닫기">닫기</button>
+    <div class="popup_content center">
+        <div class="popup_title" data-lang-code="주차검색결과">주차 검색 결과</div>
+        <div id="parking_slide" class="splide">
+            <div class="splide__track">
+                <ul id="parking_items" class="splide__list">
+                   <!-- <li class="splide__slide">
+                        <div class="parking_item">
+                            <div class="thum" style="background-image: url('/images/dummy/car1.jpg');"></div>
+                            <div class="content">
+                                <div class="item">
+                                    <div class="tit">차량번호</div>
+                                    <div class="cnt"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">주차층층</div>
+                                    <div class="cnt"></div>
+                                </div>
+                                <div class="item">
+                                    <div class="tit">구역</div>
+                                    <div class="cnt"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev" data-lang-code="이전">
+                    이전
+                </button>
+                <div id="slide-counter" class="slide-counter"></div>
+                <button class="splide__arrow splide__arrow--next" data-lang-code="다음">
+                    다음
+                </button>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- 팝업 - 통합검색 -->
+<div class="popup_layer" id="search_popup">
+    <div class="popup_box">
+        <button type="button" class="popup_close" onclick="searchCancel();" data-lang-code="닫기">닫기</button>
+        <div class="popup_content">
+            <div class="focus_only" focus-group>
+                <input type="text" class="focus_only" data-tts-popup>
+            </div>
+            <div class="popup_title" data-lang-code="통합검색">통합검색</div>
+            @@include('../partials/keypads.html')
+            <div class="popup_btns">
+                <button type="button" onclick="searchCancel();" data-lang-code="취소">취소</button>
+                <button type="button" onclick="searchSubmit();" data-lang-code="확인">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 팝업 - 남은시간 -->
+<div class="popup_layer" id="time_popup">
+    <div class="popup_box">
+        <button type="button" class="popup_close" onclick="closePopup(event);" data-lang-code="닫기">닫기</button>
+        <div class="popup_content">
+            <div class="focus_only" focus-group>
+                <input type="text" class="focus_only" data-tts-popup>
+            </div>
+            <div class="popup_title">남은시간</div>
+            <div class="time_count">
+                <strong>30</strong><span>초</span>
+            </div>
+            <div class="time_text">시간을 연장하시려면 화면을 터치해 주세요.</div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- 팝업 - 주차안내 이용방법 -->
+<div class="popup_layer" id="parking_use_popup">
+    <div class="popup_box">
+        <button type="button" class="popup_close" onclick="closePopup();" data-lang-code="닫기">닫기</button>
+        <div class="popup_content">
+            <div class="focus_only" focus-group>
+                <input type="text" class="focus_only" data-tts-popup>
+            </div>
+            <div class="popup_title" data-lang-code="이용방법">이용방법</div>
+            @@include('../partials/parking_use.html')
+        </div>
+    </div>
+</div>
