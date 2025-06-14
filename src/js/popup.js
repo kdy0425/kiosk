@@ -10,6 +10,7 @@ const popupBox = popupWrap.querySelector('#popup_box');
  *
 */
 const openPopup = async (targetPopup) => {
+    ControlState.lastFocusBeforePopup = document.activeElement;
     ControlState.currentPopupInfo = targetPopup;
     popupBox.innerHTML = '';
     const tpl = document.getElementById(targetPopup);
@@ -44,6 +45,7 @@ const openPopup = async (targetPopup) => {
  * 단순 팝업 오픈
  */
 function showPopup(targetPopup){
+    ControlState.lastFocusBeforePopup = document.activeElement;
     ControlState.currentPopupInfo = targetPopup;
     initHtmlLanguage('popup');// 언어팩에 있는 데이터로 변경
 
@@ -62,7 +64,7 @@ const closePopup = (event, targetPopup) => {
         const popupAll = document.querySelectorAll('.popup_layer');
         popupAll.forEach(popup => popup.classList.remove('show'));
         document.dispatchEvent(new Event('popup:closed'));
-        return
+        return;
     }
     if(targetPopup){
         document.querySelector(`#${targetPopup}`).classList.remove('show');

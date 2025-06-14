@@ -40,12 +40,13 @@
     const groups = getGroups(ctx);
     if(!groups.length) return;
     const active = document.activeElement;
-    let gi = groups.findIndex(g => g.contains(active));
+    const activeGroup = active.closest('[focus-group]');
+    let gi = groups.indexOf(activeGroup);
     if(gi === -1){
       setInitialFocus();
       return;
     }
-    const group = groups[gi];
+    const group = activeGroup;
     const items = getFocusable(group);
     if(!items.length) return;
     if((dir === 1) && (active.hasAttribute('page-tts') || active.hasAttribute('popup-tts'))){
@@ -66,7 +67,8 @@
     const groups = getGroups(ctx);
     if(!groups.length) return;
     const active = document.activeElement;
-    let gi = groups.findIndex(g => g.contains(active));
+    const activeGroup = active.closest('[focus-group]');
+    let gi = groups.indexOf(activeGroup);
     if(gi === -1){
       setInitialFocus();
       return;
@@ -74,6 +76,16 @@
     gi = (gi + dir + groups.length) % groups.length;
     const items = getFocusable(groups[gi]);
     if(items.length) items[0].focus();
+  }
+
+  function restorePopupFocus(){
+    const el = ControlState.lastFocusBeforePopup;
+    ControlState.lastFocusBeforePopup = null;
+    if(el && document.contains(el) && isVisible(el)){
+      el.focus();
+    }else{
+      setInitialFocus();
+    }
   }
 
   document.addEventListener('keydown', function(e){
@@ -91,7 +103,7 @@
 
   document.addEventListener('page:changed', setInitialFocus);
   document.addEventListener('popup:opened', setInitialFocus);
-  document.addEventListener('popup:closed', setInitialFocus);
+  document.addEventListener('popup:closed', restorePopupFocus);
 
   window.addEventListener('DOMContentLoaded', setInitialFocus);
 })();

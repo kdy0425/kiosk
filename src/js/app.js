@@ -21,6 +21,7 @@ const ControlState = {
   intervalId: null,
   currentPageInfo: 'screen_saver',
   currentPopupInfo: null,
+  lastFocusBeforePopup: null,
   currentStore: null,
   currentFacility: null,
   reset() {
