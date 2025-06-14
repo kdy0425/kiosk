@@ -2,7 +2,10 @@
   function isVisible(el){
     if(!el) return false;
     if(el.classList.contains('focus_only')) return false;
-    return !!(el.offsetParent !== null && window.getComputedStyle(el).display !== 'none');
+    const style = window.getComputedStyle(el);
+    if(style.display === 'none' || style.visibility === 'hidden') return false;
+    if(el.offsetParent === null && style.position !== 'fixed') return false;
+    return true;
   }
 
   function getFocusable(el){
@@ -107,15 +110,15 @@
   document.addEventListener('keydown', function(e){
     switch(e.key){
       case 'ArrowLeft':
-        moveHorizontal(-1); e.preventDefault(); break;
+        moveHorizontal(-1); e.preventDefault(); e.stopPropagation(); break;
       case 'ArrowRight':
-        moveHorizontal(1); e.preventDefault(); break;
+        moveHorizontal(1); e.preventDefault(); e.stopPropagation(); break;
       case 'ArrowUp':
-        moveVertical(-1); e.preventDefault(); break;
+        moveVertical(-1); e.preventDefault(); e.stopPropagation(); break;
       case 'ArrowDown':
-        moveVertical(1); e.preventDefault(); break;
+        moveVertical(1); e.preventDefault(); e.stopPropagation(); break;
     }
-  });
+  }, true);
 
   document.addEventListener('page:changed', setInitialFocus);
   document.addEventListener('popup:opened', setInitialFocus);
