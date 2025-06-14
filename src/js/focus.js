@@ -11,23 +11,34 @@
 
   function getContext(){
     const popup = document.querySelector('.popup_layer.show');
-    if(popup) return popup;
-    return document.querySelector(`#${ControlState.currentPageInfo}`);
+    if(popup) return [popup];
+    const contexts = [];
+    const page = document.querySelector(`#${ControlState.currentPageInfo}`);
+    if(page) contexts.push(page);
+    const floating = document.querySelector('.floating');
+    if(floating) contexts.push(floating);
+    return contexts;
   }
 
-  function getGroups(ctx){
-    return Array.from(ctx.querySelectorAll('[focus-group]')).filter(isVisible);
+  function getGroups(ctxs){
+    return ctxs.flatMap(ctx =>
+      Array.from(ctx.querySelectorAll('[focus-group]'))
+    ).filter(isVisible);
   }
 
   function setInitialFocus(){
-    const ctx = getContext();
-    if(!ctx) return;
-    let target = ctx.querySelector('[page-tts], [popup-tts]');
+    const ctxs = getContext();
+    if(!ctxs.length) return;
+    let target = null;
+    for(const c of ctxs){
+      target = c.querySelector('[page-tts], [popup-tts]');
+      if(target) break;
+    }
     if(target){
       target.focus();
       return;
     }
-    const groups = getGroups(ctx);
+    const groups = getGroups(ctxs);
     if(groups.length){
       const items = getFocusable(groups[0]);
       if(items.length) items[0].focus();
@@ -35,9 +46,9 @@
   }
 
   function moveHorizontal(dir){
-    const ctx = getContext();
-    if(!ctx) return;
-    const groups = getGroups(ctx);
+    const ctxs = getContext();
+    if(!ctxs.length) return;
+    const groups = getGroups(ctxs);
     if(!groups.length) return;
     const active = document.activeElement;
     const activeGroup = active.closest('[focus-group]');
@@ -62,9 +73,9 @@
   }
 
   function moveVertical(dir){
-    const ctx = getContext();
-    if(!ctx) return;
-    const groups = getGroups(ctx);
+    const ctxs = getContext();
+    if(!ctxs.length) return;
+    const groups = getGroups(ctxs);
     if(!groups.length) return;
     const active = document.activeElement;
     const activeGroup = active.closest('[focus-group]');
