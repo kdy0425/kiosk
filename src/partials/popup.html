@@ -9,7 +9,9 @@
     <div class="focus_only" focus-group>
         <input type="text" class="focus_only" popup-tts>
     </div>
-    <button type="button" class="popup_close" onclick="closePopup(event);" data-lang-code="닫기">닫기</button>
+    <div focus-group>
+        <button type="button" class="popup_close" onclick="closePopup(event);" data-lang-code="닫기">닫기</button>
+    </div>
     <div class="popup_title">알림</div>
     <div class="popup_content center">
         <div id="popup_alert"></div>
@@ -19,27 +21,18 @@
     </div>
 </template>
 
-<!-- 팝업 - 에러 -->
-<template id="error_popup">
-    <div class="focus_only" focus-group>
-        <input type="text" class="focus_only" popup-tts>
-    </div>
-    <button type="button" class="popup_close" onclick="closePopup(event);" data-lang-code="닫기">닫기</button>
-    <div class="popup_title">프린트 에러</div>
-    <div class="popup_content center">
-        <div id="popup_alert">기기에 문제가 있어<br/> 이용이 불가합니다.<br/>카운터에 문의해 주세요.</div>
-    </div>
-</template>
 
 <!-- 팝업 - 시설안내 -->
 <template id="wayfind_move_type">
     <div class="focus_only" focus-group>
         <input type="text" class="focus_only" popup-tts>
     </div>
-    <button type="button" class="popup_close" onclick="closePopup(event);" data-lang-code="닫기">닫기</button>
+    <div focus-group>
+        <button type="button" class="popup_close" onclick="closePopup(event);" data-lang-code="닫기">닫기</button>
+    </div>
     <div class="popup_content center">
         <div class="popup_title">원하시는 이동 수단을 선택해 주세요</div>
-        <div class="tab_btn move_type">
+        <div class="tab_btn move_type" focus-group>
             <div class="item">
                 <button type="button" onclick="selectMoveType('P01');">
                     <svg xmlns="http://www.w3.org/2000/svg" width="121" height="152" fill="none"><path fill="#fff" d="M.39.488v150.755H121V.488H.39Zm56.535 143.213H7.932V30.633h48.993V143.7Zm56.534 0H64.466V30.633h48.993V143.7Zm0-120.599H7.921V8.03h105.527v15.072h.011Z"/><path fill="#fff" d="m70.414 75.86 14.775 30.155h7.54l14.775-30.155h-6.977l-8.255 22.124V57.023h-6.626v40.961L77.392 75.86h-6.978ZM50.97 87.167 36.194 57.022h-7.542L13.88 87.168h6.978l8.254-22.114v40.962h6.626V65.053l8.255 22.114h6.977Z"/></svg>
@@ -62,7 +55,9 @@
     <div class="focus_only" focus-group>
         <input type="text" class="focus_only" popup-tts>
     </div>
-    <button type="button" class="popup_close" onclick="closePopup(event);" data-lang-code="닫기">닫기</button>
+    <div focus-group>
+        <button type="button" class="popup_close" onclick="closePopup(event);" data-lang-code="닫기">닫기</button>
+    </div>
     <div class="popup_content">
         <div class="popup_facility">
             <div class="icon"><img src="" onerror="this.src='./images/connect_hyundai_w.jpg';"></div>
@@ -73,7 +68,7 @@
             </div>
             <div class="location_text" data-lang-code="가까운시설안내">현재위치에서 가장 가까운 <br/>시설을 안내해드립니다.</div>
         </div>
-        <div class="popup_btns">
+        <div class="popup_btns" focus-group>
             <button type="button" class="wayfind_location" data-lang-code="위치안내">위치안내</button>
             <button type="button" class="wayfind_path" data-lang-code="길안내">길안내</button>
         </div>
@@ -86,7 +81,9 @@
     <div class="focus_only" focus-group>
         <input type="text" class="focus_only" popup-tts>
     </div>
-    <button type="button" class="popup_close" onclick="closePopup(event);" data-lang-code="닫기">닫기</button>
+    <div focus-group>
+        <button type="button" class="popup_close" onclick="closePopup(event);" data-lang-code="닫기">닫기</button>
+    </div>
     <div class="popup_content">
         <div class="popup_title">닥스/엔클라인/아이엘드/스카프</div>
         <div class="popup_store">
@@ -106,7 +103,7 @@
                 </div>
             </div>
         </div>
-        <div class="popup_btns">
+        <div class="popup_btns" focus-group>
             <button type="button" class="wayfind_location" data-lang-code="위치안내">위치안내</button>
             <button type="button" class="wayfind_path" data-lang-code="길안내">길안내</button>
         </div>
@@ -119,7 +116,9 @@
     <div class="focus_only" focus-group>
         <input type="text" class="focus_only" popup-tts>
     </div>
-    <button type="button" class="popup_close" onclick="closePopup(event);" data-lang-code="닫기">닫기</button>
+    <div focus-group>
+        <button type="button" class="popup_close" onclick="closePopup(event);" data-lang-code="닫기">닫기</button>
+    </div>
     <div class="popup_content center">
         <div class="popup_title" data-lang-code="주차검색결과">주차 검색 결과</div>
         <div id="parking_slide" class="splide">
@@ -146,7 +145,7 @@
                     </li> -->
                 </ul>
             </div>
-            <div class="splide__arrows">
+            <div class="splide__arrows" focus-group>
                 <button class="splide__arrow splide__arrow--prev" data-lang-code="이전">
                     이전
                 </button>
@@ -162,14 +161,16 @@
 <!-- 팝업 - 통합검색 -->
 <div class="popup_layer" id="search_popup">
     <div class="popup_box">
-        <button type="button" class="popup_close" onclick="searchCancel();" data-lang-code="닫기">닫기</button>
+        <div focus-group>
+            <button type="button" class="popup_close" onclick="searchCancel();" data-lang-code="닫기">닫기</button>
+        </div>
         <div class="popup_content">
             <div class="focus_only" focus-group>
                 <input type="text" class="focus_only" popup-tts>
             </div>
             <div class="popup_title" data-lang-code="통합검색">통합검색</div>
             @@include('../partials/keypads.html')
-            <div class="popup_btns">
+            <div class="popup_btns" focus-group>
                 <button type="button" onclick="searchCancel();" data-lang-code="취소">취소</button>
                 <button type="button" onclick="searchSubmit();" data-lang-code="확인">확인</button>
             </div>
@@ -181,7 +182,9 @@
 <!-- 팝업 - 남은시간 -->
 <div class="popup_layer" id="time_popup">
     <div class="popup_box">
-        <button type="button" class="popup_close" onclick="closePopup(event);" data-lang-code="닫기">닫기</button>
+        <div focus-group>
+            <button type="button" class="popup_close" onclick="closePopup(event);" data-lang-code="닫기">닫기</button>
+        </div>
         <div class="popup_content">
             <div class="focus_only" focus-group>
                 <input type="text" class="focus_only" popup-tts>
