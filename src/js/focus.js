@@ -42,12 +42,13 @@
     const groups = getGroups(ctx);
     if(!groups.length) return;
     const active = document.activeElement;
-    let gi = groups.findIndex(g => g.contains(active));
+    const activeGroup = active.closest('[focus-group]');
+    let gi = groups.indexOf(activeGroup);
     if(gi === -1){
       setInitialFocus();
       return;
     }
-    const group = groups[gi];
+    const group = activeGroup;
     const items = getFocusable(group);
     if(!items.length) return;
     if((dir === 1) && (active.hasAttribute('page-tts') || active.hasAttribute('popup-tts') || active.hasAttribute('group-tts'))){
@@ -68,7 +69,8 @@
     const groups = getGroups(ctx);
     if(!groups.length) return;
     const active = document.activeElement;
-    let gi = groups.findIndex(g => g.contains(active));
+    const activeGroup = active.closest('[focus-group]');
+    let gi = groups.indexOf(activeGroup);
     if(gi === -1){
       setInitialFocus();
       return;
