@@ -3,8 +3,7 @@ const hiddenInput = parkingSearch.querySelector('input[type="hidden"]');
 const digitSpans = parkingSearch.querySelectorAll('.search_input span');
 const keypadButtons = parkingSearch.querySelectorAll('.parking_keypad button');
 const maxDigits = digitSpans.length;
-// 주차 API는 CORS 헤더가 없어 프록시를 거쳐 요청한다
-const API_PROXY = 'https://corsproxy.io/?';
+//const API_PROXY = 'https://corsproxy.io/?';
 
 function updateDisplay() {
     const value = hiddenInput.value;
@@ -25,7 +24,8 @@ async function handleSearch(value) {
     url.searchParams.set('carNo4Digit', value);
 
     try {
-      const res = await fetch(`${API_PROXY}${encodeURIComponent(url.toString())}`);
+      const res = await fetch(`${url.toString()}`);
+      //const res = await fetch(`${API_PROXY}${encodeURIComponent(url.toString())}`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const json = await res.json();
 
