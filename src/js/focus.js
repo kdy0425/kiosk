@@ -1,6 +1,7 @@
 (function(){
   function isVisible(el){
     if(!el) return false;
+    if(el.classList.contains('focus_only')) return false;
     return !!(el.offsetParent !== null && window.getComputedStyle(el).display !== 'none');
   }
 
@@ -12,6 +13,8 @@
   function getContext(){
     const popup = document.querySelector('.popup_layer.show');
     if(popup) return [popup];
+    const activeSelect = document.querySelector('.floating .select_items.active');
+    if(activeSelect) return [activeSelect];
     const contexts = [];
     const page = document.querySelector(`#${ControlState.currentPageInfo}`);
     if(page) contexts.push(page);
@@ -21,9 +24,11 @@
   }
 
   function getGroups(ctxs){
-    return ctxs.flatMap(ctx =>
-      Array.from(ctx.querySelectorAll('[focus-group]'))
-    ).filter(isVisible);
+    const all = ctxs.flatMap(ctx => Array.from(ctx.querySelectorAll('[focus-group]')));
+    return all.filter(g => {
+      if(!isVisible(g)) return false;
+      return !all.some(other => other !== g && other.contains(g));
+    });
   }
 
   function setInitialFocus(){
