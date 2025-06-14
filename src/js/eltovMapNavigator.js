@@ -343,12 +343,13 @@ class MapNavigator {
         if (this.currentFloor == floor) this.initMapScale();
         this.currentFloor = floor;
         changeFloorInfo(floor);
-        const slides = slideInstances['map_slide'].Components.Slides.get(); // 슬라이드 배열
-
+        const splide = slideInstances['map_slide'];
+        if (!splide) return;
+        const slides = splide.Components.Slides.get(); // 슬라이드 배열
         for (let i = 0; i < slides.length; i++) {
             const slide = slides[i].slide; // 실제 HTML element
             if (slide.dataset.floor === floor) {
-                slideInstances['map_slide'].go(i);
+                splide.go(i);
                 break;
             }
         }

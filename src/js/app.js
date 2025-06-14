@@ -21,6 +21,7 @@ const ControlState = {
   intervalId: null,
   currentPageInfo: 'screen_saver',
   currentPopupInfo: null,
+  lastFocusBeforePopup: null,
   currentStore: null,
   currentFacility: null,
   reset() {
@@ -154,6 +155,11 @@ const movePage = (targetPage, pageInfo = null) => {
   document.documentElement.classList.add(targetPage);
   ControlState.currentPageInfo = targetPage;
   initHtmlLanguage('page');// 언어팩에 있는 데이터로 변경
+  setTimeout(() => {
+    const el = document.querySelector(`#${targetPage} [page-tts]`);
+    if(el) el.focus();
+    document.dispatchEvent(new Event('page:changed'));
+  });
 
   //ttsPageIntro('page');
   //페이지 이동시 해당 페이지 세팅 함수 실행
