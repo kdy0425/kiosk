@@ -37,8 +37,10 @@ function controlAction(button, type, option){
     } else if(type === 'pannel'){
         if(selectItemsStatus){
             selectItemsNext.classList.remove('active');
+            releaseFocus();
         }else{
             selectItemsNext.classList.add('active');
+            trapFocus(selectItemsNext);
             selectItemsNext.querySelector('.active').focus();
         }
     }
@@ -50,6 +52,7 @@ document.addEventListener('click', (event) => {
     if (!wrapper) {
       document.querySelectorAll('.floating .select_items')
         .forEach(item => item.classList.remove('active'));
+      releaseFocus();
     }
 });
   
@@ -66,6 +69,7 @@ function setControl(button, option, val, renderText){
     const beforeVal = ControlState[option]; //변경 전 값값
     selectItemsAll.forEach(item => item.classList.remove('active'))
     buttonAll.forEach(item => item.classList.remove('active'));
+    releaseFocus();
     
     ControlState[option] = val;
     button.classList.add('active');
