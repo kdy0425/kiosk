@@ -8,6 +8,7 @@
     if(el.classList.contains('focus_only')) return false;
     const style = window.getComputedStyle(el);
     if(style.display === 'none' || style.visibility === 'hidden') return false;
+    if(el.hasAttribute('tabindex') && el.getAttribute('tabindex') === '-1') return false;
     if(el.offsetParent === null && style.position !== 'fixed') return false;
     return true;
   }
@@ -17,6 +18,7 @@
     const style = window.getComputedStyle(el);
     if(style.display === 'none' || style.visibility === 'hidden') return false;
     if(el.offsetParent === null && style.position !== 'fixed') return false;
+    if(el.hasAttribute('tabindex') && el.getAttribute('tabindex') === '-1') return false;
     return true;
   }
 
@@ -81,18 +83,19 @@
     const items = getFocusable(group);
     if(!items.length) return;
     if((dir === 1) && (active.hasAttribute('page-tts') || active.hasAttribute('popup-tts'))){
-      for(let offset=1; offset<=groups.length; offset++){
-        const ni = getFocusable(groups[(gi + offset) % groups.length]);
+      const nextGroup = groups[gi + 1];
+      if(nextGroup){
+        const ni = getFocusable(nextGroup);
         if(ni.length){
           ni[0].focus();
-          return;
         }
       }
       return;
     }
     let idx = items.indexOf(active);
     if(idx === -1) idx = 0;
-    idx = (idx + dir + items.length) % items.length;
+    idx += dir;
+    if(idx < 0 || idx >= items.length) return;
     items[idx].focus();
   }
 
@@ -108,13 +111,11 @@
       setInitialFocus();
       return;
     }
-    for(let offset=1; offset<=groups.length; offset++){
-      const next = groups[(gi + (dir*offset) + groups.length) % groups.length];
-      const items = getFocusable(next);
-      if(items.length){
-        items[0].focus();
-        return;
-      }
+    const next = groups[gi + dir];
+    if(!next) return;
+    const items = getFocusable(next);
+    if(items.length){
+      items[0].focus();
     }
   }
 
