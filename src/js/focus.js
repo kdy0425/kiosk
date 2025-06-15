@@ -8,6 +8,7 @@
     if(el.classList.contains('focus_only')) return false;
     const style = window.getComputedStyle(el);
     if(style.display === 'none' || style.visibility === 'hidden') return false;
+    if(style.opacity === '0' || style.pointerEvents === 'none') return false;
     if(el.hasAttribute('tabindex') && el.getAttribute('tabindex') === '-1') return false;
     if(el.offsetParent === null && style.position !== 'fixed') return false;
     return true;
@@ -17,6 +18,7 @@
     if(!el) return false;
     const style = window.getComputedStyle(el);
     if(style.display === 'none' || style.visibility === 'hidden') return false;
+    if(style.opacity === '0' || style.pointerEvents === 'none') return false;
     if(el.offsetParent === null && style.position !== 'fixed') return false;
     if(el.hasAttribute('tabindex') && el.getAttribute('tabindex') === '-1') return false;
     return true;
