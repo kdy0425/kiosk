@@ -10,6 +10,7 @@ const popupBox = popupWrap.querySelector('#popup_box');
  *
 */
 const openPopup = async (targetPopup) => {
+    ControlState.lastFocusBeforePopup = document.activeElement;
     ControlState.currentPopupInfo = targetPopup;
     popupBox.innerHTML = '';
     const tpl = document.getElementById(targetPopup);
@@ -29,7 +30,11 @@ const openPopup = async (targetPopup) => {
 
     popupWrap.classList.remove('lang_translating');
     popupWrap.classList.add('show');
-    //document.querySelector(`#layer_popup [data-tts-popup]`).focus();
+    setTimeout(() => {
+        const el = popupWrap.querySelector('[popup-tts]');
+        if(el) el.focus();
+    });
+    document.dispatchEvent(new Event('popup:opened'));
     
 };
 
@@ -40,10 +45,17 @@ const openPopup = async (targetPopup) => {
  * 단순 팝업 오픈
  */
 function showPopup(targetPopup){
+    ControlState.lastFocusBeforePopup = document.activeElement;
     ControlState.currentPopupInfo = targetPopup;
     initHtmlLanguage('popup');// 언어팩에 있는 데이터로 변경
 
-    document.querySelector(`#${targetPopup}`).classList.add('show');
+    const layer = document.querySelector(`#${targetPopup}`);
+    layer.classList.add('show');
+    setTimeout(() => {
+        const el = layer.querySelector('[popup-tts]');
+        if(el) el.focus();
+    });
+    document.dispatchEvent(new Event('popup:opened'));
 };
 
 const closePopup = (event, targetPopup) => {
@@ -51,7 +63,8 @@ const closePopup = (event, targetPopup) => {
     if (!event && !targetPopup) {
         const popupAll = document.querySelectorAll('.popup_layer');
         popupAll.forEach(popup => popup.classList.remove('show'));
-        return
+        document.dispatchEvent(new Event('popup:closed'));
+        return;
     }
     if(targetPopup){
         document.querySelector(`#${targetPopup}`).classList.remove('show');
@@ -59,6 +72,7 @@ const closePopup = (event, targetPopup) => {
         const closeLayer = event.target.closest('.popup_layer');
         closeLayer.classList.remove('show');
     }
+    document.dispatchEvent(new Event('popup:closed'));
 }
 
 
