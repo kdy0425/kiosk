@@ -63,7 +63,7 @@ function page_map(pageInfo) {
         if (btn.classList.contains('active')) btn.classList.remove('active');
     });
     const splide = slideInstances['map_slide'];
-    splide.options = {speed: 400};
+    if (splide) splide.options = {speed: 400};
     document.querySelector('#page_map').classList.toggle('result',false);
     /*
     targetType : store, pub
@@ -192,7 +192,7 @@ function findTargetPath(pubCode = '') {
 
         // 길찾기 완료 화면
         const splide = slideInstances['map_slide'];
-        splide.options = {speed: 0, arrows:false};
+        if (splide) splide.options = {speed: 0, arrows:false};
         document.querySelector('#page_map').classList.toggle('result');
 
         ttsInstructions = mapNavigator.generateTTSRouteInstructions(pathResult.data);
@@ -246,7 +246,7 @@ function wayfindEnd() {
     mapNavigator.initMapItems();
     mapNavigator.showCurrentLocation();
     const splide = slideInstances['map_slide'];
-    splide.options = {speed: 400};
+    if (splide) splide.options = {speed: 400};
 }
 
 function changeFloorInfo(floor){
