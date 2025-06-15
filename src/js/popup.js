@@ -30,6 +30,7 @@ const openPopup = async (targetPopup) => {
 
     popupWrap.classList.remove('lang_translating');
     popupWrap.classList.add('show');
+    trapFocus(popupWrap);
     setTimeout(() => {
         const el = popupWrap.querySelector('[popup-tts]');
         if(el) el.focus();
@@ -51,6 +52,7 @@ function showPopup(targetPopup){
 
     const layer = document.querySelector(`#${targetPopup}`);
     layer.classList.add('show');
+    trapFocus(layer);
     setTimeout(() => {
         const el = layer.querySelector('[popup-tts]');
         if(el) el.focus();
@@ -63,14 +65,17 @@ const closePopup = (event, targetPopup) => {
     if (!event && !targetPopup) {
         const popupAll = document.querySelectorAll('.popup_layer');
         popupAll.forEach(popup => popup.classList.remove('show'));
+        releaseFocus();
         document.dispatchEvent(new Event('popup:closed'));
         return;
     }
     if(targetPopup){
         document.querySelector(`#${targetPopup}`).classList.remove('show');
+        releaseFocus();
     }else if(event){
         const closeLayer = event.target.closest('.popup_layer');
         closeLayer.classList.remove('show');
+        releaseFocus();
     }
     document.dispatchEvent(new Event('popup:closed'));
 }
