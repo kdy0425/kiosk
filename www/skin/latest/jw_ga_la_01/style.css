@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* jworks by.      */
+/* http://www.jwcd.co.kr      */
+/* master@jwcd.co.kr      */
+ /*  갤러리스킨 ver 1.0 jw_ga_01 */
+
+.latest_jw_ga_bbs_01_box .latest_jw_ga_bbs_01_cop {display:inline; float:left;} /* li, 가로배열,높이,바깥여백 */
+.latest_jw_ga_bbs_01_box .latest_jw_ga_bbs_01_cop a {cursor:pointer;} /* a링크커서 */ 
+.latest_jw_ga_bbs_01_box .latest_jw_ga_bbs_01_cop .thumb {display:block; position:relative;   } /* 썸네일 */ 
+.latest_jw_ga_bbs_01_box .latest_jw_ga_bbs_01_cop img{z-index:10}
+.latest_jw_ga_bbs_01_box li a{z-index:10}
+.latest_jw_ga_bbs_01_box li{position:relative}
+
+
+.latest_jw_ga_bbs_01_box .latest_jw_ga_bbs_01_cop .cop_txt {display:block;background-color:#eaeaea;position:relative;z-index:9999999;  padding:9px 10px 11px;  border-top:1px solid #ebebeb;  font-size: 12px; line-height: 18px; letter-spacing: -1px; } /* 썸네일아래 텍스트box */ 
+
+.latest_jw_ga_bbs_01_box .latest_jw_ga_bbs_01_cop .cop_txt .txt_blck {display:block; overflow:hidden; white-space: nowrap; font-weight: bold; text-decoration: none; margin: 1px 0 0; } /* 상단굵은txt,행바꿈안되게 */
+.board_jw_ga_bbs_01_box .board_jw_ga_bbs_01_cop .cop_txt a, .board_jw_ga_bbs_01_box .board_jw_ga_bbs_01_cop .cop_txt a:visited {color:#3e3e3e } /* 상단굵은txt a링크 색 */
+.latest_jw_ga_bbs_01_box .latest_jw_ga_bbs_01_cop .cop_txt a:hover{color:#000; text-decoration: underline;} /* 상단굵은txt a링크 후버색 */ 
+
+
+.latest_jw_ga_bbs_01_box .latest_jw_ga_bbs_01_cop .cop_txt .txt_gry {display:block; color:#888; white-space: nowrap; overflow: hidden; }
+ /*하단txt */
