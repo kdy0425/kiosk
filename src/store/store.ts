@@ -40,6 +40,7 @@ import {
   NblReducer,
   DdalReducer,
   StnTabsReducer,
+  StnPageStateReducer,
   /** 검색 리듀서 */
   SeacrhReducer,
 } from './slices'
@@ -92,6 +93,7 @@ export const store = configureStore({
     nblInfo: NblReducer,
     ddalInfo: DdalReducer,
     stnTabs: persistReducer(tabsPersistConfig, StnTabsReducer),
+    stnPageState: StnPageStateReducer,
     /** 검색 리듀서 */
     searchCategory: SeacrhReducer,
   },
@@ -137,6 +139,7 @@ const rootReducer = combineReducers({
   nblInfo: NblReducer,
   ddalInfo: DdalReducer,
   stnTabs: StnTabsReducer,
+  stnPageState: StnPageStateReducer,
   /** 검색 리듀서 */
   searchCategory: SeacrhReducer,
 })
