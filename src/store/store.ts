@@ -39,12 +39,17 @@ import {
   DvhalReducer,
   NblReducer,
   DdalReducer,
+  StnTabsReducer,
   /** 검색 리듀서 */
   SeacrhReducer,
 } from './slices'
 
 const persistConfig = {
   key: 'root',
+  storage,
+}
+const tabsPersistConfig = {
+  key: 'stn-tabs',
   storage,
 }
 
@@ -86,6 +91,7 @@ export const store = configureStore({
     dvhalInfo: DvhalReducer,
     nblInfo: NblReducer,
     ddalInfo: DdalReducer,
+    stnTabs: persistReducer(tabsPersistConfig, StnTabsReducer),
     /** 검색 리듀서 */
     searchCategory: SeacrhReducer,
   },
@@ -130,6 +136,7 @@ const rootReducer = combineReducers({
   dvhalInfo: DvhalReducer,
   nblInfo: NblReducer,
   ddalInfo: DdalReducer,
+  stnTabs: StnTabsReducer,
   /** 검색 리듀서 */
   searchCategory: SeacrhReducer,
 })

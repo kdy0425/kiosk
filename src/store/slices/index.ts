@@ -33,6 +33,7 @@ export { default as TaavelReducer } from '../page/TaavelSlice'
 export { default as DvhalReducer } from '../page/DvhalSlice'
 export { default as NblReducer } from '../page/NblSlice'
 export { default as DdalReducer } from '../page/DdalSlice'
+export { default as StnTabsReducer } from '../page/StnTabsSlice'
 
 /** 검색 리듀서 */
 export { default as SeacrhReducer } from '../search/SearchSlice'
