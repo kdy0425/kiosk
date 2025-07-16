@@ -18,8 +18,6 @@ import { Breadcrumb } from '@/utils/fsms/fsm/mui-imports'
 import { BsVhclModal, BsVhclRow } from './_components/BsVhclModal'
 
 import ModalContent from './_components/ModalContent'
-import HistorySlider from '@/components/history/HistorySlider'
-import { useTabHistory } from '@/utils/fsms/common/useTabHistory'
 
 
 // utils
@@ -130,7 +128,6 @@ type listSearchObj = {
 
 const DataList = () => {
   
-  const { tabs: historyTabs, remove: removeHistory, removeAll: clearHistory } = useTabHistory()
   const router = useRouter() // 화면이동을 위한객체
   const querys = useSearchParams() // 쿼리스트링을 가져옴
   const allParams: listParamObj = Object.fromEntries(querys.entries()) // 쿼리스트링 값을 오브젝트 형식으로 담음
@@ -401,11 +398,7 @@ const DataList = () => {
   return (
     <PageContainer title="준공영제차량관리" description="준공영제차량관리">
       
-      <HistorySlider
-        items={historyTabs}
-        onRemove={removeHistory}
-        onRemoveAll={clearHistory}
-      />
+
       {/* breadcrumb */}
       <Breadcrumb title="준공영제차량관리" items={BCrumb} />
       {/* end breadcrumb */}

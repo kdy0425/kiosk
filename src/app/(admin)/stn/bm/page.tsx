@@ -5,19 +5,12 @@ import { Breadcrumb } from '@/utils/fsms/fsm/mui-imports'
 import PageContainer from '@/components/container/PageContainer'
 
 import HeaderTab from '@/components/tables/CommHeaderTab'
-import HistorySlider from '@/components/history/HistorySlider'
-import { useTabHistory } from '@/utils/fsms/common/useTabHistory'
 import { getUserInfo } from '@/utils/fsms/utils'
 import { isArray } from 'lodash'
 import { SelectItem } from 'select'
 import TrPage from './_components/TrPage'
 import TxPage from './_components/TxPage'
 import BsPage from './_components/BsPage'
-
-interface TabItem {
-  title: string
-  url: string
-}
 
 
 const BCrumb = [
@@ -45,7 +38,6 @@ const DataList = () => {
   const [selectedTab, setSelectedTab] = useState('')
   const [tabs, setTabs] = useState<SelectItem[]>([{ value: '', label: '' }])
 
-  const { tabs: historyTabs, remove: removeHistory, removeAll: clearHistory } = useTabHistory()
 
   useEffect(() => {
     setTabs([
@@ -58,11 +50,6 @@ const DataList = () => {
 
   return (
     <PageContainer title="사업자관리" description="사업자관리">
-      <HistorySlider
-        items={historyTabs}
-        onRemove={removeHistory}
-        onRemoveAll={clearHistory}
-      />
       {/* breadcrumb */}
       <Breadcrumb title="사업자관리" items={BCrumb} />
       <HeaderTab tabs={tabs} onChange={setSelectedTab} />

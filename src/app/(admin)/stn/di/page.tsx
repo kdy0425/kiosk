@@ -9,8 +9,6 @@ import { BlankCard, Breadcrumb } from '@/utils/fsms/fsm/mui-imports'
 // utils
 import { sendHttpRequest } from '@/utils/fsms/common/apiUtils'
 import { toQueryString } from '@/utils/fsms/utils'
-import HistorySlider from '@/components/history/HistorySlider'
-import { useTabHistory } from '@/utils/fsms/common/useTabHistory'
 
 // components
 import CustomFormLabel from '@/components/forms/theme-elements/CustomFormLabel'
@@ -152,7 +150,6 @@ export interface Row {
 }
 
 const DataList = () => {
-  const { tabs: historyTabs, remove: removeHistory, removeAll: clearHistory } = useTabHistory()
 
   const querys = useSearchParams() // 쿼리스트링을 가져옴
   const allParams: listParamObj = Object.fromEntries(querys.entries()) // 쿼리스트링 값을 오브젝트 형식으로 담음
@@ -500,11 +497,7 @@ const DataList = () => {
 
   return (
     <PageContainer title="화물 운전면허정보" description="차량휴지관리 페이지">
-       <HistorySlider
-        items={historyTabs}
-        onRemove={removeHistory}
-        onRemoveAll={clearHistory}
-      />
+
       {/* breadcrumb */}
       <Breadcrumb title="화물 운전면허정보" items={BCrumb} />
       {/* end breadcrumb */}

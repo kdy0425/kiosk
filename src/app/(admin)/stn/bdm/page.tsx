@@ -38,8 +38,6 @@ import DayoffCarReserveModal from './_components/DayoffCarReserveModal'
 import DayoffMemoModal from './_components/DayoffMemoModal'
 import DayoffGroupDetailModal from './_components/DayoffGroupDetailModal'
 import ModalCalendar from './_components/ModalCalendar'
-import HistorySlider from '@/components/history/HistorySlider'
-import { useTabHistory } from '@/utils/fsms/common/useTabHistory'
 
 const BCrumb = [
   {
@@ -262,7 +260,6 @@ const DataList = () => {
     },
   ]
   
-  const { tabs: historyTabs, remove: removeHistory, removeAll: clearHistory } = useTabHistory()
 
   const router = useRouter() // 화면이동을 위한객체
   const querys = useSearchParams() // 쿼리스트링을 가져옴
@@ -878,12 +875,7 @@ const DataList = () => {
 
   return (
     <PageContainer title="차량별 부제관리" description="차량별 부제관리">
-      
-      <HistorySlider
-        items={historyTabs}
-        onRemove={removeHistory}
-        onRemoveAll={clearHistory}
-      />
+
       {/* breadcrumb */}
       <Breadcrumb title="차량별 부제관리" items={BCrumb} />
       {/* end breadcrumb */}

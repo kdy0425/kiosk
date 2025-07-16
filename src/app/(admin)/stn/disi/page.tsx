@@ -21,8 +21,6 @@ import {
   sendHttpRequest,
 } from '@/utils/fsms/common/apiUtils'
 import { toQueryString } from '@/utils/fsms/utils'
-import HistorySlider from '@/components/history/HistorySlider'
-import { useTabHistory } from '@/utils/fsms/common/useTabHistory'
 
 // components
 import CustomFormLabel from '@/components/forms/theme-elements/CustomFormLabel'
@@ -211,7 +209,6 @@ type pageable = {
 
 const DataList = () => {
   
-  const { tabs: historyTabs, remove: removeHistory, removeAll: clearHistory } = useTabHistory()
 
   const router = useRouter() // 화면이동을 위한객체
   const querys = useSearchParams() // 쿼리스트링을 가져옴
@@ -562,11 +559,7 @@ const DataList = () => {
       description="차량휴지관리 페이지"
     >
       
-    <HistorySlider
-      items={historyTabs}
-      onRemove={removeHistory}
-      onRemoveAll={clearHistory}
-    />
+
       {/* breadcrumb */}
       <Breadcrumb title="화물 의무보험가입정보" items={BCrumb} />
       {/* end breadcrumb */}

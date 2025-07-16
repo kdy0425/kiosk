@@ -24,8 +24,6 @@ import { HeadCell, Pageable2 } from 'table'
 import { LoadingBackdrop } from '@/app/components/loading/LoadingBackdrop'
 import { stnbnoHeadCells } from '@/utils/fsms/headCells'
 import { getFormatToday } from '@/utils/fsms/common/dateUtils'
-import HistorySlider from '@/components/history/HistorySlider'
-import { useTabHistory } from '@/utils/fsms/common/useTabHistory'
 
 const BCrumb = [
   {
@@ -74,7 +72,6 @@ const DataList = () => {
   const [excelFlag, setExcelFlag] = useState<boolean>(false) // 조회조건 변경 시 엑셀기능 동작여부
   const [loadingBackdrop, setLoadingBackdrop] = useState(false) // 로딩상태
   const [pageable, setPageable] = useState<Pageable2>({ pageNumber: 1, pageSize: 10, totalPages: 1 }); // 페이징객체
-  const { tabs: historyTabs, remove: removeHistory, removeAll: clearHistory } = useTabHistory()
 
   useEffect(() =>{
     setParams((prev) => ({ ...prev, aplcnBgngYmd : getFormatToday()}));
@@ -202,11 +199,7 @@ const DataList = () => {
 
   return (
     <PageContainer title="지역별 고시유가관리" description="지역별 고시유가관리">
-      <HistorySlider
-        items={historyTabs}
-        onRemove={removeHistory}
-        onRemoveAll={clearHistory}
-      />
+
       {/* breadcrumb */}
       <Breadcrumb title="지역별 고시유가관리" items={BCrumb} />
 

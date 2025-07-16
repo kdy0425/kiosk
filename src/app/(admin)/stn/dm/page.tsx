@@ -8,8 +8,6 @@ import { Breadcrumb } from '@/utils/fsms/fsm/mui-imports'
 
 // utils
 import { sendHttpRequest } from '@/utils/fsms/common/apiUtils'
-import HistorySlider from '@/components/history/HistorySlider'
-import { useTabHistory } from '@/utils/fsms/common/useTabHistory'
 
 // components
 import CustomFormLabel from '@/components/forms/theme-elements/CustomFormLabel'
@@ -104,7 +102,6 @@ type listSearchObj = {
 
 const BsPage = () => {
   
-  const { tabs: historyTabs, remove: removeHistory, removeAll: clearHistory } = useTabHistory()
 
   const [flag, setFlag] = useState<boolean | null>(null) // 데이터 갱신을 위한 플래그 설정
   const [rows, setRows] = useState<Row[]>([]) // 가져온 로우 데이터
@@ -376,11 +373,7 @@ const BsPage = () => {
   return (
     <PageContainer title="운전자관리" description="운전자관리">
       
-      <HistorySlider
-        items={historyTabs}
-        onRemove={removeHistory}
-        onRemoveAll={clearHistory}
-      />
+
       {/* breadcrumb */}
       <Breadcrumb title="운전자관리" items={BCrumb} />
       <Box>
