@@ -22,8 +22,6 @@ import { listParamObj } from '@/types/fsms/fsm/listParamObj'
 import { Pageable2 } from 'table'
 import { getExcelFile, getToday } from '@/utils/fsms/common/comm'
 import { LoadingBackdrop } from '@/app/components/loading/LoadingBackdrop'
-import HistorySlider from '@/components/history/HistorySlider'
-import { useTabHistory } from '@/utils/fsms/common/useTabHistory'
 
 
 const BCrumb = [
@@ -126,7 +124,6 @@ export interface Row {
 
 const DataList = () => {
   
-  const { tabs: historyTabs, remove: removeHistory, removeAll: clearHistory } = useTabHistory()
 
   const querys = useSearchParams() // 쿼리스트링을 가져옴
   const allParams: listParamObj = Object.fromEntries(querys.entries()) // 쿼리스트링 값을 오브젝트 형식으로 담음
@@ -406,11 +403,7 @@ const DataList = () => {
   return (
     <PageContainer title="화물 사업자정보조회" description="화물 사업자정보조회 페이지">
         
-      <HistorySlider
-        items={historyTabs}
-        onRemove={removeHistory}
-        onRemoveAll={clearHistory}
-      />
+
       {/* breadcrumb */}
       <Breadcrumb title="화물 사업자정보조회" items={BCrumb} />
       {/* end breadcrumb */}

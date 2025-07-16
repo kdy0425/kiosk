@@ -5,19 +5,16 @@ import { Breadcrumb } from '@/utils/fsms/fsm/mui-imports'
 import PageContainer from '@/components/container/PageContainer'
 
 import HeaderTab from '@/components/tables/CommHeaderTab'
-import HistorySlider from '@/components/history/HistorySlider'
-import { useTabHistory } from '@/utils/fsms/common/useTabHistory'
 import { getUserInfo } from '@/utils/fsms/utils'
 import { isArray } from 'lodash'
 import { SelectItem } from 'select'
 import TrPage from './_components/TrPage'
 import TxPage from './_components/TxPage'
 import BsPage from './_components/BsPage'
-
-interface TabItem {
-  title: string
-  url: string
-}
+import { usePathname } from 'next/navigation'
+import { useDispatch, useSelector } from '@/store/hooks'
+import { setPageState } from '@/store/page/StnPageStateSlice'
+import type { RootState } from '@/store/store'
 
 
 const BCrumb = [
@@ -38,14 +35,16 @@ const BCrumb = [
 ]
 
 const DataList = () => {
+  const pathname = usePathname()
+  const dispatch = useDispatch()
+  const saved = useSelector((state: RootState) => state.stnPageState[pathname])
 
   // const userInfo = getUserInfo()
 
   // 상위 컴포넌트에서 탭 상태 관리
-  const [selectedTab, setSelectedTab] = useState('')
+  const [selectedTab, setSelectedTab] = useState(saved?.selectedTab || '')
   const [tabs, setTabs] = useState<SelectItem[]>([{ value: '', label: '' }])
 
-  const { tabs: historyTabs, remove: removeHistory, removeAll: clearHistory } = useTabHistory()
 
   useEffect(() => {
     setTabs([
@@ -53,16 +52,17 @@ const DataList = () => {
       { value: 'TX', label: '택시' },
       { value: 'BS', label: '버스' },
     ])
-    setSelectedTab('TR')
+    setSelectedTab((prev) => prev || 'TR')
   }, [])
+
+  useEffect(() => {
+    return () => {
+      dispatch(setPageState({ path: pathname, state: { selectedTab } }))
+    }
+  }, [dispatch, pathname, selectedTab])
 
   return (
     <PageContainer title="사업자관리" description="사업자관리">
-      <HistorySlider
-        items={historyTabs}
-        onRemove={removeHistory}
-        onRemoveAll={clearHistory}
-      />
       {/* breadcrumb */}
       <Breadcrumb title="사업자관리" items={BCrumb} />
       <HeaderTab tabs={tabs} onChange={setSelectedTab} />

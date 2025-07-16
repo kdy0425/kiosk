@@ -1,16 +1,26 @@
 'use client'
-import { Box, Button, TableCell, TableHead, TableRow } from '@mui/material'
-import { useSearchParams } from 'next/navigation'
+import {
+  Box,
+  Button,
+  FormControlLabel,
+  Table,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+} from '@mui/material'
+import { useRouter, useSearchParams } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 
 import PageContainer from '@/components/container/PageContainer'
 import { BlankCard, Breadcrumb } from '@/utils/fsms/fsm/mui-imports'
 
 // utils
-import { sendHttpRequest } from '@/utils/fsms/common/apiUtils'
+import {
+  sendHttpFileRequest,
+  sendHttpRequest,
+} from '@/utils/fsms/common/apiUtils'
 import { toQueryString } from '@/utils/fsms/utils'
-import HistorySlider from '@/components/history/HistorySlider'
-import { useTabHistory } from '@/utils/fsms/common/useTabHistory'
 
 // components
 import CustomFormLabel from '@/components/forms/theme-elements/CustomFormLabel'
@@ -18,15 +28,31 @@ import CustomTextField from '@/components/forms/theme-elements/CustomTextField'
 
 import TableDataGrid from '@/app/components/tables/CommDataGrid2'
 
+
 // types
 import { listParamObj } from '@/types/fsms/fsm/listParamObj'
-import { Pageable2 } from 'table'
-import { getExcelFile, getToday } from '@/utils/fsms/common/comm'
+import { HeadCell, Pageable, Pageable2 } from 'table'
+import { SelectItem } from 'select'
+import {
+  getCityCodes,
+  getCodesByGroupNm,
+  getLocalGovCodes,
+} from '@/utils/fsms/common/code/getCode'
+import { formatDate } from '@/utils/fsms/common/convert'
+import {
+  getCtpvCd,
+  getExcelFile,
+  getLocGovCd,
+  getToday,
+} from '@/utils/fsms/common/comm'
 import {
   CtpvSelect,
   LocgovSelect,
 } from '@/app/components/tx/commSelect/CommSelect'
-import { drliInfoHeadCells, hisDrliHeadCells } from '@/utils/fsms/headCells'
+import {
+  dutyInsrSbscInfoHeadCells,
+  hisDutyInsrSbscInfoHeadCells,
+} from '@/utils/fsms/headCells'
 import { LoadingBackdrop } from '@/app/components/loading/LoadingBackdrop'
 
 import { getUserInfo } from '@/utils/fsms/utils'
@@ -43,8 +69,8 @@ const BCrumb = [
     title: '자격관리',
   },
   {
-    to: '/stn/di',
-    title: '운전면허정보',
+    to: '/stn/disi',
+    title: '의무보험가입정보',
   },
 ]
 
@@ -52,35 +78,40 @@ const customHeader = (): React.ReactNode => {
   return (
     <TableHead>
       <TableRow>
-        <TableCell style={{ whiteSpace: 'nowrap' }} colSpan={6}>
+        <TableCell style={{ whiteSpace: 'nowrap' }} colSpan={5}>
           차량정보
         </TableCell>
-        <TableCell style={{ whiteSpace: 'nowrap' }} colSpan={6}>
-          운전자정보
-        </TableCell>
-        <TableCell style={{ whiteSpace: 'nowrap' }} colSpan={6}>
-          운전면허정보
+        <TableCell style={{ whiteSpace: 'nowrap' }} colSpan={14}>
+          의무보험 가입정보
         </TableCell>
       </TableRow>
       <TableRow>
         <TableCell style={{ whiteSpace: 'nowrap' }}>차량번호</TableCell>
-        <TableCell style={{ whiteSpace: 'nowrap' }}>주민등록번호</TableCell>
         <TableCell style={{ whiteSpace: 'nowrap' }}>소유자명</TableCell>
         <TableCell style={{ whiteSpace: 'nowrap' }}>소유구분</TableCell>
         <TableCell style={{ whiteSpace: 'nowrap' }}>차량상태</TableCell>
         <TableCell style={{ whiteSpace: 'nowrap' }}>차량등록일자</TableCell>
 
-        <TableCell style={{ whiteSpace: 'nowrap' }}>운전자명</TableCell>
-        <TableCell style={{ whiteSpace: 'nowrap' }}>주민등록번호</TableCell>
-        <TableCell style={{ whiteSpace: 'nowrap' }}>계약시작일</TableCell>
-        <TableCell style={{ whiteSpace: 'nowrap' }}>계약종료일</TableCell>
-        <TableCell style={{ whiteSpace: 'nowrap' }}>연락처</TableCell>
-        <TableCell style={{ whiteSpace: 'nowrap' }}>운전자등록일자</TableCell>
-
-        <TableCell style={{ whiteSpace: 'nowrap' }}>면허보유여부</TableCell>
-        <TableCell style={{ whiteSpace: 'nowrap' }}>정지시작일자</TableCell>
-        <TableCell style={{ whiteSpace: 'nowrap' }}>정지종료일자</TableCell>
-        <TableCell style={{ whiteSpace: 'nowrap' }}>취소일자</TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>대인1보험상태</TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>
+          대인1보험시기일자
+        </TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>
+          대인1보험종기일자
+        </TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>대인2보험상태</TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>
+          대인2보험시기일자
+        </TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>
+          대인2보험종기일자
+        </TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>대물보험상태</TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>대물보험시기일자</TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>대물보험종기일자</TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>보험사</TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>보험종목</TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>계약번호</TableCell>
         <TableCell style={{ whiteSpace: 'nowrap' }}>등록일자</TableCell>
         <TableCell style={{ whiteSpace: 'nowrap' }}>수정일자</TableCell>
       </TableRow>
@@ -92,17 +123,35 @@ const hisCustomHeader = (): React.ReactNode => {
   return (
     <TableHead>
       <TableRow>
-        <TableCell style={{ whiteSpace: 'nowrap' }} colSpan={8}>
-          운전면허정보 이력
+        <TableCell style={{ whiteSpace: 'nowrap' }} colSpan={17}>
+          의무보험 가입정보 이력
         </TableCell>
       </TableRow>
       <TableRow>
         <TableCell style={{ whiteSpace: 'nowrap' }}>순번</TableCell>
-        <TableCell style={{ whiteSpace: 'nowrap' }}>주민등록번호</TableCell>
-        <TableCell style={{ whiteSpace: 'nowrap' }}>면허보유여부</TableCell>
-        <TableCell style={{ whiteSpace: 'nowrap' }}>정지시작일자</TableCell>
-        <TableCell style={{ whiteSpace: 'nowrap' }}>정지종료일자</TableCell>
-        <TableCell style={{ whiteSpace: 'nowrap' }}>취소일자</TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>차량번호</TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>당일수신상태</TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>대인1보험상태</TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>
+          대인1보험시기일자
+        </TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>
+          대인1보험종기일자
+        </TableCell>
+
+        <TableCell style={{ whiteSpace: 'nowrap' }}>대인2보험상태</TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>
+          대인2보험시기일자
+        </TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>
+          대인2보험종기일자
+        </TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>대물보험상태</TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>대물보험시기일자</TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>대물보험종기일자</TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>보험사</TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>보험종목</TableCell>
+        <TableCell style={{ whiteSpace: 'nowrap' }}>계약번호</TableCell>
         <TableCell style={{ whiteSpace: 'nowrap' }}>등록일자</TableCell>
         <TableCell style={{ whiteSpace: 'nowrap' }}>수정일자</TableCell>
       </TableRow>
@@ -123,41 +172,49 @@ type listSearchObj = {
 }
 
 export interface Row {
+  sn?: string // 순번
   locgovCd?: string // 시도명+관할관청
   vhclNo?: string // 차량번호
-  vonrRrno?: string // 주민등록번호(원본)
-  vonrRrnoSecure?: string // 주민등록번호(별표)
-  knpaVonrRrno?: string
-  knpaVonrRrnoS?: string
+  vonrRrno?: string // 주민등록번호
   vonrNm?: string // 소유자명
-  vhclPsnNm: string // 소유구분
-  vhclSttsCdNm?: string // 차량상태
+  carSts?: string // 차량상태
   carRegDt?: string // 차량등록일자
-  driverVonrNm?: string // 운전자명
-  driverVonrRrno?: string // 운전자주민등록번호(원본)
-  driverVonrRrnoSecure?: string // 운전자주민등록번호(별표)
-  ctrtBgngYmd?: string // 계약시작일
-  ctrtEndYmd?: string // 계약종료일
-  telno?: string // 연락처
-  driverRegDt?: string // 운전자등록일자
-  psnSeCdNm?: string // 면허보유여부
-  stopBgngYmd?: string // 정지시작일자
-  stopEndYmd?: string // 정지종료일자
-  rtrcnYmd?: string // 취소일자
-  knpaRgtrId?: string // 등록자아이디
-  knpaRegDt?: string // 등록일자
-  knpaMdfrId?: string // 수정자아이디
-  knpaMdfcnDt?: string // 수정일자
-  hstrySn?: string // 순번
+  carOwnNm?: string // 소유구분
+  twdpsn1SeNm?: string // 대인1보험상태
+  twdpsn1EraYmd?: string // 대인1보험 시기일자
+  twdpsn1EotYmd?: string | null // 대인1보험 종기일자
+  twdpsn2SeNm?: string // 대인2보험상태
+  twdpsn2EraYmd?: string // 대인2보험 시기일자
+  twdpsn2EotYmd?: string | null // 대인2보험 종기일자
+  sbsttNm?: string // 대물보험상태
+  sbsttEraYmd?: string // 대물보험시기일자
+  sbsttEotYmd?: string // 대물보험종기일자
+  insrncCoNm?: string// 보험사
+  insrncClsSetuNm?: string // 보험종목명
+  insrncCtrtNo?: string // 계약번호
+  etcCn?: string // 기타내용
+  rgtrId?: string // 등록자아이디
+  regDt?: string // 등록일시
+  mdfrId?: string // 수정자아이디
+  mdfcnDt?: string // 수정일시
+  insrncSttsCd?: string // 당일수신상태
+}
+
+// 조회하여 가져온 정보를 Table에 넘기는 객체
+type pageable = {
+  pageNumber: number
+  pageSize: number
+  sort: string
 }
 
 const DataList = () => {
-  const { tabs: historyTabs, remove: removeHistory, removeAll: clearHistory } = useTabHistory()
+  
 
+  const router = useRouter() // 화면이동을 위한객체
   const querys = useSearchParams() // 쿼리스트링을 가져옴
   const allParams: listParamObj = Object.fromEntries(querys.entries()) // 쿼리스트링 값을 오브젝트 형식으로 담음
 
-  const [flag, setFlag] = useState<boolean>(false) // 데이터 갱신을 위한 플래그 설정
+  const [flag, setFlag] = useState<boolean | null>(null) // 데이터 갱신을 위한 플래그 설정
   const [historyflag, setHistoryFlag] = useState<boolean>(false) // 데이터 갱신을 위한 플래그 설정
 
   const [rows, setRows] = useState<Row[]>([]) // 가져온 로우 데이터
@@ -168,18 +225,14 @@ const DataList = () => {
   const [selectedIndex, setSelectedIndex] = useState<number>(-1)
 
   const [selectedRow, setSelectedRow] = useState<Row>() // 선택된 Row를 저장할 state
+  const [isModalOpen, setIsModalOpen] = useState(false) // modal   오픈 상태
+
   const [historyRows, setHistoryRows] = useState<Row[]>([]) // 거래내역에 대한 Row
-  const [historyTotalRows, setHistoryTotalRows] = useState(0) // 총 수
+  const [historyTotalRows, setHistoryTotalRows] = useState(0)
 
     const [excelFlag, setExcelFlag] = useState<boolean>(false) // 조회조건 변경 시 엑셀기능 동작여부
     const [loadingBackdrop, setLoadingBackdrop] = useState(false) // 로딩상태
   
-
-  const [detailParams, setDetailParams] = useState({
-    page: Number(allParams.page ?? 1), // 페이지 번호는 1부터 시작
-    size: Number(allParams.size ?? 10), // 기본 페이지 사이즈 설정
-    sort: allParams.sort ?? '', // 정렬 기준 추가
-  })
 
   // 목록 조회를 위한 객체 (쿼리스트링에서 조건 유무를 확인 하고 없으면 초기값 설정)
   const [params, setParams] = useState<listSearchObj>({
@@ -204,9 +257,15 @@ const DataList = () => {
     totalPages: 1,
   })
 
+  const [detailParams, setDetailParams] = useState({
+    page: Number(allParams.page ?? 1), // 페이지 번호는 1부터 시작
+    size: Number(allParams.size ?? 10), // 기본 페이지 사이즈 설정
+    sort: allParams.sort ?? '', // 정렬 기준 추가
+  })
+
   // 플래그의 변화를 통해 현재 정보를 기준으로 데이터를 가져오기위해 설정
   useEffect(() => {
-    if (params.ctpvCd && params.locgovCd) {
+    if(flag != null){
       fetchData()
     }
   }, [flag])
@@ -218,24 +277,12 @@ const DataList = () => {
     }
   }, [historyflag])
 
-  
   useEffect(() => {
-        //첫행조회
-        if (rows.length > 0) {
-          handleRowClick(rows[0], 0)
-        }
-    }, [rows])
-
-    
-  // 조건 검색 변환 매칭
-  const sortChange = (sort: String): String => {
-    if (sort && sort != '') {
-      let [field, sortOrder] = sort.split(',') // field와 sortOrder 분리하여 매칭
-      if (field === 'regYmd') field = 'regDt' // DB -> regDt // DTO -> regYmd ==> 매칭 작업
-      return field + ',' + sortOrder
-    }
-    return ''
-  }
+      //첫행조회
+      if (rows.length > 0) {
+        handleRowClick(rows[0], 0)
+      }
+  }, [rows])
 
   const userInfo = getUserInfo();
 
@@ -255,21 +302,21 @@ const DataList = () => {
     setSelectedRow(undefined)
     setSelectedIndex(-1)
     setLoading(true)
-    setExcelFlag(true) // 엑셀기능 동작여부
+    setExcelFlag(true)
 
     try {
       // 검색 조건에 맞는 endpoint 생성
       let endpoint: string =
-        `/fsm/stn/di/tr/drliInfo?page=${params.page}&size=${params.size}` +
+        `/fsm/stn/disi/tr/dutyInsrSbscInfo?page=${params.page}&size=${params.size}` +
         `${params.ctpvCd ? '&ctpvCd=' + params.ctpvCd : ''}` +
         `${params.locgovCd ? '&locgovCd=' + params.locgovCd : ''}` +
-        `${params.vhclNo ? '&vhclNo=' + params.vhclNo : ''}` +
-        `${params.vonrRrno ? '&vonrRrno=' + params.vonrRrno : ''}`
+        `${params.vhclNo ? '&vhclNo=' + params.vhclNo : ''}`
 
       const response = await sendHttpRequest('GET', endpoint, null, true, {
         cache: 'no-store',
       })
       if (response && response.resultType === 'success' && response.data) {
+        // 데이터 조회 성공시
         setRows(response.data.content)
         setTotalRows(response.data.totalElements)
         setPageable({
@@ -309,23 +356,24 @@ const DataList = () => {
       return;
     }
 
+      
+
     if(!excelFlag){
       alert('조회조건이 변경되었습니다. 검색 후 다운로드가 가능합니다.')
-      return
+      return    
     }
 
     try{
       setLoadingBackdrop(true)
       let endpoint: string =
-        `/fsm/stn/di/tr/getExcelDrliInfoTr?page=${detailParams.page}&size=${detailParams.size}` +
+        `/fsm/stn/disi/tr/getExcelDutyInsrSbscInfo?` +
         `${params.ctpvCd ? '&ctpvCd=' + params.ctpvCd : ''}` +
         `${params.locgovCd ? '&locgovCd=' + params.locgovCd : ''}` +
-        `${params.vhclNo ? '&vhclNo=' + params.vhclNo : ''}` +
-        `${params.vonrRrno ? '&vonrRrno=' + params.vonrRrno : ''}`
+        `${params.vhclNo ? '&vhclNo=' + params.vhclNo : ''}`
 
-        await  getExcelFile(
+      await  getExcelFile(
         endpoint,
-        BCrumb[BCrumb.length - 1].title + '_' + getToday() + '.xlsx',
+        '' + BCrumb[BCrumb.length - 1].title + getToday() + '.xlsx',
       )
     }catch(error){
       console.error("ERROR :: ", error)
@@ -343,14 +391,16 @@ const DataList = () => {
     try {
       // 검색 조건에 맞는 endpoint 생성
       let endpoint: string =
-        `/fsm/stn/di/tr/drliHst?` +
-        `${selectedRow.driverVonrRrno ? '&vonrRrno=' + selectedRow.driverVonrRrno : selectedRow.vonrRrno}`
-
+        `/fsm/stn/disi/tr/dutyInsrSbscHst?page=${detailParams.page}&size=${detailParams.size}` +
+        `${params.ctpvCd ? '&ctpvCd=' + params.ctpvCd : ''}` +
+        `${selectedRow.locgovCd ? '&locgovCd=' + selectedRow.locgovCd : ''}` +
+        `${selectedRow.vhclNo ? '&vhclNo=' + selectedRow.vhclNo : ''}`
 
       const response = await sendHttpRequest('GET', endpoint, null, true, {
         cache: 'no-store',
       })
       if (response && response.resultType === 'success' && response.data) {
+        // 데이터 조회 성공시
         setHistoryRows(response.data.content)
         setHistoryTotalRows(response.data.totalElements)
         setDetailPageable({
@@ -388,19 +438,21 @@ const DataList = () => {
       return
     }
     let endpoint: string =
-      `/fsm/stn/di/tr/getExcelDrliHstTr?` +
-      `${selectedRow.driverVonrRrno ? '&vonrRrno=' + selectedRow.driverVonrRrno : selectedRow.vonrRrno}`
+      `/fsm/stn/disi/tr/getExcelDutyInsrSbscHst?` +
+      `${params.ctpvCd ? '&ctpvCd=' + params.ctpvCd : ''}` +
+      `${selectedRow.locgovCd ? '&locgovCd=' + selectedRow.locgovCd : ''}` +
+      `${selectedRow.vhclNo ? '&vhclNo=' + selectedRow.vhclNo : ''}`
     try{
       setLoadingBackdrop(true)
       await  getExcelFile(
             endpoint,
-            BCrumb[BCrumb.length - 1].title + '_이력' + getToday() + '.xlsx',
+            '' + BCrumb[BCrumb.length - 1].title + '상세' + getToday() + '.xlsx',
       )
     }catch(error){
       console.error("ERROR :: ", error)
     }finally{
       setLoadingBackdrop(false)
-    }  
+    }
   }
 
   // 페이지 번호와 페이지 사이즈를 params에 업데이트
@@ -429,7 +481,6 @@ const DataList = () => {
   // 행 클릭 시 호출되는 함수
   const handleRowClick = (selectedRow: Row, index?: number) => {
     setSelectedIndex(index ?? -1)
-
     setSelectedRow(selectedRow)
     setHistoryFlag((prev) => !prev)
   }
@@ -442,17 +493,20 @@ const DataList = () => {
     setQString(toQueryString(params))
   }, [params])
 
-  // 플래그를 통한 데이터 갱신
-  // 플래그의 변화를 통해 현재 정보를 기준으로 데이터를 가져오기위해 설정
-  useEffect(() => {
-    if (params.ctpvCd || params.locgovCd) {
-      fetchData()
-    }
-  }, [flag])
-
   // 검색시 검색 조건에 맞는 데이터 갱신 및 1페이지로 이동
   const handleAdvancedSearch = (event: React.FormEvent) => {
     event.preventDefault()
+    if((userInfo.roles[0]) == 'LOGV') {   // 지자체 권한일때만 시도 및 관할관청 체크
+      if (!params.ctpvCd) {
+        alert('시도를 선택해주세요.')
+        return
+      }
+
+      if (!params.locgovCd) {
+        alert('관할관청을 선택해주세요.')
+        return
+      }
+    }
     setParams((prev) => ({ ...prev, page: 1, size: 10 })) // 첫 페이지로 이동
     fetchData()
   }
@@ -469,6 +523,7 @@ const DataList = () => {
 
       if (isValidDateRange(name, value, otherDate)) {
         setExcelFlag(false)
+
         setParams((prev) => ({ ...prev, page: 1, [name]: value }))
       } else {
         alert('종료일은 시작일보다 빠를 수 없습니다.')
@@ -499,14 +554,14 @@ const DataList = () => {
   }
 
   return (
-    <PageContainer title="화물 운전면허정보" description="차량휴지관리 페이지">
-       <HistorySlider
-        items={historyTabs}
-        onRemove={removeHistory}
-        onRemoveAll={clearHistory}
-      />
+    <PageContainer
+      title="화물 의무보험가입정보"
+      description="차량휴지관리 페이지"
+    >
+      
+
       {/* breadcrumb */}
-      <Breadcrumb title="화물 운전면허정보" items={BCrumb} />
+      <Breadcrumb title="화물 의무보험가입정보" items={BCrumb} />
       {/* end breadcrumb */}
 
       {/* 검색영역 시작 */}
@@ -558,22 +613,6 @@ const DataList = () => {
                 fullWidth
               />
             </div>
-            <div className="form-group">
-              <CustomFormLabel
-                className="input-label-display"
-                htmlFor="ft-vonrRrno"
-              >
-                주민등록번호
-              </CustomFormLabel>
-              <CustomTextField
-                name="vonrRrno"
-                value={params.vonrRrno ?? ''}
-                onChange={handleSearchChange}
-                type="text"
-                id="ft-vonrRrno"
-                fullWidth
-              />
-            </div>
           </div>
         </Box>
         <Box className="table-bottom-button-group">
@@ -596,8 +635,11 @@ const DataList = () => {
 
       {/* 테이블영역 시작 */}
       <Box>
+        <Box style={{ display: 'flex', padding: '1rem 1rem', gap: '1rem' }}>
+          <span>■ 의무보험 정보가 유효하게 변경이 된 경우 보험 시작일부터 어제까지 유효한 거래건이 있는 경우 2~3일 이내에 자동소급이 등록이 됩니다.</span>
+        </Box>
         <TableDataGrid
-          headCells={drliInfoHeadCells}
+          headCells={dutyInsrSbscInfoHeadCells}
           customHeader={customHeader}
           selectedRowIndex={selectedIndex}
           rows={rows} // 목록 데이터
@@ -608,15 +650,17 @@ const DataList = () => {
           pageable={pageable} // 현재 페이지 / 사이즈 정보
           paging={true}
           cursor={true}
-          caption={"화물-운전면허정보 목록 조회"}
+          caption={"화물-의무보험가입정보 조회 목록"}
         />
       </Box>
       {/* 테이블영역 끝 */}
+
       {/* 상세 영역 시작 */}
+
       <>
         {selectedRow ? (
           <>
-            <BlankCard title="운전면허정보 이력"
+            <BlankCard title="의무보험가입 정보 이력"
             className="contents-card" 
             buttons={[
               {
@@ -627,7 +671,7 @@ const DataList = () => {
             ]}
             >
               <TableDataGrid
-                headCells={hisDrliHeadCells}
+                headCells={hisDutyInsrSbscInfoHeadCells}
                 customHeader={hisCustomHeader}
                 rows={historyRows} // 목록 데이터
                 totalRows={historyTotalRows} // 총 로우 수
@@ -636,12 +680,13 @@ const DataList = () => {
                 onPaginationModelChange={handleDetailPaginationModelChange} // 페이지 , 사이즈 변경 핸들러 추가
                 pageable={detailPageable} // 현재 페이지 / 사이즈 정보
                 paging={true}
-                caption={"운전면허정보 이력 목록 조회"}
+                caption={"의무보험가입 정보 이력 목록 조회"}
               />
             </BlankCard>
           </>
         ) : null}
       </>
+
       {/* 상세 영역 끝 */}
     </PageContainer>
   )

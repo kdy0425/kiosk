@@ -14,8 +14,6 @@ import { SelectItem } from 'select'
 import TaxiPage from './_components/Taxi/TaxiPage'
 import BusPage from './_components/Bus/BusPage'
 import FreightPage from './_components/Freight/FreightPage'
-import HistorySlider from '@/components/history/HistorySlider'
-import { useTabHistory } from '@/utils/fsms/common/useTabHistory'
 
 const BCrumb = [
   {
@@ -37,7 +35,6 @@ const BCrumb = [
 const Page = () => {
   const userInfo = getUserInfo()
 
-  const { tabs: historyTabs, remove: removeHistory, removeAll: clearHistory } = useTabHistory()
 
   // 상위 컴포넌트에서 탭 상태 관리
   const [selectedTab, setSelectedTab] = useState('')
@@ -68,11 +65,7 @@ const Page = () => {
 
   return (
     <PageContainer title="자동차망비교조회" description="자동차망비교조회">
-       <HistorySlider
-        items={historyTabs}
-        onRemove={removeHistory}
-        onRemoveAll={clearHistory}
-      />
+
       <Breadcrumb title="자동차망비교조회" items={BCrumb} />
       <HeaderTab tabs={tabs} onChange={setSelectedTab} />
       {selectedTab === 'TR' ? (
