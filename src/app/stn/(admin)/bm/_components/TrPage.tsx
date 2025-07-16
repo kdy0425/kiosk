@@ -38,9 +38,7 @@ import {stnBmBsnesMngTrHc} from '@/utils/fsms/headCells'
 import { LoadingBackdrop } from '@/app/components/loading/LoadingBackdrop'
 import { isNumber } from "@/utils/fsms/common/comm"
 import { usePathname } from "next/navigation"
-import { useDispatch, useSelector } from "@/store/hooks"
-import { setPageState } from "@/store/page/StnPageStateSlice"
-import type { RootState } from "@/store/store"
+import useStnPageState from "@/hooks/useStnPageState"
 
 export interface Row {
   vhclNo?: string;            // 차량번호
@@ -93,8 +91,6 @@ const TrPage = () => {
   const querys = useSearchParams() // 쿼리스트링을 가져옴
   const allParams: listParamObj = Object.fromEntries(querys.entries()) // 쿼리스트링 값을 오브젝트 형식으로 담음
   const pathname = usePathname()
-  const dispatch = useDispatch()
-  const saved = useSelector((state: RootState) => state.stnPageState[pathname])
 
   const [flag, setFlag] = useState<boolean | null>(null) // 데이터 갱신을 위한 플래그 설정
   const [dtFlag, setDtFlag] = useState<boolean>(false) // 전체날짜조회를 위한 플래그
@@ -108,17 +104,14 @@ const TrPage = () => {
   const [loadingBackdrop, setLoadingBackdrop] = useState(false) // 로딩상태
   
 
-  // 목록 조회를 위한 객체 (쿼리스트링에서 조건 유무를 확인 하고 없으면 초기값 설정)
-  const [params, setParams] = useState<listSearchObj>(
-    saved?.params || {
-      page: Number(allParams.page ?? 1),
-      size: Number(allParams.size ?? 10),
-      searchValue: allParams.searchValue ?? '',
-      searchSelect: allParams.searchSelect ?? 'ttl',
-      searchStDate: allParams.searchStDate ?? '',
-      searchEdDate: allParams.searchEdDate ?? '',
-    },
-  )
+  const [params, setParams] = useStnPageState<listSearchObj>({
+    page: Number(allParams.page ?? 1),
+    size: Number(allParams.size ?? 10),
+    searchValue: allParams.searchValue ?? '',
+    searchSelect: allParams.searchSelect ?? 'ttl',
+    searchStDate: allParams.searchStDate ?? '',
+    searchEdDate: allParams.searchEdDate ?? '',
+  })
 
   const [pageable, setPageable] = useState<Pageable2>({
     pageNumber: 1, // 페이지 번호는 1부터 시작
@@ -312,11 +305,7 @@ const TrPage = () => {
     setFlag((prev) => !prev)
   }
 
-  useEffect(() => {
-    return () => {
-      dispatch(setPageState({ path: pathname, state: { params } }))
-    }
-  }, [dispatch, pathname, params])
+
 
   // const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
   //   if (event.key === 'Enter') {

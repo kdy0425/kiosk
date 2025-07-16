@@ -2,6 +2,7 @@
 import { ReactNode, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import HistorySlider from '@/components/history/HistorySlider'
+import NavListing from '@/app/(admin)/layout/vertical/navbar-top/NavListing/NavListing'
 import { useDispatch, useSelector } from '@/store/hooks'
 import { addTab, removeTab, removeAllTabs } from '@/store/page/StnTabsSlice'
 import type { RootState } from '@/store/store'
@@ -19,12 +20,19 @@ export default function StnLayout({ children }: { children: ReactNode }) {
 
   return (
     <AdminLayout>
-      <HistorySlider
-        items={tabs}
-        onRemove={(url) => dispatch(removeTab(url))}
-        onRemoveAll={() => dispatch(removeAllTabs())}
-      />
-      {children}
+      <div style={{ display: 'flex', minHeight: '100%' }}>
+        <aside style={{ width: 240 }}>
+          <NavListing />
+        </aside>
+        <div style={{ flex: 1 }}>
+          <HistorySlider
+            items={tabs}
+            onRemove={(url) => dispatch(removeTab(url))}
+            onRemoveAll={() => dispatch(removeAllTabs())}
+          />
+          {children}
+        </div>
+      </div>
     </AdminLayout>
   )
 }
