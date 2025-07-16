@@ -20,7 +20,7 @@ import { HeadCell, Pageable2 } from 'table'
 import { Row } from '../page'
 import CustomCheckbox from '@/app/components/forms/theme-elements/CustomCheckbox'
 import { brNoFormatter, getDateTimeString } from '@/utils/fsms/common/util'
-import ColspanTableComponent from '../../../stn/disi/_components/ColspanGridTable'
+import ColspanTableComponent from '../../../../stn/(admin)/disi/_components/ColspanGridTable'
 type SupportedLocales = keyof typeof locales
 
 // 페이지 정보
