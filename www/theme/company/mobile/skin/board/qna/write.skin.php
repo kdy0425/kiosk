@@ -159,7 +159,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         <tr>
             <th scope="row">자동등록방지</th>
             <td>
-               <div class="g-recaptcha" data-sitekey="6LdxdFcrAAAAAHjxHR91VnBgHqzDhkAo-ZU3hrGo"></div>
+               <div class="g-recaptcha" data-sitekey="<?php echo RECAPTCHA_SITE_KEY; ?>" data-action="<?php echo RECAPTCHA_EXPECTED_ACTION; ?>"></div>
             </td>
         </tr>
 

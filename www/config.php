@@ -217,4 +217,13 @@ if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS']=='on') {   //https 통신일때
 } else {  //http 통신일때 daum 주소 js
     define('G5_POSTCODE_JS', '<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>');
 }
+
+// Google reCAPTCHA 설정
+// 비밀키는 실제 발급받은 값을 사용하세요.
+define('RECAPTCHA_SITE_KEY', '6LdxdFcrAAAAAHjxHR91VnBgHqzDhkAo-ZU3hrGo');
+define('RECAPTCHA_SECRET_KEY', 'REPLACE_WITH_YOUR_SECRET');
+// reCAPTCHA Enterprise settings
+define('RECAPTCHA_PROJECT_ID', '');
+define('RECAPTCHA_EXPECTED_ACTION', 'qna');
+define('RECAPTCHA_SCORE_THRESHOLD', 0.5);
 ?>

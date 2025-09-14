@@ -2,10 +2,86 @@
 include_once('./_common.php');
 include_once(G5_LIB_PATH.'/naver_syndi.lib.php');
 include_once(G5_CAPTCHA_PATH.'/captcha.lib.php');
+include_once(G5_LIB_PATH.'/recaptcha_enterprise.lib.php');
 
 $g5['title'] = '게시글 저장';
 
 $msg = array();
+
+// Google reCAPTCHA 검증
+if (defined('RECAPTCHA_SITE_KEY') && RECAPTCHA_SITE_KEY) {
+    $recaptcha_response = isset($_POST['g-recaptcha-response']) ? trim($_POST['g-recaptcha-response']) : '';
+    if (!$recaptcha_response) {
+        alert('자동등록방지를 완료해 주세요.');
+    }
+
+    $recaptcha_ok = false;
+    if (defined('RECAPTCHA_PROJECT_ID') && RECAPTCHA_PROJECT_ID) {
+        // Use reCAPTCHA Enterprise if project ID is configured
+        $recaptcha_ok = verify_recaptcha_enterprise(
+            $recaptcha_response,
+            RECAPTCHA_SITE_KEY,
+            RECAPTCHA_PROJECT_ID,
+            defined('RECAPTCHA_EXPECTED_ACTION') ? RECAPTCHA_EXPECTED_ACTION : 'qna',
+            defined('RECAPTCHA_SCORE_THRESHOLD') ? RECAPTCHA_SCORE_THRESHOLD : 0.5
+        );
+    } else {
+        // Fallback to classic siteverify API
+        $params = http_build_query([
+            'secret'   => RECAPTCHA_SECRET_KEY,
+            'response' => $recaptcha_response,
+            'remoteip' => $_SERVER['REMOTE_ADDR'],
+        ]);
+
+        $verify = false;
+        if (ini_get('allow_url_fopen')) {
+            $context = stream_context_create([
+                'http' => [
+                    'method'  => 'POST',
+                    'header'  => "Content-Type: application/x-www-form-urlencoded\r\n",
+                    'content' => $params,
+                    'timeout' => 3,
+                ]
+            ]);
+            $verify = @file_get_contents('https://www.google.com/recaptcha/api/siteverify', false, $context);
+        }
+
+        if ($verify === false) {
+            $fp = @fsockopen('ssl://www.google.com', 443, $errno, $errstr, 5);
+            if ($fp) {
+                $out  = "POST /recaptcha/api/siteverify HTTP/1.0\r\n";
+                $out .= "Host: www.google.com\r\n";
+                $out .= "Content-Type: application/x-www-form-urlencoded\r\n";
+                $out .= "Content-Length: " . strlen($params) . "\r\n";
+                $out .= "Connection: close\r\n\r\n";
+                $out .= $params;
+
+                fwrite($fp, $out);
+                $verify = '';
+                while (!feof($fp)) {
+                    $verify .= fgets($fp, 1024);
+                }
+                fclose($fp);
+
+                $pos = strpos($verify, "\r\n\r\n");
+                if ($pos !== false) {
+                    $verify = substr($verify, $pos + 4);
+                }
+            }
+        }
+
+        if ($verify !== false && $verify !== '') {
+            $result = json_decode($verify, true);
+            if (isset($result['success']) && $result['success']) {
+                $recaptcha_ok = true;
+            }
+        }
+    }
+
+    if (!$recaptcha_ok) {
+        alert('자동등록방지 인증에 실패했습니다.');
+    }
+}
 
 $wr_subject = '';
 if (isset($_POST['wr_subject'])) {
